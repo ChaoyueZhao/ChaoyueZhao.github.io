@@ -144,7 +144,8 @@ git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/anank
 <li><p>用terminal，cd到之前建的Hugo文件夹里，我的是hugo-blog, 用</p></li>
 </ol>
 
-<p><code>git remote add origin &lt;第一步的repo地址&gt;</code></p>
+<pre><code>  git remote add origin &lt;第一步的repo地址&gt;
+</code></pre>
 
 <p>这里是把GitHub上的新建的repo作为本地hugo-blog的远程仓库，注意，为了下一步省事，在第一第二步建立GitHub的repo的时候，不要自动生成README.md。</p>
 
@@ -152,50 +153,65 @@ git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/anank
 <li>然后把本地hugo-blog仓库push到远程仓库（第一步创建的repo），代码是:</li>
 </ol>
 
-<p><code>git push origin master</code></p>
+<pre><code> git push origin master
+</code></pre>
 
 <ol>
 <li>现在看看hugo-blog根目录有没有public，如果没有的话，在terminal里输入</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hugo```" data-lang="hugo```"> 
- 会立刻生成一个public文件夹，这个是Hugo默认的网站发布路径。然后
- 
- ```cd public```
 
-
-6. 这一步很关键，需要把public文件夹作为第二步repo的子模块，代码是:
-
- ``` git submodule add &lt;第二步repo的地址&gt; ```
- 
- 这样的好处是把Hugo建站工具文件（hugo-blog）和生成好的网站文件（public）分开，由于hugo-blog本身就是一个git repo，所以在它内部的public文件夹必须要变成一个submodule（子模块）才能生成repo。
-
-7. 这样每次写了新文章，确定更新了，就输入:
-
- ```hugo```
- 
- Hugo会自动生成新的public文件夹
- 
- 然后，先把hugo-blog文件夹同步到GitHub上，输入</code></pre></div>
-<p>git add .
- git commit
- git push</p>
-
-<pre><code> 注意这里git会显示自动忽略public文件夹里的内容，因为public文件夹是一个子模块。
- 
- 接着处理public文件夹，输入：
- 
+<pre><code> hugo
 </code></pre>
 
-<p>cd public</p>
+<p>会立刻生成一个public文件夹，这个是Hugo默认的网站发布路径。然后</p>
 
-<p>git add .</p>
+<pre><code> cd public
+</code></pre>
 
-<p>git commit</p>
+<ol>
+<li>这一步很关键，需要把public文件夹作为第二步repo的子模块，代码是:</li>
+</ol>
 
-<p>git push
-  ```</p>
+<pre><code> git submodule add &lt;第二步repo的地址&gt;
+</code></pre>
+
+<p>这样的好处是把Hugo建站工具文件（hugo-blog）和生成好的网站文件（public）分开，由于hugo-blog本身就是一个git repo，所以在它内部的public文件夹必须要变成一个submodule（子模块）才能生成repo。</p>
+
+<ol>
+<li>这样每次写了新文章，确定更新了，就输入:</li>
+</ol>
+
+<pre><code> hugo
+</code></pre>
+
+<p>Hugo会自动生成新的public文件夹</p>
+
+<p>然后，先把hugo-blog文件夹同步到GitHub上，输入</p>
+
+<pre><code> git add .
+ git commit
+ git push
+</code></pre>
+
+<p>注意这里git会显示自动忽略public文件夹里的内容，因为public文件夹是一个子模块。</p>
+
+<p>接着处理public文件夹，输入：</p>
+
+<pre><code> cd public
+ 
+ git add .
+ 
+ git commit
+ 
+ git push
+</code></pre>
 
 <p>这样就把public 推到了GitHub，然后过一小会，网站内容就出现在<usersname>.github.io这个网址了。</p>
+
+<p>### 小结 ###
+ 这里的难点是git的熟练使用，我在这里耽误了不少时间，各种报错，想了想还是自己对git不熟悉，我的心得是，初学者一定要搞清楚本地repo和远程repo（GitHub）的交互方法，如何push，如何pull， 这些基本的东西一定要搞清楚。</p>
+
+<p>此外，还需要理解submodule（子模块）的含义，我就一度把submodule和remote搞混了。</p>
 
 
 </article>
