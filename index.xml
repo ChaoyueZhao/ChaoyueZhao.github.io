@@ -17,16 +17,7 @@
       <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
       
       <guid>https://chaoyuezhao.github.io/posts/2018/first/</guid>
-      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jelly，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&amp;rsquo;s fastest framework for buliding websites&amp;rdquo;。</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://chaoyuezhao.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Tue, 16 Jan 2018 00:45:07 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description>this is the first page</description>
+      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&amp;rsquo;s fastest framework for buliding websites&amp;rdquo;。</description>
     </item>
     
     <item>
@@ -39,6 +30,15 @@
 今天恍然发现，如果从离职开始计算，我完全脱产自学编程已经快4个月了。这段时间到底学了什么？做了什么新项目？先来看看统计数据吧。
  教程：学习了29个在线教程，其中18个已完成，11个未完成。
  书籍：看了8本技术书，其中完成度超过80%的有4本。</description>
+    </item>
+    
+    <item>
+      <title>入选互联网名人堂的三位中国人</title>
+      <link>https://chaoyuezhao.github.io/posts/33/</link>
+      <pubDate>Fri, 13 Oct 2017 13:46:56 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/33/</guid>
+      <description>简介 互联网名人堂（The Internet Hall of Fame）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献的人物，被认为是全球互联网社群的最高荣誉。</description>
     </item>
     
     <item>
