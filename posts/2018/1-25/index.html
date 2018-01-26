@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang='zh'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&rsquo;s fastest framework for buliding websites&rdquo;。
+我是去年11月发现Hugo的，当时对Wordpress已经丧失了最初的激情，随着自己技术的增长，希望能搞一个更好玩的网站，于是开始了解Hugo。不过由于种种原因，直到今年过完元旦我才正式开始研究它，花了两天时间，踩了不少坑，终于算是初步搞定了。下面就记录下我用Hugo建站的过程。
+一、快速开始 首先，按照官网上 Quick Start 的步骤走就行，一切正常的话，5分钟就搞定了，
+Mac上，打开terminal，按照以下步骤进行：
+ 安装Hugo
+brew install hugo  创建一个新站
+hugo new site hugo-blog  增加一个主题（皮肤）
+cd hugo-blog; git init; git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/ananke;  修改根目录的toml文件。
+echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  创建一篇文章，比如first-post.md
+hugo new posts/first-post.md  下来就可以搭建一个本地服务器啦，用-D来生成显示草稿（默认新文章都是草稿）
+hugo server -D  访问localhost地址，这样就看到网站啦，这里有点小激动，毕竟距离成功已经不远啦。
+  小结 如果顺利的话，以上步骤5分钟就可以搞定了，我当时忘记修改config.toml文件里的theme，怎么也无法生成网站。其实手动打开文件输入代码也可以，感觉用terminal反而不习惯。
+二、快速部署 Hugo官网推荐了9种部署方式，我使用的是在GitHub上的User Page，步骤如下：
+ 在GitHub上创建一个repo用来放Hugo的主体文件。比如：
+hugo-blog  在GitHub上创建一个自己用户名的repo，我的是:
+ChaoyueZhao.github.io  这个repo用来放Hugo生成好的网站文件，利用GitHub自带的网站功能，自动形成repo名的免费网址。'>
+
+<meta property='og:title' content='Hugo建站心得 • 超越的主页'>
+<meta property='og:description' content='Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&rsquo;s fastest framework for buliding websites&rdquo;。
+我是去年11月发现Hugo的，当时对Wordpress已经丧失了最初的激情，随着自己技术的增长，希望能搞一个更好玩的网站，于是开始了解Hugo。不过由于种种原因，直到今年过完元旦我才正式开始研究它，花了两天时间，踩了不少坑，终于算是初步搞定了。下面就记录下我用Hugo建站的过程。
+一、快速开始 首先，按照官网上 Quick Start 的步骤走就行，一切正常的话，5分钟就搞定了，
+Mac上，打开terminal，按照以下步骤进行：
+ 安装Hugo
+brew install hugo  创建一个新站
+hugo new site hugo-blog  增加一个主题（皮肤）
+cd hugo-blog; git init; git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/ananke;  修改根目录的toml文件。
+echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  创建一篇文章，比如first-post.md
+hugo new posts/first-post.md  下来就可以搭建一个本地服务器啦，用-D来生成显示草稿（默认新文章都是草稿）
+hugo server -D  访问localhost地址，这样就看到网站啦，这里有点小激动，毕竟距离成功已经不远啦。
+  小结 如果顺利的话，以上步骤5分钟就可以搞定了，我当时忘记修改config.toml文件里的theme，怎么也无法生成网站。其实手动打开文件输入代码也可以，感觉用terminal反而不习惯。
+二、快速部署 Hugo官网推荐了9种部署方式，我使用的是在GitHub上的User Page，步骤如下：
+ 在GitHub上创建一个repo用来放Hugo的主体文件。比如：
+hugo-blog  在GitHub上创建一个自己用户名的repo，我的是:
+ChaoyueZhao.github.io  这个repo用来放Hugo生成好的网站文件，利用GitHub自带的网站功能，自动形成repo名的免费网址。'>
+<meta property='og:url' content='https://chaoyuezhao.github.io/posts/2018/1-25/'>
+<meta property='og:site_name' content='超越的主页'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://chaoyuezhao.github.io/image/hugo.jpg'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-01-25T22:15:19&#43;08:00'/><meta property='article:modified_time' content='2018-01-25T22:15:19&#43;08:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@zcy521'><meta property='twitter:image' content='https://chaoyuezhao.github.io/image/hugo.jpg'>
+
+<meta name="generator" content="Hugo 0.32.4" />
+
+  <title>Hugo建站心得 • 超越的主页</title>
+  <link rel='canonical' href='https://chaoyuezhao.github.io/posts/2018/1-25/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-posts hasCover'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>跳转</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='主菜单'>
+  <ul class='main-menu'>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>超越的主页</p>
+          
+          <p class='site-description subtitle'>道义是天际的星光，科学是指路的灯火</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='zh' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Hugo建站心得</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2018-01-25T22:15:19&#43;08:00'>2018-01-25</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+阅读时间 1 分钟
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    <div class='entry-cover-container'>
+  <figure class='entry-cover cover-normal'>
+    <img src='/image/hugo.jpg'/>
+    
+  </figure>
+</div>
+    
+
+    <div class='entry-content'>
+  
+
+<p>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&rsquo;s fastest framework for buliding websites&rdquo;。</p>
+
+<p>我是去年11月发现Hugo的，当时对Wordpress已经丧失了最初的激情，随着自己技术的增长，希望能搞一个更好玩的网站，于是开始了解Hugo。不过由于种种原因，直到今年过完元旦我才正式开始研究它，花了两天时间，踩了不少坑，终于算是初步搞定了。下面就记录下我用Hugo建站的过程。</p>
+
+<h2 id="一-快速开始">一、快速开始</h2>
+
+<p>首先，按照官网上 <strong><a href="http://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start</a></strong> 的步骤走就行，一切正常的话，5分钟就搞定了，</p>
+
+<p>Mac上，打开terminal，按照以下步骤进行：</p>
+
+<ol>
+<li><p>安装Hugo</p>
+
+<pre><code>brew install hugo
+</code></pre></li>
+
+<li><p>创建一个新站</p>
+
+<pre><code>hugo new site hugo-blog
+</code></pre></li>
+
+<li><p>增加一个主题（皮肤）</p>
+
+<pre><code>cd hugo-blog;
+git init;
+git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/ananke;
+</code></pre></li>
+
+<li><p>修改根目录的toml文件。</p>
+
+<pre><code>echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre></li>
+
+<li><p>创建一篇文章，比如first-post.md</p>
+
+<pre><code>hugo new posts/first-post.md
+</code></pre></li>
+
+<li><p>下来就可以搭建一个本地服务器啦，用-D来生成显示草稿（默认新文章都是草稿）</p>
+
+<pre><code>hugo server -D
+</code></pre></li>
+
+<li><p>访问localhost地址，这样就看到网站啦，这里有点小激动，毕竟距离成功已经不远啦。</p></li>
+</ol>
+
+<h3 id="小结">小结</h3>
+
+<p>如果顺利的话，以上步骤5分钟就可以搞定了，我当时忘记修改config.toml文件里的theme，怎么也无法生成网站。其实手动打开文件输入代码也可以，感觉用terminal反而不习惯。</p>
+
+<hr />
+
+<h2 id="二-快速部署">二、快速部署</h2>
+
+<p>Hugo官网推荐了9种部署方式，我使用的是在GitHub上的User Page，步骤如下：</p>
+
+<ol>
+<li><p>在GitHub上创建一个repo用来放Hugo的主体文件。比如：</p>
+
+<pre><code>hugo-blog
+</code></pre></li>
+
+<li><p>在GitHub上创建一个自己用户名的repo，我的是:</p>
+
+<pre><code>ChaoyueZhao.github.io
+</code></pre></li>
+
+<li><p>这个repo用来放Hugo生成好的网站文件，利用GitHub自带的网站功能，自动形成repo名的免费网址。</p></li>
+
+<li><p>用terminal，cd到之前用Hugo创建的本地文件夹里，我的是hugo-blog, 用</p>
+
+<pre><code>git remote add origin &lt;第一步的repo地址&gt;
+</code></pre>
+
+<p>这里是把GitHub上的新建的repo作为本地hugo-blog的远程仓库，注意，为了下一步省事，在第一第二步建立GitHub的repo的时候，不要自动生成README.md。</p></li>
+
+<li><p>然后把本地hugo-blog仓库push到远程仓库（第一步创建的repo），代码是:</p>
+
+<pre><code>git push origin master
+</code></pre></li>
+
+<li><p>现在看看hugo-blog根目录有没有public，如果没有的话，在terminal里输入</p>
+
+<pre><code> hugo
+</code></pre>
+
+<p>会立刻生成一个public文件夹，这个是Hugo默认的网站发布路径。然后:</p>
+
+<pre><code>cd public
+</code></pre></li>
+
+<li><p>这一步很关键，需要把public文件夹作为第二步repo的子模块，代码是:</p>
+
+<pre><code>git submodule add &lt;第二步repo的地址&gt;
+</code></pre>
+
+<p>这样的好处是把Hugo建站工具文件（hugo-blog）和生成好的网站文件（public）分开，由于hugo-blog本身就是一个git repo，所以在它内部的public文件夹必须要变成一个submodule（子模块）才能生成repo。</p></li>
+
+<li><p>这样每次写了新文章，确定更新了，就输入:</p>
+
+<pre><code>hugo
+</code></pre>
+
+<p>Hugo会自动生成新的public文件夹</p>
+
+<p>然后，先把hugo-blog文件夹同步到GitHub上，依次进行以下步骤：</p>
+
+<pre><code>git add .
+git commit
+git push
+</code></pre>
+
+<p>注意这里git会显示自动忽略public文件夹里的内容，因为public文件夹是一个子模块。</p></li>
+
+<li><p>接着同步public文件夹：</p>
+
+<pre><code>cd public
+git add .
+git commit 
+git push
+</code></pre>
+
+<p>这样就把public 推到了GitHub，然后过一小会，网站内容就出现在<usersname>.github.io这个网址了。</p></li>
+</ol>
+
+<h3 id="小结-1">小结</h3>
+
+<p>这部分的难点是git的熟练使用，我在这里耽误了不少时间，各种报错，想了想还是自己对git不熟悉。我的心得是，初学者一定要搞清楚本地repo和远程repo（GitHub）的交互方法，如何push，如何pull， 这些基本的东西一定要掌握。</p>
+
+<p>此外，还需要了解submodule（子模块）的含义，我就一度把submodule和remote搞混了。</p>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='categories'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>分类: </span><a class='category' href='/categories/%E6%8A%80%E6%9C%AF'>技术</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/posts/2017/12-24/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader'>上一篇文章: </span>辞职三个月学习总结</a>
+    </div></div>
+</nav>
+
+  
+<div class='comments-container'>
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zhaochaoyue" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='社交菜单'>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/ChaoyueZhao' target='_blank' rel='noopener'>
+          <span class='screen-reader'>在新标签打开 Github </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/ZCY521' target='_blank' rel='noopener'>
+          <span class='screen-reader'>在新标签打开 Twitter </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:me@zhaochaoyue.com' target='_blank' rel='noopener'>
+          <span class='screen-reader'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://codepen.io/Chaoyue' target='_blank' rel='noopener'>
+          <span class='screen-reader'>在新标签打开 Codepen </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+  <line x1="12" y1="22" x2="12" y2="15.5"/>
+  <polyline points="22 8.5 12 15.5 2 8.5"/>
+  <polyline points="2 15.5 12 8.5 22 15.5"/>
+  <line x1="12" y1="2" x2="12" y2="8.5"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 超越 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>赵超越的主页</title>
+    <title>超越的主页</title>
     <link>https://chaoyuezhao.github.io/</link>
-    <description>Recent content on 赵超越的主页</description>
+    <description>Recent content on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright &amp;copy; 2018 - 超越</copyright>
     <lastBuildDate>Thu, 25 Jan 2018 22:15:19 +0800</lastBuildDate>
     
 	<atom:link href="https://chaoyuezhao.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -13,32 +12,66 @@
     
     <item>
       <title>Hugo建站心得</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/first/</link>
+      <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
       <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/first/</guid>
-      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&amp;rsquo;s fastest framework for buliding websites&amp;rdquo;。</description>
+      <guid>https://chaoyuezhao.github.io/posts/2018/1-25/</guid>
+      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&amp;rsquo;s fastest framework for buliding websites&amp;rdquo;。
+我是去年11月发现Hugo的，当时对Wordpress已经丧失了最初的激情，随着自己技术的增长，希望能搞一个更好玩的网站，于是开始了解Hugo。不过由于种种原因，直到今年过完元旦我才正式开始研究它，花了两天时间，踩了不少坑，终于算是初步搞定了。下面就记录下我用Hugo建站的过程。
+一、快速开始 首先，按照官网上 Quick Start 的步骤走就行，一切正常的话，5分钟就搞定了，
+Mac上，打开terminal，按照以下步骤进行：
+ 安装Hugo
+brew install hugo  创建一个新站
+hugo new site hugo-blog  增加一个主题（皮肤）
+cd hugo-blog; git init; git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/ananke;  修改根目录的toml文件。
+echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  创建一篇文章，比如first-post.md
+hugo new posts/first-post.md  下来就可以搭建一个本地服务器啦，用-D来生成显示草稿（默认新文章都是草稿）
+hugo server -D  访问localhost地址，这样就看到网站啦，这里有点小激动，毕竟距离成功已经不远啦。
+  小结 如果顺利的话，以上步骤5分钟就可以搞定了，我当时忘记修改config.toml文件里的theme，怎么也无法生成网站。其实手动打开文件输入代码也可以，感觉用terminal反而不习惯。
+二、快速部署 Hugo官网推荐了9种部署方式，我使用的是在GitHub上的User Page，步骤如下：
+ 在GitHub上创建一个repo用来放Hugo的主体文件。比如：
+hugo-blog  在GitHub上创建一个自己用户名的repo，我的是:
+ChaoyueZhao.github.io  这个repo用来放Hugo生成好的网站文件，利用GitHub自带的网站功能，自动形成repo名的免费网址。</description>
     </item>
     
     <item>
       <title>辞职三个月学习总结</title>
-      <link>https://chaoyuezhao.github.io/posts/%E8%BE%9E%E8%81%8C%E4%B8%89%E4%B8%AA%E6%9C%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</link>
+      <link>https://chaoyuezhao.github.io/posts/2017/12-24/</link>
       <pubDate>Sun, 24 Dec 2017 19:35:02 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/%E8%BE%9E%E8%81%8C%E4%B8%89%E4%B8%AA%E6%9C%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://chaoyuezhao.github.io/posts/2017/12-24/</guid>
       <description>写博客的好处是可以认真反思一下自己。
 今天恍然发现，如果从离职开始计算，我完全脱产自学编程已经快4个月了。这段时间到底学了什么？做了什么新项目？先来看看统计数据吧。
  教程：学习了29个在线教程，其中18个已完成，11个未完成。
- 书籍：看了8本技术书，其中完成度超过80%的有4本。</description>
+ 书籍：看了8本技术书，其中完成度超过80%的有4本。
+ 项目：完成了一个静态网页设计；在GitHub开始了一个互联网名人堂翻译项目；开发了一个民国人物纪念网站 安汉纪念馆
+  如果我现在还是学生，那么可以说这三个月学习效率还不错。然而现实是，我就快要到而立之年了，而且还打算尽快找到工作，这样看来这三个月的学习根本无法令人满意。目前我面临一个选择：是要继续加强基础知识的学习，还是尽快学习JS框架方便找工作？
+这个选择确实不容易做出，如果要加强基础知识的话，是否要从计算机专业的教科书补起？数据结构、算法、编程思想这些都是基础中的基础，但是对于一个自学编程的人来说，也许应该更工作导向一些？随便点开一个网站中招聘前端工程师的岗位要求，几乎必有“熟悉并使用过Angular、React或Vue等框架”。为了找工作有时候还是得妥协，但是这么短的时间怎么可能达到“熟练掌握”或者“精通”？其实找工作、写简历、准备面试也是程序员需要学习的一大领域，慢慢明白这里面的门道很多的，找工作暂且按下不表，先来说说我的选择吧。
+我的选择是深入学习JavaScript和CSS3。原因如下，学习了三个多月，发现自己JS用的很少，目前自己做的大多数工作都可以归为“网页设计”，离真正的“网页开发”还很远。主要是因为手写JS代码太少了，大部分时间是在用HTML和CSS，再结合上Bootstrap，偶尔找一些好用的库和API，然而JavaScript才属于前端的编程语言，不深入掌握原生代码，怎么好意思叫自己Web工程师？
+另外，随着学习的深入，我发现CSS3真的很博大精深，很多复杂的东西，真正学好并不容易，而网页布局又无法离开它，所以我计划下一步的学习方案是啃下《JavaScript权威指南》和《CSS3权威指南（第四版）英文版》。《JavaScript权威指南》有三分之一都是参考资料，实际上主要内容也就700页左右，英文版的最新CSS3权威指南PDF版有一千七百多页，但是挑实用章节的重点难点看的话，也就一千页左右。我争取今年内把这两本大部头拿下。</description>
     </item>
     
     <item>
       <title>入选互联网名人堂的三位中国人</title>
-      <link>https://chaoyuezhao.github.io/posts/33/</link>
+      <link>https://chaoyuezhao.github.io/posts/2017/10-13/</link>
       <pubDate>Fri, 13 Oct 2017 13:46:56 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/33/</guid>
-      <description>简介 互联网名人堂（The Internet Hall of Fame）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献的人物，被认为是全球互联网社群的最高荣誉。</description>
+      <guid>https://chaoyuezhao.github.io/posts/2017/10-13/</guid>
+      <description>简介 互联网名人堂（The Internet Hall of Fame）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献的人物，被认为是全球互联网社群的最高荣誉。
+互联网名人堂的获奖人分为三类： * 互联网创始人/先驱（Pioneers） * 互联网创新者/改革者（Innovators） * 推动全球互联者（Global Connectors）
+除了2015和2016年为了使入选者更多参与进来而暂停2年，互联网名人堂每年公布一次入选名单。
+以下是被选入互联网名人堂的三位中国人的官方简介，更多获奖者中文简介请访问我的GitHub仓库Internet-Hall-of-Fame 中文翻译计划
+2013年入选推动全球互联者 胡启恒 (Qiheng Hu ) ### 胡启恒女士带领“中国国家计算机与网络设施（NCFC）”工程团队将互联网带进了中国大陆。1994年，身为中国科学院副主席的胡启恒访问了美国国家科学基金会（NSF）并举行了会谈，促成了中国与国际互联网的第一条TCP/IP全功能链接。1997年，她成立了中国互联网络信息中心（CNNIC），并担任其工作委员会主任委员超过10年。这个委员会让企业、政府和学者协作起来支持中国互联网络信息中心的工作，从而管理中国互联网资源的运行和发展。她是中国互联网协会（ISC）理事长，中国互联网协会在胡启恒的帮助下于2001年建立，是一个拥有超过400会员的民间协会。作为中国互联网协会的领导人，胡启恒女士助力于慈善事业的开展，帮助边远贫困地区的学生获得互联网接入和使用互联网应用。
+胡启恒女士还投身于国际互联网事务。她是编号分配机构（ICANN）的国际域名委员会和联合国互联网治理工作小组（WGIG）的成员。胡启恒女士在莫斯科受到工业过程自动控制系统专业的工程师教育，之后获得了技术科学副博士学位。她在美国凯斯西储大学担任了两年客座教授。作为中国最早的模式识别和人工智能研究者之一，胡启恒女士现在是中国科学院研究员和中国工程院院士。
+2014年入选互联网创新者/改革者 钱华林 (Hualin Qian )
+钱华林教授是中国许多大型互联网相关项目的负责人。他带领团队完成了1994年中美最早的一次互联网连接。同一年，他的团队完成了中国顶级域名.cn的建设，他担任该顶级域名的技术和行政联络员。他的团队在1984年开发了中国第一个X.25网络，在1986年开发了中国第一个基于计算机平台的数据/语音/传真系统。钱华林也是1990年亚运会计算机网络和体育应用系统的首席设计师。
+自2002年以来，钱华林服务于由中国国家发展与改革委员会成立的一个推动部署中国IPv6的专家委员会。作为专家组的一员，他从2007年开始监督指导由中国科技部支持的基础研究项目。 他也是计算机与网络技术期刊的编委会成员。
+目前，钱华林担任中国互联网络信息中心（CNNIC）首席科学家，中国科学院研究员，也是CNNIC指导委员会的成员。
+2017年入选推动全球互联者 吴建平 (Jianping Wu )
+吴建平博士在促进中国和亚太地区互联网技术、部署以及教育方面扮演了先锋式的角色，并帮助中国和亚太地区提高了在全球互联网中的地位，增强了相互的联系。
+自1994年开始，他领导了中国第一个网际网络主干CERNET（中国教育和科研计算机网）的设计、开发和改进的工作，使之成为全国最大的学术网络。他也是推动和部署中国IPv6的一位领导者，提出了中国下一代互联网示范工程（China Next Generation Internet Project）来促进中国下一代网际网络主干的开发，并领导了中国第一个大型IPv6网际网络主干和世界上最大的native IPv6网络之一的CNGI-CERNET2（“中国下一代互联网示范工程-第二代中国教育和科研计算机网）的开发。
+他坚持不懈地鼓励中国的科学家参与国际互联网的开发工作，对亚太地区和欧亚大陆开发先进的网络起到了重要的作用。
+他是清华大学计算机技术与科学系教授和主任，中国工程院院士。</description>
     </item>
     
     <item>

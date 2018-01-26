@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 超越的主页</title>
+    <link>https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Jan 2018 22:15:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo建站心得</title>
+      <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
+      <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/2018/1-25/</guid>
+      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world&amp;rsquo;s fastest framework for buliding websites&amp;rdquo;。
+我是去年11月发现Hugo的，当时对Wordpress已经丧失了最初的激情，随着自己技术的增长，希望能搞一个更好玩的网站，于是开始了解Hugo。不过由于种种原因，直到今年过完元旦我才正式开始研究它，花了两天时间，踩了不少坑，终于算是初步搞定了。下面就记录下我用Hugo建站的过程。
+一、快速开始 首先，按照官网上 Quick Start 的步骤走就行，一切正常的话，5分钟就搞定了，
+Mac上，打开terminal，按照以下步骤进行：
+ 安装Hugo
+brew install hugo  创建一个新站
+hugo new site hugo-blog  增加一个主题（皮肤）
+cd hugo-blog; git init; git submodule add https/:github.com/budparr/gohugo-theme-ananke.git themes/ananke;  修改根目录的toml文件。
+echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  创建一篇文章，比如first-post.md
+hugo new posts/first-post.md  下来就可以搭建一个本地服务器啦，用-D来生成显示草稿（默认新文章都是草稿）
+hugo server -D  访问localhost地址，这样就看到网站啦，这里有点小激动，毕竟距离成功已经不远啦。
+  小结 如果顺利的话，以上步骤5分钟就可以搞定了，我当时忘记修改config.toml文件里的theme，怎么也无法生成网站。其实手动打开文件输入代码也可以，感觉用terminal反而不习惯。
+二、快速部署 Hugo官网推荐了9种部署方式，我使用的是在GitHub上的User Page，步骤如下：
+ 在GitHub上创建一个repo用来放Hugo的主体文件。比如：
+hugo-blog  在GitHub上创建一个自己用户名的repo，我的是:
+ChaoyueZhao.github.io  这个repo用来放Hugo生成好的网站文件，利用GitHub自带的网站功能，自动形成repo名的免费网址。</description>
+    </item>
+    
+  </channel>
+</rss>
