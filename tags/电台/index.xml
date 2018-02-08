@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电台 on 超越的主页</title>
+    <link>https://chaoyuezhao.github.io/tags/%E7%94%B5%E5%8F%B0/</link>
+    <description>Recent content in 电台 on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 02 Feb 2018 17:20:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://chaoyuezhao.github.io/tags/%E7%94%B5%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2018年,你为什么应该成为一个web开发工程师？</title>
+      <link>https://chaoyuezhao.github.io/posts/2018/2-2/</link>
+      <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/2018/2-2/</guid>
+      <description>本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。 不过在此之前，我们先来做个简要的介绍，如果你点进来收听这个节目了，那么你很</description>
+    </item>
+    
+  </channel>
+</rss>

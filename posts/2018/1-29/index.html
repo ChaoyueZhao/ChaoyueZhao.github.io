@@ -4,18 +4,10 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。
-第一章 原始类型和引用类型 一、两种类型  原始类型  通过 var 赋值给一个变量时，原始类型的值直接保存在变量中。
-  布尔 （boolean） 数字 （number） 字符串 （string） 空类型 （null） 未定义 （undefined）   引用类型  通过var赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）
-  Array （数组） Date （日期和时间） Error （错误） Function （函数） Object （通用对象） RegExp （正则表达式）   二、鉴别类型  鉴别原始类型  布尔、数字、字符串、未定义这四个原始类型直接用typeof鉴别，分别返回“boolean”、“number”、&rdquo;string&rdquo;、“undefined”。 空类型需要用三等号与null进行比较 （value === null），返回true就是空类型，false则不是。   鉴别引用类型  鉴别函数直接用typeof，是函数则返回 function 用typeof鉴别非函数的引用类型时，都返回object，无法精确鉴别，所以需要用instanceof来鉴别。（注意：所有引用类型的instanceof Object 都返回true，因为instanceof可以用来鉴别继承类型，所有引用类型都继承自Object。） 鉴别数组还可以直接用Array.isArray(&quot;被鉴别的对象&quot;)来实现，这个方法可以解决不同全局上下文的问题。   三、原始封装类型 这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：
- 设置了原始封装类型  原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。 原始封装类型具有方法，比如String的toLowerCase()、Number的toFixed()、Boolean的toString()，String的方法最多，也最常用。 当读取字符串、数字或布尔值这三种原始类型时，相应的原始封装类型会被自动创建，并创建出一个原始封装类型的实例（对象），在这个实例上自然可以使用相应的原始封装类型的方法。使用结束后，JavaScript会自动销毁这个实例（自动打包）。   原始方法  原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。 注意：null和undefined没有方法。   原书的代码例子很好的解释了这个概念：'>
+<meta name='description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量'>
 
 <meta property='og:title' content='《JavaScript面向对象精要》学习笔记 • 超越的主页'>
-<meta property='og:description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。
-第一章 原始类型和引用类型 一、两种类型  原始类型  通过 var 赋值给一个变量时，原始类型的值直接保存在变量中。
-  布尔 （boolean） 数字 （number） 字符串 （string） 空类型 （null） 未定义 （undefined）   引用类型  通过var赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）
-  Array （数组） Date （日期和时间） Error （错误） Function （函数） Object （通用对象） RegExp （正则表达式）   二、鉴别类型  鉴别原始类型  布尔、数字、字符串、未定义这四个原始类型直接用typeof鉴别，分别返回“boolean”、“number”、&rdquo;string&rdquo;、“undefined”。 空类型需要用三等号与null进行比较 （value === null），返回true就是空类型，false则不是。   鉴别引用类型  鉴别函数直接用typeof，是函数则返回 function 用typeof鉴别非函数的引用类型时，都返回object，无法精确鉴别，所以需要用instanceof来鉴别。（注意：所有引用类型的instanceof Object 都返回true，因为instanceof可以用来鉴别继承类型，所有引用类型都继承自Object。） 鉴别数组还可以直接用Array.isArray(&quot;被鉴别的对象&quot;)来实现，这个方法可以解决不同全局上下文的问题。   三、原始封装类型 这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：
- 设置了原始封装类型  原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。 原始封装类型具有方法，比如String的toLowerCase()、Number的toFixed()、Boolean的toString()，String的方法最多，也最常用。 当读取字符串、数字或布尔值这三种原始类型时，相应的原始封装类型会被自动创建，并创建出一个原始封装类型的实例（对象），在这个实例上自然可以使用相应的原始封装类型的方法。使用结束后，JavaScript会自动销毁这个实例（自动打包）。   原始方法  原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。 注意：null和undefined没有方法。   原书的代码例子很好的解释了这个概念：'>
+<meta property='og:description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量'>
 <meta property='og:url' content='https://chaoyuezhao.github.io/posts/2018/1-29/'>
 <meta property='og:site_name' content='超越的主页'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://chaoyuezhao.github.io/image/jing-yao.jpg'><meta property='article:section' content='Posts'><meta property='article:tag' content='JavaScript'><meta property='article:published_time' content='2018-01-29T17:20:16&#43;08:00'/><meta property='article:modified_time' content='2018-01-29T17:20:16&#43;08:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@zcy521'><meta property='twitter:image' content='https://chaoyuezhao.github.io/image/jing-yao.jpg'>
@@ -47,7 +39,7 @@
       <a href='/posts'>文章</a>
     </li>
   <li>
-      <a href='/about.md'>关于</a>
+      <a href='/posts/about.md'>关于</a>
     </li>
   
   </ul>
@@ -94,7 +86,7 @@
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-阅读时间 1 分钟
+阅读时间 9 分钟
 </span>
 
 
@@ -201,20 +193,280 @@
 </ol>
 
 <p>原书的代码例子很好的解释了这个概念：</p>
-
-<pre><code>var name = &quot;Nicholas&quot;
-var firstChar = name.charAt(0);
-console.log(firstChar);    // &quot;N&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nicholas&#34;</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">firstChar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">firstChar</span>);    <span style="color:#75715e">/* 输出 &#34;N&#34; */</span></code></pre></div>
 <p>上面是我们看到的结果，而背后发生的事如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nicholas&#34;</span>  <span style="color:#75715e">/* 这时候就自动创建了原始封装类型String */</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String(<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">/* 创建原始封装类型String的实例temp */</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">firstChar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">temp</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>);  <span style="color:#75715e">/* 读取原始封装类型的方法，赋值给firstChar */</span>
+<span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;  <span style="color:#75715e">/* 任务完成，销毁实例 */</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">firstChar</span>);  <span style="color:#75715e">/* 输出 &#34;N&#34; */</span></code></pre></div>
+<h3 id="第二章-函数">第二章 函数</h3>
 
-<pre><code>var name = &quot;Nicholas&quot;  //这时候就自动创建了原始封装类型String
-var temp = new String(name);  //创建原始封装类型String的实例temp
-var firstChar = temp.charAt(0);  //读取原始封装类型的方法，赋值给firstChar
-temp = null;  //任务完成，销毁实例
-console.log(firstChar);  //&quot;N&quot;
-</code></pre>
+<h4 id="一-函数是什么">一、函数是什么</h4>
+
+<p>在JavaScript里，函数就是对象，也就是一个引用类型Function的一个实例。让函数区别于其他对象的是函数自己的内部属性[[Call]]，typeof对含有[[Call]]的对象返回Function。除此之外，函数使用起来和其他对象没有区别，函数就是值。</p>
+
+<p>函数具有两种字面形式，分别为：</p>
+
+<ul>
+<li>函数声明：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">num1</span>, <span style="color:#a6e22e">numb2</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
+  }</code></pre></div>
+<p>和</p>
+
+<ul>
+<li>函数表达式</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">num1</span>, <span style="color:#a6e22e">num2</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
+  );</code></pre></div>
+<p>区别：</p>
+
+<ol>
+<li>函数声明会被提升至上下文的顶部。</li>
+<li>函数表达式最后有一个分号。</li>
+</ol>
+
+<h4 id="二-函数的参数">二、函数的参数</h4>
+
+<p>这里有两对概念一定要区分：</p>
+
+<ol>
+<li>形参和实参</li>
+<li>function.length 和 arguments.length</li>
+</ol>
+
+<p>首先，形参用书中的话来讲就是“函数期望的参数”，也就是声明函数时候写入的参数，形参被保存在函数的length属性中。</p>
+
+<p>而实参，顾名思义，就是真正传入函数的参数，实参被保存在一个叫arguments的对象中。arguments对象具有两个类似数组的方法：</p>
+
+<ul>
+<li>arguments.length返回arguments值的个数；</li>
+<li>arguments[number]返回相应位置的值，类似数组的索引。</li>
+</ul>
+
+<p>注意： arguments对象不是数组。</p>
+
+<p>当实参大于形参的时候，多余的实参不起作用；当形参大于实参的时候，多余的形参会返回undefined</p>
+
+<h4 id="三-this对象">三、this对象</h4>
+
+<p>this出现在全局作用域的时候，代表全局对象，即浏览器里的window。this出现在函数作用域里的时候，代表调用该函数的对象。</p>
+
+<p>改变this值的三种方法：</p>
+
+<ol>
+<li>call()方法</li>
+<li>apply()方法</li>
+<li>bind()方法</li>
+</ol>
+
+<p>call()方法第一个参数指定一个新的this值，后面的参数是需要被传入的参数。例子：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayNameFaoAll</span>(<span style="color:#a6e22e">label</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">label</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Li Bai&#34;</span>
+};
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person2</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Du Fu&#34;</span>
+};
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Shi Ren&#34;</span>;
+
+<span style="color:#75715e">//这一步相当于直接sayNameForAll(&#34;global&#34;);
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>, <span style="color:#e6db74">&#34;global&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;global: Shi Ren&#34; */</span>
+
+<span style="color:#75715e">//将this指向person1，并传入参数“person1”
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">person1</span>, <span style="color:#e6db74">&#34;person1&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person1: Li Bai&#34; */</span>
+
+<span style="color:#75715e">//将this指向person2，并传入参数“person2”
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">person2</span>, <span style="color:#e6db74">&#34;person2&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person2: Du Fu&#34; */</span></code></pre></div>
+<p>apply()和call()的工作方式一样，唯一区别是apply()只接受两个参数，第二个参数可以是数组对象或者arguments对象。</p>
+
+<p>bind()方法是ES5中新加的方法。与之前两个方法的用法基本相似，需要注意的是bind()返回的是一个新函数，通常赋值给一个变量，而call()和appy()则是直接引用原函数。例子：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayNameForAll</span>(<span style="color:#a6e22e">label</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">label</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Li Bai&#34;</span>
+};
+
+<span style="color:#75715e">//这里赋值给一个新变量
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sayNameForPerson1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">bind</span>(<span style="color:#a6e22e">person1</span>);  
+
+<span style="color:#75715e">//这里执行新函数
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForPerson1</span>(<span style="color:#e6db74">&#34;person1&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person1:Li Bai&#34; */</span></code></pre></div>
+<h3 id="第三章-理解对象">第三章 理解对象</h3>
+
+<p>定义对象的属性：</p>
+
+<ul>
+<li>第一次定义时，JavaScript在对象上调用内部方法 [[Put]]</li>
+<li>赋予属性一个新值时，JavaScript调用内部方法 [[Set]]</li>
+</ul>
+
+<p>检测对象是否含有某个属性：</p>
+
+<ul>
+<li><p>in 操作符可以查找给定名称的属性，但不区分自有属性和原型属性，如果找到则返回true</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;property&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">object</span>); <span style="color:#75715e">/* 返回 true 或 false */</span></code></pre></div></li>
+
+<li><p>所有对象都拥有hasWenProperty()方法，只检测是否存在自有属性</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">hasWenProperty</span>(<span style="color:#e6db74">&#34;property&#34;</span>)); <span style="color:#75715e">/* 返回 true 或 false */</span></code></pre></div></li>
+</ul>
+
+<p>删除对象的某个属性用 delete 操作符，会调用[[Delete]]内部方法</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">object</span>  <span style="color:#75715e">/* 删除成功返回 true， 失败返回 false */</span></code></pre></div>
+<p>属性的特征[[Configurable]]规定了属性是否可以配置，默认是可以配置的。可以通过Object.defineProperty()方法改变：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">object</span>, <span style="color:#e6db74">&#34;property&#34;</span>, {
+   <span style="color:#a6e22e">configurable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>   <span style="color:#75715e">/* 变为不可配置，属性描述对象与属性特征同名，不带中括号，首字母小写。 */</span>
+})</code></pre></div>
+<p>属性枚举（遍历），可以用以下两种方法</p>
+
+<ul>
+<li>for (property in object)</li>
+<li>或者ES5引入的 Object.keys()方法，区别是这个方法可以返回属性名的数组</li>
+<li>属性的特征[[Enumerable]]规定了属性是否可以遍历，默认是可以枚举的。可以通过Object.defineProperty()方法改变：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">object</span>, <span style="color:#e6db74">&#34;property&#34;</span>, {
+    <span style="color:#a6e22e">enumerable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>  <span style="color:#75715e">//变为不可枚举，属性描述对象与属性特征同名，不带中括号，首字母小写。
+</span><span style="color:#75715e"></span>})</code></pre></div>
+<p>注意：当使用Object.defineProperty()时，一定要给所有属性特征制定一个值，否则会被默认制定为false。</p>
+
+<p>用Object.defineProperties()可以为一个对象同时定义多个属性。</p>
+
+<p>获取对象的属性特征可以用 Object.getOwnPropertyDescription(object, &ldquo;property&rdquo;)，会返回一个属性描述对象，包含四个属性（两个通用，两个特殊）</p>
+
+<p>对象的属性类型有两种：</p>
+
+<ol>
+<li><p>数据属性</p>
+
+<ul>
+<li>数据属性包含一个值</li>
+<li>拥有通用特征[[Enumerable]]和[[Configurable]]</li>
+<li>拥有独特的属性特征 [[Value]]和[[Writable]]
+
+<ul>
+<li>属性的值保存在[[Value]]中</li>
+<li>[[Writable]]是个布尔值，表示该属性是否可以写入
+<br /></li>
+</ul></li>
+</ul></li>
+
+<li><p>访问器属性</p>
+
+<ul>
+<li>访问器属性不包含值，而是定义了一个getter和一个setter。访问器属性只需要getter和setter的任意一个，也可以都有。</li>
+<li>拥有通用特征[[Enumerable]]和[[Configurable]]</li>
+<li>拥有独特的属性特征[[Get]]和[[Set]]</li>
+</ul></li>
+</ol>
+
+<p>禁止修改对象的方法</p>
+
+<ol>
+<li><p>禁止扩展</p>
+
+<ul>
+<li>使对象无法添加新属性</li>
+<li>代码是：Object.preventExtensions(object);</li>
+<li>用Object.isExtensible(object)来检测是否可以扩展</li>
+</ul></li>
+
+<li><p>封印对象</p>
+
+<ul>
+<li>使对象无法添加新属性、无法删除属性或更改其类型，只能读写。（禁止扩展 + 不可配置）</li>
+<li>代码是： Object.seal(object);</li>
+<li>用Object.isSealed(object)来检测是否封印了</li>
+</ul></li>
+
+<li><p>冻结对象</p>
+
+<ul>
+<li>使对象无法添加新属性、不能删除属性或更改类型、不能给属性赋值。（禁止扩展 + 不可配置 + 不能读写）</li>
+<li>代码是：Object.freeze(object);</li>
+<li>用Object.isFrozen(object)来检测是否冻结了</li>
+</ul></li>
+</ol>
+
+<h3 id="第四章-构造函数和原型对象">第四章 构造函数和原型对象</h3>
+
+<h4 id="一-构造函数">一、构造函数</h4>
+
+<blockquote>
+<p>构造函数就是用new创建对象时调用的函数</p>
+</blockquote>
+
+<p>例子：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Person</span>(<span style="color:#a6e22e">name</span>) {   <span style="color:#75715e">/* 构造函数首字母大写 */</span>
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sayName</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+    };
+}
+
+<span style="color:#75715e">//始终确保用new来调用构造函数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person1</span>(<span style="color:#e6db74">&#34;Li Bai&#34;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person2</span>(<span style="color:#e6db74">&#34;Du Fu&#34;</span>);
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">person1</span>.<span style="color:#a6e22e">name</span>);   <span style="color:#75715e">/* &#34;Li Bai&#34; */</span> 
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">person2</span>.<span style="color:#a6e22e">name</span>);   <span style="color:#75715e">/* &#34;Du Fu&#34; */</span> 
+
+<span style="color:#a6e22e">person1</span>.<span style="color:#a6e22e">sayName</span>();  <span style="color:#75715e">/* 输出 &#34;Li Bai&#34; */</span>   
+<span style="color:#a6e22e">person2</span>.<span style="color:#a6e22e">sayName</span>();  <span style="color:#75715e">/* 输出 &#34;Du Fu */</span> </code></pre></div>
+<blockquote>
+<p>使用构造函数的目的是为了轻松创建许多拥有相同属性和方法的对象</p>
+</blockquote>
+
+<h4 id="二-原型对象">二、原型对象</h4>
+
+<blockquote>
+<p>可以把原型对象看作是对象的基类</p>
+</blockquote>
+
+<p>构造函数创建出的新对象会拥有构造函数的原型对象。</p>
+
+<p>可以用Object.getPrototypeOf(object)方法读取[[Prototype]]属性的值，可以用object.isPrototypeOf(object)方法检查第一个object是否是第二个prototype的原型对象。</p>
+
+<p>重要：无法给原型对象的属性赋值，会变成创建一个同名自有属性。</p>
+
+<p>可以给构造函数中的原型对象创建新的属性，与在构造函数中创建新属性的区别是，调用原型对象上的新属性时，this值指向用new新生成的对象，而不是指向构造函数。</p>
+
+<p>可以用对象字面形式改写原型对象，但要注意手动把constructor属性（原型对象特有的属性）指向构造函数。（constructor属性是原型对象特有的属性，默认会指向Object）</p>
+
+<p>例子：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Person</span>(<span style="color:#a6e22e">name</span>) {
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+}
+
+<span style="color:#a6e22e">Person</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">constructor</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Person</span>,
+    
+    <span style="color:#a6e22e">sayName</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+    },
+    
+    <span style="color:#a6e22e">toString</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;[Person &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;]&#34;</span>;
+    }
+};</code></pre></div>
+<p>重要： 构造函数和对象实例之间没有直接联系，他们通过原型对象相连</p>
+
+<p>[[prototype]]属性是指向原型对象的指针。对原型对象的所有改变可以无缝立即生成为对象实例的属性，无论何时改变都可以，因为JavaScript查找对象属性每次都会先查找自有属性，然后再查找原型对象的属性。</p>
+
+<p>Object.freeeze和Object.seal只对自有属性生效，完全可以再改变原型对象的属性。</p>
+
+<p>当然，理论上可以改变内建对象的原型对象，比如给Array, String, Boolean的原型对象赋新值，但不推荐这么做。</p>
 
 </div>
 
@@ -256,6 +508,16 @@ console.log(firstChar);  //&quot;N&quot;
 </svg>
  上一个</span>
         <span class='screen-reader'>上一篇文章: </span>Hugo建站心得</a>
+    </div><div class='next-entry'>
+      <a href='/posts/2018/2-2/'>
+        <span class='screen-reader'>下一篇: </span>2018年,你为什么应该成为一个web开发工程师？<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
     </div></div>
 </nav>
 

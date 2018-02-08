@@ -16,11 +16,7 @@
       <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
       
       <guid>https://chaoyuezhao.github.io/posts/2018/1-29/</guid>
-      <description>麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。
-第一章 原始类型和引用类型 一、两种类型  原始类型  通过 var 赋值给一个变量时，原始类型的值直接保存在变量中。
-  布尔 （boolean） 数字 （number） 字符串 （string） 空类型 （null） 未定义 （undefined）   引用类型  通过var赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）
-  Array （数组） Date （日期和时间） Error （错误） Function （函数） Object （通用对象） RegExp （正则表达式）   二、鉴别类型  鉴别原始类型  布尔、数字、字符串、未定义这四个原始类型直接用typeof鉴别，分别返回“boolean”、“number”、&amp;rdquo;string&amp;rdquo;、“undefined”。 空类型需要用三等号与null进行比较 （value === null），返回true就是空类型，false则不是。   鉴别引用类型  鉴别函数直接用typeof，是函数则返回 function 用typeof鉴别非函数的引用类型时，都返回object，无法精确鉴别，所以需要用instanceof来鉴别。（注意：所有引用类型的instanceof Object 都返回true，因为instanceof可以用来鉴别继承类型，所有引用类型都继承自Object。） 鉴别数组还可以直接用Array.isArray(&amp;quot;被鉴别的对象&amp;quot;)来实现，这个方法可以解决不同全局上下文的问题。   三、原始封装类型 这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：
- 设置了原始封装类型  原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。 原始封装类型具有方法，比如String的toLowerCase()、Number的toFixed()、Boolean的toString()，String的方法最多，也最常用。 当读取字符串、数字或布尔值这三种原始类型时，相应的原始封装类型会被自动创建，并创建出一个原始封装类型的实例（对象），在这个实例上自然可以使用相应的原始封装类型的方法。使用结束后，JavaScript会自动销毁这个实例（自动打包）。   原始方法  原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。 注意：null和undefined没有方法。   原书的代码例子很好的解释了这个概念：</description>
+      <description>麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量</description>
     </item>
     
   </channel>
