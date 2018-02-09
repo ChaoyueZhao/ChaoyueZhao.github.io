@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://chaoyuezhao.github.io/posts/2017/7-31/</loc>
+    <lastmod>2017-07-31T14:04:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chaoyuezhao.github.io/posts/2017/5-26/</loc>
     <lastmod>2017-05-26T23:50:04+08:00</lastmod>
   </url>
@@ -45,18 +50,6 @@
   <url>
     <loc>https://chaoyuezhao.github.io/posts/2017/5-25/</loc>
     <lastmod>2017-05-25T00:39:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chaoyuezhao.github.io/categories/</loc>
-    <lastmod>2017-05-25T00:39:57+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaoyuezhao.github.io/tags/</loc>
-    <lastmod>2017-05-25T00:39:57+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -70,7 +63,6 @@
   
   <url>
     <loc>https://chaoyuezhao.github.io/categories/</loc>
-    <lastmod>2017-05-25T00:39:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,6 +80,12 @@
   
   <url>
     <loc>https://chaoyuezhao.github.io/tags/</loc>
+    <lastmod>2018-01-29T17:20:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaoyuezhao.github.io/tags/%E5%AE%89%E6%B1%89/</loc>
     <lastmod>2017-05-25T00:39:57+08:00</lastmod>
     <priority>0</priority>
   </url>

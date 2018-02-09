@@ -19,53 +19,95 @@
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+<link rel='stylesheet' href='/assets/css/main.88344e3d.css'><link rel='stylesheet' href='/css/custom.css'>
 </head>
 
 
-<body class='page type-posts hasCover'>
+<body class='page type-posts has-cover has-sidebar sidebar-sticky'>
+
   <div class='site'>
 
-    <a class='screen-reader' href='#main'>跳转</a>
+    <a class='screen-reader-text' href='#main-menu'></a>
 
-    <header id='header' class='header-container'>
-      <div class='header site-header'>
-        <nav id='main-menu' class='main-menu-container' aria-label='主菜单'>
-  <ul class='main-menu'>
-  <li>
-      <a href='index.html'>首页</a>
-    </li>
-  <li>
-      <a href='/posts'>文章</a>
-    </li>
-  <li>
-      <a href='/posts/about.md'>关于</a>
-    </li>
-  
-  </ul>
+<div id='sidebar' class='sidebar'>
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/image/my-picture.jpg'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    超越的主页
+    </h2>
+    <div class='desc'>
+    技术、翻译、随笔
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>标签</h4>
+  </header>
+
+  <div class='taxonomy-cloud'>
+    <ul class='list'><li>
+      <a href='/tags/javascript' style='font-size:1em'>JavaScript</a>
+    </li><li>
+      <a href='/tags/%E5%AE%89%E6%B1%89' style='font-size:1em'>安汉</a>
+    </li><li>
+      <a href='/tags/%E7%94%B5%E5%8F%B0' style='font-size:1em'>电台</a>
+    </li><li>
+      <a href='/tags/%E8%AE%BA%E6%96%87' style='font-size:1em'>论文</a>
+    </li></ul>
+
+  </div>
+</section>
+</div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='main-menu' aria-label='主菜单'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>跳转</a>
+
+<button id='sidebar-toggler' class='hamburger hamburger--arrow sidebar-toggler' type='button' aria-controls='sidebar' aria-expanded='false'>
+  <span class='screen-reader-text'></span>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    <ul><li class='item'>
+        <a href='/posts/'>文章</a>
+      </li></ul>
+  </div>
 </nav>
 
-        <div class='header-info'>
-          
-          <p class='site-title title'>超越的主页</p>
-          
-          <p class='site-description subtitle'>技术、翻译、随笔</p>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>超越的主页</p><p class='desc site-desc'>技术、翻译、随笔</p>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      <main id='content'>
 
 
-<main id='main' class='main'>
-  <article lang='zh' class='entry'>
-    <header class='header-container'>
-  <div class='header entry-header'>
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
     <div class='header-info'>
       <h1 class='title'>《JavaScript面向对象精要》学习笔记</h1>
       
 
     </div>
     
-<div class='meta'>
+<div class='entry-meta'>
   <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -74,8 +116,8 @@
   <line x1="3" y1="10" x2="21" y2="10"/>
   
 </svg>
-<span class='screen-reader'>Posted on </span>
-  <time class='date' datetime='2018-01-29T17:20:16&#43;08:00'>2018-01-29</time>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-01-29T17:20:16&#43;08:00'>2018-01-29</time>
 </span>
 
   
@@ -86,7 +128,7 @@
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-阅读时间 9 分钟
+阅读时间 10 分钟
 </span>
 
 
@@ -96,15 +138,15 @@
   </div>
 </header>
 
-    <div class='entry-cover-container'>
-  <figure class='entry-cover cover-normal'>
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
     <img src='/image/jing-yao.jpg'/>
     
   </figure>
 </div>
-    
+  
 
-    <div class='entry-content'>
+  <div class='container entry-content'>
   
 
 <p>麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。</p>
@@ -193,15 +235,27 @@
 </ol>
 
 <p>原书的代码例子很好的解释了这个概念：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nicholas&#34;</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">firstChar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>);
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">firstChar</span>);    <span style="color:#75715e">/* 输出 &#34;N&#34; */</span></code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> name <span style="color:#555">=</span> <span style="color:#c30">&#34;Nicholas&#34;</span>
+<span style="color:#069;font-weight:bold">var</span> firstChar <span style="color:#555">=</span> name.charAt(<span style="color:#f60">0</span>);
+console.log(firstChar);    <span style="color:#09f;font-style:italic">/* 输出 &#34;N&#34; */</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>上面是我们看到的结果，而背后发生的事如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nicholas&#34;</span>  <span style="color:#75715e">/* 这时候就自动创建了原始封装类型String */</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String(<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">/* 创建原始封装类型String的实例temp */</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">firstChar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">temp</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>);  <span style="color:#75715e">/* 读取原始封装类型的方法，赋值给firstChar */</span>
-<span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;  <span style="color:#75715e">/* 任务完成，销毁实例 */</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">firstChar</span>);  <span style="color:#75715e">/* 输出 &#34;N&#34; */</span></code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> name <span style="color:#555">=</span> <span style="color:#c30">&#34;Nicholas&#34;</span>  <span style="color:#09f;font-style:italic">/* 这时候就自动创建了原始封装类型String */</span>
+<span style="color:#069;font-weight:bold">var</span> temp <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> <span style="color:#366">String</span>(name);  <span style="color:#09f;font-style:italic">/* 创建原始封装类型String的实例temp */</span>
+<span style="color:#069;font-weight:bold">var</span> firstChar <span style="color:#555">=</span> temp.charAt(<span style="color:#f60">0</span>);  <span style="color:#09f;font-style:italic">/* 读取原始封装类型的方法，赋值给firstChar */</span>
+temp <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">null</span>;  <span style="color:#09f;font-style:italic">/* 任务完成，销毁实例 */</span>
+console.log(firstChar);  <span style="color:#09f;font-style:italic">/* 输出 &#34;N&#34; */</span></code></pre></td></tr></table>
+</div>
+</div>
 <h3 id="第二章-函数">第二章 函数</h3>
 
 <h4 id="一-函数是什么">一、函数是什么</h4>
@@ -213,17 +267,29 @@
 <ul>
 <li>函数声明：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">num1</span>, <span style="color:#a6e22e">numb2</span>) {
-      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
-  }</code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> add(num1, numb2) {
+    <span style="color:#069;font-weight:bold">return</span> num1 <span style="color:#555">+</span> num2;
+}</code></pre></td></tr></table>
+</div>
+</div>
 <p>和</p>
 
 <ul>
 <li>函数表达式</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">num1</span>, <span style="color:#a6e22e">num2</span>) {
-      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
-  );</code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> add <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">function</span>(num1, num2) {
+    <span style="color:#069;font-weight:bold">return</span> num1 <span style="color:#555">+</span> num2;
+);</code></pre></td></tr></table>
+</div>
+</div>
 <p>区别：</p>
 
 <ol>
@@ -266,44 +332,56 @@
 </ol>
 
 <p>call()方法第一个参数指定一个新的this值，后面的参数是需要被传入的参数。例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayNameFaoAll</span>(<span style="color:#a6e22e">label</span>) {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">label</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> sayNameFaoAll(label) {
+    console.log(label <span style="color:#555">+</span> <span style="color:#c30">&#34;:&#34;</span> <span style="color:#555">+</span> <span style="color:#069;font-weight:bold">this</span>.name);
 }
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Li Bai&#34;</span>
+<span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> {
+    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>
 };
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person2</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Du Fu&#34;</span>
+<span style="color:#069;font-weight:bold">var</span> person2 <span style="color:#555">=</span> {
+    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Du Fu&#34;</span>
 };
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Shi Ren&#34;</span>;
+<span style="color:#069;font-weight:bold">var</span> name <span style="color:#555">=</span> <span style="color:#c30">&#34;Shi Ren&#34;</span>;
 
-<span style="color:#75715e">//这一步相当于直接sayNameForAll(&#34;global&#34;);
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>, <span style="color:#e6db74">&#34;global&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;global: Shi Ren&#34; */</span>
+<span style="color:#09f;font-style:italic">//这一步相当于直接sayNameForAll(&#34;global&#34;);
+</span><span style="color:#09f;font-style:italic"></span>sayNameForAll.call(<span style="color:#069;font-weight:bold">this</span>, <span style="color:#c30">&#34;global&#34;</span>);  <span style="color:#09f;font-style:italic">/* 输出 &#34;global: Shi Ren&#34; */</span>
 
-<span style="color:#75715e">//将this指向person1，并传入参数“person1”
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">person1</span>, <span style="color:#e6db74">&#34;person1&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person1: Li Bai&#34; */</span>
+<span style="color:#09f;font-style:italic">//将this指向person1，并传入参数“person1”
+</span><span style="color:#09f;font-style:italic"></span>sayNameForAll.call(person1, <span style="color:#c30">&#34;person1&#34;</span>);  <span style="color:#09f;font-style:italic">/* 输出 &#34;person1: Li Bai&#34; */</span>
 
-<span style="color:#75715e">//将this指向person2，并传入参数“person2”
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">person2</span>, <span style="color:#e6db74">&#34;person2&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person2: Du Fu&#34; */</span></code></pre></div>
+<span style="color:#09f;font-style:italic">//将this指向person2，并传入参数“person2”
+</span><span style="color:#09f;font-style:italic"></span>sayNameForAll.call(person2, <span style="color:#c30">&#34;person2&#34;</span>);  <span style="color:#09f;font-style:italic">/* 输出 &#34;person2: Du Fu&#34; */</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>apply()和call()的工作方式一样，唯一区别是apply()只接受两个参数，第二个参数可以是数组对象或者arguments对象。</p>
 
 <p>bind()方法是ES5中新加的方法。与之前两个方法的用法基本相似，需要注意的是bind()返回的是一个新函数，通常赋值给一个变量，而call()和appy()则是直接引用原函数。例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayNameForAll</span>(<span style="color:#a6e22e">label</span>){
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">label</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> sayNameForAll(label){
+    console.log(label <span style="color:#555">+</span> <span style="color:#c30">&#34;:&#34;</span> <span style="color:#555">+</span> <span style="color:#069;font-weight:bold">this</span>.name);
 }
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Li Bai&#34;</span>
+<span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> {
+    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>
 };
 
-<span style="color:#75715e">//这里赋值给一个新变量
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sayNameForPerson1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sayNameForAll</span>.<span style="color:#a6e22e">bind</span>(<span style="color:#a6e22e">person1</span>);  
+<span style="color:#09f;font-style:italic">//这里赋值给一个新变量
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">var</span> sayNameForPerson1 <span style="color:#555">=</span> sayNameForAll.bind(person1);  
 
-<span style="color:#75715e">//这里执行新函数
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">sayNameForPerson1</span>(<span style="color:#e6db74">&#34;person1&#34;</span>);  <span style="color:#75715e">/* 输出 &#34;person1:Li Bai&#34; */</span></code></pre></div>
+<span style="color:#09f;font-style:italic">//这里执行新函数
+</span><span style="color:#09f;font-style:italic"></span>sayNameForPerson1(<span style="color:#c30">&#34;person1&#34;</span>);  <span style="color:#09f;font-style:italic">/* 输出 &#34;person1:Li Bai&#34; */</span></code></pre></td></tr></table>
+</div>
+</div>
 <h3 id="第三章-理解对象">第三章 理解对象</h3>
 
 <p>定义对象的属性：</p>
@@ -317,18 +395,42 @@
 
 <ul>
 <li><p>in 操作符可以查找给定名称的属性，但不区分自有属性和原型属性，如果找到则返回true</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;property&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">object</span>); <span style="color:#75715e">/* 返回 true 或 false */</span></code></pre></div></li>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">console.log(<span style="color:#c30">&#34;property&#34;</span> <span style="color:#069;font-weight:bold">in</span> object); <span style="color:#09f;font-style:italic">/* 返回 true 或 false */</span></code></pre></td></tr></table>
+</div>
+</div></li>
 
 <li><p>所有对象都拥有hasWenProperty()方法，只检测是否存在自有属性</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">hasWenProperty</span>(<span style="color:#e6db74">&#34;property&#34;</span>)); <span style="color:#75715e">/* 返回 true 或 false */</span></code></pre></div></li>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">console.log(object.hasWenProperty(<span style="color:#c30">&#34;property&#34;</span>)); <span style="color:#09f;font-style:italic">/* 返回 true 或 false */</span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 
 <p>删除对象的某个属性用 delete 操作符，会调用[[Delete]]内部方法</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">object</span>  <span style="color:#75715e">/* 删除成功返回 true， 失败返回 false */</span></code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">delete</span> property.object  <span style="color:#09f;font-style:italic">/* 删除成功返回 true， 失败返回 false */</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>属性的特征[[Configurable]]规定了属性是否可以配置，默认是可以配置的。可以通过Object.defineProperty()方法改变：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">object</span>, <span style="color:#e6db74">&#34;property&#34;</span>, {
-   <span style="color:#a6e22e">configurable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>   <span style="color:#75715e">/* 变为不可配置，属性描述对象与属性特征同名，不带中括号，首字母小写。 */</span>
-})</code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#366">Object</span>.defineProperty(object, <span style="color:#c30">&#34;property&#34;</span>, {
+   configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">false</span>   <span style="color:#09f;font-style:italic">/* 变为不可配置，属性描述对象与属性特征同名，不带中括号，首字母小写。 */</span>
+})</code></pre></td></tr></table>
+</div>
+</div>
 <p>属性枚举（遍历），可以用以下两种方法</p>
 
 <ul>
@@ -336,9 +438,15 @@
 <li>或者ES5引入的 Object.keys()方法，区别是这个方法可以返回属性名的数组</li>
 <li>属性的特征[[Enumerable]]规定了属性是否可以遍历，默认是可以枚举的。可以通过Object.defineProperty()方法改变：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">object</span>, <span style="color:#e6db74">&#34;property&#34;</span>, {
-    <span style="color:#a6e22e">enumerable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>  <span style="color:#75715e">//变为不可枚举，属性描述对象与属性特征同名，不带中括号，首字母小写。
-</span><span style="color:#75715e"></span>})</code></pre></div>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#366">Object</span>.defineProperty(object, <span style="color:#c30">&#34;property&#34;</span>, {
+    enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">false</span>  <span style="color:#09f;font-style:italic">//变为不可枚举，属性描述对象与属性特征同名，不带中括号，首字母小写。
+</span><span style="color:#09f;font-style:italic"></span>})</code></pre></td></tr></table>
+</div>
+</div>
 <p>注意：当使用Object.defineProperty()时，一定要给所有属性特征制定一个值，否则会被默认制定为false。</p>
 
 <p>用Object.defineProperties()可以为一个对象同时定义多个属性。</p>
@@ -374,23 +482,21 @@
 <p>禁止修改对象的方法</p>
 
 <ol>
-<li><p>禁止扩展</p>
+<li>禁止扩展
 
 <ul>
 <li>使对象无法添加新属性</li>
 <li>代码是：Object.preventExtensions(object);</li>
 <li>用Object.isExtensible(object)来检测是否可以扩展</li>
 </ul></li>
-
-<li><p>封印对象</p>
+<li>封印对象
 
 <ul>
 <li>使对象无法添加新属性、无法删除属性或更改其类型，只能读写。（禁止扩展 + 不可配置）</li>
 <li>代码是： Object.seal(object);</li>
 <li>用Object.isSealed(object)来检测是否封印了</li>
 </ul></li>
-
-<li><p>冻结对象</p>
+<li>冻结对象
 
 <ul>
 <li>使对象无法添加新属性、不能删除属性或更改类型、不能给属性赋值。（禁止扩展 + 不可配置 + 不能读写）</li>
@@ -408,22 +514,28 @@
 </blockquote>
 
 <p>例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Person</span>(<span style="color:#a6e22e">name</span>) {   <span style="color:#75715e">/* 构造函数首字母大写 */</span>
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sayName</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> Person(name) {   <span style="color:#09f;font-style:italic">/* 构造函数首字母大写 */</span>
+    <span style="color:#069;font-weight:bold">this</span>.name <span style="color:#555">=</span> name;
+    <span style="color:#069;font-weight:bold">this</span>.sayName <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">function</span>(){
+        console.log(<span style="color:#069;font-weight:bold">this</span>.name);
     };
 }
 
-<span style="color:#75715e">//始终确保用new来调用构造函数
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person1</span>(<span style="color:#e6db74">&#34;Li Bai&#34;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person2</span>(<span style="color:#e6db74">&#34;Du Fu&#34;</span>);
+<span style="color:#09f;font-style:italic">//始终确保用new来调用构造函数
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Person1(<span style="color:#c30">&#34;Li Bai&#34;</span>);
+<span style="color:#069;font-weight:bold">var</span> person2 <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Person2(<span style="color:#c30">&#34;Du Fu&#34;</span>);
 
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">person1</span>.<span style="color:#a6e22e">name</span>);   <span style="color:#75715e">/* &#34;Li Bai&#34; */</span> 
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">person2</span>.<span style="color:#a6e22e">name</span>);   <span style="color:#75715e">/* &#34;Du Fu&#34; */</span> 
+console.log(person1.name);   <span style="color:#09f;font-style:italic">/* &#34;Li Bai&#34; */</span> 
+console.log(person2.name);   <span style="color:#09f;font-style:italic">/* &#34;Du Fu&#34; */</span> 
 
-<span style="color:#a6e22e">person1</span>.<span style="color:#a6e22e">sayName</span>();  <span style="color:#75715e">/* 输出 &#34;Li Bai&#34; */</span>   
-<span style="color:#a6e22e">person2</span>.<span style="color:#a6e22e">sayName</span>();  <span style="color:#75715e">/* 输出 &#34;Du Fu */</span> </code></pre></div>
+person1.sayName();  <span style="color:#09f;font-style:italic">/* 输出 &#34;Li Bai&#34; */</span>   
+person2.sayName();  <span style="color:#09f;font-style:italic">/* 输出 &#34;Du Fu */</span> </code></pre></td></tr></table>
+</div>
+</div>
 <blockquote>
 <p>使用构造函数的目的是为了轻松创建许多拥有相同属性和方法的对象</p>
 </blockquote>
@@ -445,21 +557,27 @@
 <p>可以用对象字面形式改写原型对象，但要注意手动把constructor属性（原型对象特有的属性）指向构造函数。（constructor属性是原型对象特有的属性，默认会指向Object）</p>
 
 <p>例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Person</span>(<span style="color:#a6e22e">name</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> Person(name) {
+    <span style="color:#069;font-weight:bold">this</span>.name <span style="color:#555">=</span> name;
 }
 
-<span style="color:#a6e22e">Person</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">constructor</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Person</span>,
+Person.prototype <span style="color:#555">=</span> {
+    constructor<span style="color:#555">:</span> Person,
     
-    <span style="color:#a6e22e">sayName</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
-        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+    sayName<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">function</span>() {
+        console.log(<span style="color:#069;font-weight:bold">this</span>.name);
     },
     
-    <span style="color:#a6e22e">toString</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;[Person &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;]&#34;</span>;
+    toString<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">function</span>() {
+        <span style="color:#069;font-weight:bold">return</span> <span style="color:#c30">&#34;[Person &#34;</span> <span style="color:#555">+</span> <span style="color:#069;font-weight:bold">this</span>.name <span style="color:#555">+</span> <span style="color:#c30">&#34;]&#34;</span>;
     }
-};</code></pre></div>
+};</code></pre></td></tr></table>
+</div>
+</div>
 <p>重要： 构造函数和对象实例之间没有直接联系，他们通过原型对象相连</p>
 
 <p>[[prototype]]属性是指向原型对象的指针。对原型对象的所有改变可以无缝立即生成为对象实例的属性，无论何时改变都可以，因为JavaScript查找对象属性每次都会先查找自有属性，然后再查找原型对象的属性。</p>
@@ -468,11 +586,149 @@
 
 <p>当然，理论上可以改变内建对象的原型对象，比如给Array, String, Boolean的原型对象赋新值，但不推荐这么做。</p>
 
+<h3 id="第五章继承">第五章继承</h3>
+
+<blockquote>
+<p>JavaScript内建的继承方法被称为原型对象链，也叫原型对象继承</p>
+</blockquote>
+
+<p>所有的对象都继承自Object.prototype，也就是说Object.prototype是原型对象链的最顶端，它自己的[[prototype]]属性值为null。</p>
+
+<p>Object.prototype具有五种方法，其他对象都可以使用：</p>
+
+<ul>
+<li>hasOwnProperty()</li>
+<li>propertyIsEnumerable()</li>
+<li>isPrototypeOf()</li>
+<li>valueOf()</li>
+<li>toString()</li>
+</ul>
+
+<h4 id="对象继承">对象继承</h4>
+
+<p>使用var 生成一个对象的时候，JavaScript会隐式指定Object.prototype为对象的[[prototype]]。可以用Object.create()方法显式指定，例子：</p>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">23</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">24</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">25</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">26</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">27</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">28</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">29</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">30</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">31</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">32</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">33</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">34</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> {
+    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>
+    occupation<span style="color:#555">:</span> <span style="color:#c30">&#34;Shi Ren&#34;</span>
+};
+
+<span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> <span style="color:#366">Object</span>.create(<span style="color:#366">Object</span>.prototype, {
+               name<span style="color:#555">:</span> {
+                   configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   value<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>,
+                   writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
+               }
+               
+               occupation<span style="color:#555">:</span> {
+                   configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   value<span style="color:#555">:</span> <span style="color:#c30">&#34;Shi Ren,
+</span><span style="color:#c30">                   writable: true
+</span><span style="color:#c30">               }
+</span><span style="color:#c30">
+</span><span style="color:#c30">          });
+</span><span style="color:#c30">
+</span><span style="color:#c30">var person2 = Object.create(person1, {
+</span><span style="color:#c30">               //这里新创建自由属性name，会替换继承自person1的name属性
+</span><span style="color:#c30">               name: {  
+</span><span style="color:#c30">                   configurable: true,
+</span><span style="color:#c30">                   enumerable: true,
+</span><span style="color:#c30">                   value: &#34;</span>Du Fu<span style="color:#a00;background-color:#faa">&#34;</span>,
+                   writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
+                   }
+              });
+
+person1.occupation();    <span style="color:#09f;font-style:italic">/* 输出“Shi Ren” */</span>
+person2.occupation();    <span style="color:#09f;font-style:italic">/* 输出“Shi Ren” */</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="构造函数继承">构造函数继承</h4>
+
+<p>首先要明白，创建构造函数时，JavaScript在背后隐式的做了这些事：</p>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#09f;font-style:italic">//表面上声明构造函数：
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">function</span> Shiren() {
+    work1<span style="color:#555">:</span> <span style="color:#c30">&#34;Xie Shi&#34;</span>;
+    work2<span style="color:#555">:</span> <span style="color:#c30">&#34;Xie Ci&#34;</span>;
+}
+
+<span style="color:#09f;font-style:italic">//背后逻辑：
+</span><span style="color:#09f;font-style:italic"></span>Shiren.prototype <span style="color:#555">=</span> <span style="color:#366">Object</span>.create(<span style="color:#366">Object</span>.prototype, {
+                       <span style="color:#09f;font-style:italic">//constructor是自有属性，指向自身
+</span><span style="color:#09f;font-style:italic"></span>                       constructor<span style="color:#555">:</span> {
+                           configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                           enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                           value<span style="color:#555">:</span> Shiren,
+                           writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
+                       }
+                    });</code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="构造函数继承-1">构造函数继承</h4>
+
+<blockquote>
+<p>方法是让新构造函数的原型对象变成被继承的构造函数的一个新实例</p>
+</blockquote>
+
+<p>例子：</p>
+
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span></span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">23</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">24</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">25</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">26</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">27</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">28</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">29</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">30</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">31</span></span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">32</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">33</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">34</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">35</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">36</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">37</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> Juxing(chang, kuan) {
+    <span style="color:#069;font-weight:bold">this</span>.chang <span style="color:#555">=</span> chang;
+    <span style="color:#069;font-weight:bold">this</span>.kuan <span style="color:#555">=</span> kuan;
+}
+
+Juxing.prototype.mianJi <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">function</span>() {
+    <span style="color:#069;font-weight:bold">return</span> <span style="color:#069;font-weight:bold">this</span>.chang <span style="color:#555">*</span> <span style="color:#069;font-weight:bold">this</span>.kuan;
+}
+
+<span style="color:#069;font-weight:bold">function</span> ZhengFangXing(bian) {
+    <span style="color:#069;font-weight:bold">this</span>.chang <span style="color:#555">=</span> bian;
+    <span style="color:#069;font-weight:bold">this</span>.kuan <span style="color:#555">=</span> bian;
+}
+
+<span style="background-color:#d8dada;display:block;width:100%"><span style="color:#09f;font-style:italic">//10-13行的代码可以用“构造函数窃取”实现，这种方法也叫“伪类继承”
+</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">function</span> ZhengFangXing(bian) {
+</span><span style="background-color:#d8dada;display:block;width:100%">    Juxing.call(<span style="color:#069;font-weight:bold">this</span>, bian, bian);
+</span><span style="background-color:#d8dada;display:block;width:100%">}
+</span>
+ZhengFangXing.prototype <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Juxing();
+ZhengFangXing.prototype.constructor <span style="color:#555">=</span> ZhengFangXing;
+
+<span style="background-color:#d8dada;display:block;width:100%"><span style="color:#09f;font-style:italic">//20、21两行代码可以被替换为如下
+</span></span><span style="background-color:#d8dada;display:block;width:100%"><span style="color:#09f;font-style:italic"></span>ZhengFangXing.prototype <span style="color:#555">=</span> <span style="color:#366">Object</span>.create(Juxing.prototype, {
+</span><span style="background-color:#d8dada;display:block;width:100%">                       constructor<span style="color:#555">:</span> {
+</span><span style="background-color:#d8dada;display:block;width:100%">                           configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+</span><span style="background-color:#d8dada;display:block;width:100%">                           enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+</span><span style="background-color:#d8dada;display:block;width:100%">                           value<span style="color:#555">:</span> ZhengFangXing,
+</span><span style="background-color:#d8dada;display:block;width:100%">                           writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
+</span><span style="background-color:#d8dada;display:block;width:100%">                       }
+</span><span style="background-color:#d8dada;display:block;width:100%">                    });
+</span>
+<span style="color:#069;font-weight:bold">var</span> ju <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Juxing(<span style="color:#f60">5</span>, <span style="color:#f60">10</span>);
+<span style="color:#069;font-weight:bold">var</span> zheng <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> ZhengFangXing(<span style="color:#f60">6</span>);
+
+console.log(ju.mianJi());    <span style="color:#09f;font-style:italic">/* 50 */</span>
+console.log(zheng.mianJi());   <span style="color:#09f;font-style:italic">/* 36 */</span>  </code></pre></td></tr></table>
+</div>
 </div>
 
-    
-<footer class='entry-footer-container'>
-  <div class='entry-footer'>
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
   <div class='categories'>
   <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -480,7 +736,7 @@
   
 </svg>
 </span>
-  <span class='screen-reader'>分类: </span><a class='category' href='/categories/%E6%8A%80%E6%9C%AF'>技术</a></div>
+  <span class='screen-reader-text'>分类: </span><a class='category' href='/categories/%E6%8A%80%E6%9C%AF'>技术</a></div>
 <div class='tags'>
   <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -489,16 +745,16 @@
   
 </svg>
 </span>
-  <span class='screen-reader'>标签: </span><a class='tag' href='/tags/javascript'>JavaScript</a></div>
+  <span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/javascript'>JavaScript</a></div>
 
   </div>
 </footer>
 
 
-  </article>
-  
-<nav class='entry-nav-container'>
-  <div class='entry-nav'><div class='prev-entry'>
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
       <a href='/posts/2018/1-25/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -507,10 +763,10 @@
   
 </svg>
  上一个</span>
-        <span class='screen-reader'>上一篇文章: </span>Hugo建站心得</a>
-    </div><div class='next-entry'>
+        <span class='screen-reader-text'>上一篇文章: </span>Hugo建站心得</a>
+    </div><div class='next-entry sep-before'>
       <a href='/posts/2018/2-2/'>
-        <span class='screen-reader'>下一篇: </span>2018年,你为什么应该成为一个web开发工程师？<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+        <span class='screen-reader-text'>下一篇: </span>2018年,你为什么应该成为一个web开发工程师？<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
   <polyline points="14 6 20 12 14 18"/>
@@ -521,9 +777,10 @@
     </div></div>
 </nav>
 
-  
-<div class='comments-container'>
-  <div id="disqus_thread"></div>
+
+<section class='comments'>
+  <div class='container sep-before'>
+    <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -543,17 +800,19 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+  </div>
+</section>
 
-</main>
 
-    <footer id='footer' class='footer-container'>
-      <div class='footer'>
-        <div class='social-menu-container'>
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          <div class='social-menu'>
   <nav aria-label='社交菜单'>
-    <ul class='social-menu'><li>
+    <ul><li>
         <a href='https://github.com/ChaoyueZhao' target='_blank' rel='noopener'>
-          <span class='screen-reader'>在新标签打开 Github </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>在新标签打开 Github </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
   
@@ -561,7 +820,7 @@
 </a>
       </li><li>
         <a href='https://twitter.com/ZCY521' target='_blank' rel='noopener'>
-          <span class='screen-reader'>在新标签打开 Twitter </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>在新标签打开 Twitter </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
   
@@ -569,7 +828,7 @@
 </a>
       </li><li>
         <a href='mailto:me@zhaochaoyue.com' target='_blank' rel='noopener'>
-          <span class='screen-reader'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
   <polyline points="22,6 12,13 2,6"/>
@@ -578,7 +837,7 @@
 </a>
       </li><li>
         <a href='https://codepen.io/Chaoyue' target='_blank' rel='noopener'>
-          <span class='screen-reader'>在新标签打开 Codepen </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>在新标签打开 Codepen </span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
   <line x1="12" y1="22" x2="12" y2="15.5"/>
@@ -591,21 +850,15 @@
       </li></ul>
   </nav>
 </div>
-        <div class='copyright'>
-  <p>
-        
-          
-        
-      
-
-       &copy; 2017-2018 超越 
-  </p>
+          <div class='copyright'>
+  <p> &copy; 2017-2018 超越 </p>
 </div>
 
-      </div>
-    </footer>
+        </div>
+      </footer>
 
-  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+    </div>
+  </div><div class='sidebar-overlay'></div><script src='/assets/js/main.89545a27.js'></script><script src='/js/custom.js'></script></body>
 
 </html>
 
