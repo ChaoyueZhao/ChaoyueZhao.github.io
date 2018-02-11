@@ -4,17 +4,17 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量'>
+<meta name='description' content='本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧'>
 
-<meta property='og:title' content='《JavaScript面向对象精要》学习笔记 • 超越的主页'>
-<meta property='og:description' content='麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量'>
+<meta property='og:title' content='15分钟了解JS面向对象精要 • 超越的主页'>
+<meta property='og:description' content='本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧'>
 <meta property='og:url' content='https://chaoyuezhao.github.io/posts/2018/1-29/'>
 <meta property='og:site_name' content='超越的主页'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://chaoyuezhao.github.io/image/jing-yao.jpg'><meta property='article:section' content='Posts'><meta property='article:tag' content='JavaScript'><meta property='article:published_time' content='2018-01-29T17:20:16&#43;08:00'/><meta property='article:modified_time' content='2018-01-29T17:20:16&#43;08:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@zcy521'><meta property='twitter:image' content='https://chaoyuezhao.github.io/image/jing-yao.jpg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://chaoyuezhao.github.io/image/JSOOP.jpg'><meta property='article:section' content='Posts'><meta property='article:tag' content='JavaScript'><meta property='article:published_time' content='2018-01-29T17:20:16&#43;08:00'/><meta property='article:modified_time' content='2018-01-29T17:20:16&#43;08:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@zcy521'><meta property='twitter:image' content='https://chaoyuezhao.github.io/image/JSOOP.jpg'>
 
 <meta name="generator" content="Hugo 0.32.4" />
 
-  <title>《JavaScript面向对象精要》学习笔记 • 超越的主页</title>
+  <title>15分钟了解JS面向对象精要 • 超越的主页</title>
   <link rel='canonical' href='https://chaoyuezhao.github.io/posts/2018/1-29/'>
   
   
@@ -50,18 +50,16 @@
 </section>
 <section class='widget widget-taxonomy_cloud sep-after'>
   <header>
-    <h4 class='title widget-title'>标签</h4>
+    <h4 class='title widget-title'>分类</h4>
   </header>
 
   <div class='taxonomy-cloud'>
     <ul class='list'><li>
-      <a href='/tags/javascript' style='font-size:1em'>JavaScript</a>
+      <a href='/categories/%E6%8A%80%E6%9C%AF' style='font-size:1.2em'>技术</a>
     </li><li>
-      <a href='/tags/%E5%AE%89%E6%B1%89' style='font-size:1em'>安汉</a>
+      <a href='/categories/%E7%BF%BB%E8%AF%91' style='font-size:2em'>翻译</a>
     </li><li>
-      <a href='/tags/%E7%94%B5%E5%8F%B0' style='font-size:1em'>电台</a>
-    </li><li>
-      <a href='/tags/%E8%AE%BA%E6%96%87' style='font-size:1em'>论文</a>
+      <a href='/categories/%E9%9A%8F%E7%AC%94' style='font-size:1em'>随笔</a>
     </li></ul>
 
   </div>
@@ -82,7 +80,7 @@
   </span>
 </button>
     <ul><li class='item'>
-        <a href='/posts/'>文章</a>
+        <a href='/posts/'>归档</a>
       </li></ul>
   </div>
 </nav>
@@ -102,7 +100,7 @@
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>《JavaScript面向对象精要》学习笔记</h1>
+      <h1 class='title'>15分钟了解JS面向对象精要</h1>
       
 
     </div>
@@ -128,7 +126,7 @@
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-阅读时间 10 分钟
+阅读时间 12 分钟
 </span>
 
 
@@ -140,7 +138,7 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='/image/jing-yao.jpg'/>
+    <img src='/image/JSOOP.jpg'/>
     
   </figure>
 </div>
@@ -149,7 +147,7 @@
   <div class='container entry-content'>
   
 
-<p>麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。</p>
+<p>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧对精要二字。我反复读了三四遍，总结出了以下的知识点。</p>
 
 <h3 id="第一章-原始类型和引用类型">第一章 原始类型和引用类型</h3>
 
@@ -724,6 +722,110 @@ console.log(zheng.mianJi());   <span style="color:#09f;font-style:italic">/* 36 
 </div>
 </div>
 
+<h3 id="第六章-对象模式">第六章 对象模式</h3>
+
+<p>如何让对象的属性私有？这一章简要介绍了几种方法</p>
+
+<ol>
+<li><p>模块模式</p>
+
+<blockquote>
+<p>模块模式是一种用于创建拥有私有数据的单件对象的模式</p>
+</blockquote>
+
+<p>基本做法： 使用立调函数表达（IIFE）</p>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> yourObject <span style="color:#555">=</span> (<span style="color:#069;font-weight:bold">function</span>() {
+    
+      <span style="color:#09f;font-style:italic">//私有数据变量，无法在外部访问
+</span><span style="color:#09f;font-style:italic"></span>      
+  <span style="color:#069;font-weight:bold">return</span> {
+      
+      <span style="color:#09f;font-style:italic">//公共方法和属性，可以访问自己的私有数据
+</span><span style="color:#09f;font-style:italic"></span>          
+  }
+    
+}());</code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>构造函数的私有成员</p>
+
+<blockquote>
+<p>用在同样需要私有属性的自定义类型上</p>
+</blockquote>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> Person(name) {  
+    <span style="color:#069;font-weight:bold">var</span> age <span style="color:#555">=</span> <span style="color:#f60">25</span>;  <span style="color:#09f;font-style:italic">/* 本地变量 */</span>
+        
+    <span style="color:#069;font-weight:bold">this</span>.name <span style="color:#555">=</span> name;
+        
+    <span style="color:#069;font-weight:bold">this</span>.getAge <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">function</span>() {           
+        <span style="color:#069;font-weight:bold">return</span> age;            
+    };
+        
+    <span style="color:#069;font-weight:bold">this</span>.growOlder <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">function</span>(){            
+        age<span style="color:#555">++</span>;  
+    };
+  }</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+<h4 id="另一种伪继承方法-混入-mixin">另一种伪继承方法：混入（mixin）</h4>
+
+<blockquote>
+<p>函数mixin()接受两个参数：接受者 和 提供者。
+该函数的目的是将提供者所有可枚举属性复制给接收者</p>
+</blockquote>
+
+<p>例子：</p>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> person <span style="color:#555">=</span> mixin( <span style="color:#069;font-weight:bold">new</span> Person(), {
+    chaoDai<span style="color:#555">:</span> <span style="color:#c30">&#34;Tang Chao&#34;</span>,
+    
+    sayChaoDai<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">function</span>() {
+        console.log(<span style="color:#069;font-weight:bold">this</span>.name);      
+    } 
+});</code></pre></td></tr></table>
+</div>
+</div>
+<p>这个例子表达的意思是：构造函数Person()的新实例person，混入了新的属性（chaoDai 和 sayChaoDai），而没有改变person的原型对象链。</p>
+
+<p>注意：提供者的访问器属性会自动变成接受者的数据属性</p>
+
+<h4 id="作用域安全的构造函数">作用域安全的构造函数</h4>
+
+<p>构造函数生成新实例如果不用 new， this值会强制指向全局对象， 严格模式下会抛出错误。可以通过以下方法来制造作用域安全的构造函数（也就是说用不用new都可以的构造函数）</p>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> Person(name) {
+
+    <span style="color:#069;font-weight:bold">if</span> (<span style="color:#069;font-weight:bold">this</span> instanceOf Person) {
+        <span style="color:#069;font-weight:bold">this</span>.name <span style="color:#555">=</span> name;  <span style="color:#09f;font-style:italic">/* 当自己是被new调用时，正常设置name属性 */</span>
+    } <span style="color:#069;font-weight:bold">else</span> {
+        <span style="color:#069;font-weight:bold">return</span> <span style="color:#069;font-weight:bold">new</span> Person(name);  <span style="color:#09f;font-style:italic">/* 当不是被new调用时，则以new递归调用自己，以确保创建正确的实例 */</span>
+    }
+}
+
+<span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">new</span> Person(<span style="color:#c30">&#34;Li Bai&#34;</span>);
+<span style="color:#069;font-weight:bold">var</span> person2 <span style="color:#555">=</span> Person(<span style="color:#c30">&#34;Du Fu&#34;</span>);
+
+console.log(person1 <span style="color:#069;font-weight:bold">instanceof</span> Person); <span style="color:#09f;font-style:italic">/* true */</span> 
+console.log(person2 <span style="color:#069;font-weight:bold">instanceof</span> Person); <span style="color:#09f;font-style:italic">/* true */</span> </code></pre></td></tr></table>
+</div>
+</div>
 </div>
 
   
@@ -793,7 +895,7 @@ console.log(zheng.mianJi());   <span style="color:#09f;font-style:italic">/* 36 
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "zhaochaoyue" + '.disqus.com/embed.js';
+        s.src = '//' + "ge-ren-wang-zhan" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

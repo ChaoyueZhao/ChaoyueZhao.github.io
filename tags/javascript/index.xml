@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>《JavaScript面向对象精要》学习笔记</title>
+      <title>15分钟了解JS面向对象精要</title>
       <link>https://chaoyuezhao.github.io/posts/2018/1-29/</link>
       <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
       
       <guid>https://chaoyuezhao.github.io/posts/2018/1-29/</guid>
-      <description>麻雀虽小，五脏俱全，这本不到一百页的小册子，真可谓微言大义，不愧对精要二字。 第一章 原始类型和引用类型 一、两种类型 原始类型 通过 var 赋值给一个变量</description>
+      <description>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧</description>
     </item>
     
   </channel>
