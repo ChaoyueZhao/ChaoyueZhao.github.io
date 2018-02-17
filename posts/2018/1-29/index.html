@@ -62,7 +62,9 @@ ga('send', 'pageview');
 
   <div class='taxonomy-cloud'>
     <ul class='list'><li>
-      <a href='/tags/javascript' style='font-size:1em'>JavaScript</a>
+      <a href='/tags/hugo' style='font-size:1em'>Hugo</a>
+    </li><li>
+      <a href='/tags/javascript' style='font-size:2em'>JavaScript</a>
     </li><li>
       <a href='/tags/%E5%AE%89%E6%B1%89' style='font-size:1em'>安汉</a>
     </li><li>
@@ -89,9 +91,9 @@ ga('send', 'pageview');
   </span>
 </button>
     <ul><li class='item'>
-        <a href='categories'>分类</a>
-      </li><li class='item'>
         <a href='/posts/'>归档</a>
+      </li><li class='item'>
+        <a href='/categories/'>分类</a>
       </li></ul>
   </div>
 </nav>
@@ -137,7 +139,7 @@ ga('send', 'pageview');
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-阅读时间 12 分钟
+预计阅读 12 分钟
 </span>
 
 
@@ -165,7 +167,7 @@ ga('send', 'pageview');
 <h4 id="一-两种类型">一、两种类型</h4>
 
 <ol>
-<li><h5 id="原始类型">原始类型</h5>
+<li><p><strong>原始类型</strong></p>
 
 <blockquote>
 <p>通过 <code>var</code> 赋值给一个变量时，原始类型的值直接保存在变量中。</p>
@@ -183,7 +185,7 @@ ga('send', 'pageview');
 <br /></li>
 </ul></li>
 
-<li><h5 id="引用类型">引用类型</h5>
+<li><p><strong>引用类型</strong></p>
 
 <blockquote>
 <p>通过<code>var</code>赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）</p>
@@ -202,7 +204,7 @@ ga('send', 'pageview');
 <h4 id="二-鉴别类型">二、鉴别类型</h4>
 
 <ol>
-<li><h5 id="鉴别原始类型">鉴别原始类型</h5>
+<li><p><strong>鉴别原始类型</strong></p>
 
 <ul>
 <li>布尔、数字、字符串、未定义这四个原始类型直接用<code>typeof</code>鉴别，分别返回“boolean”、“number”、&rdquo;string&rdquo;、“undefined”。</li>
@@ -211,7 +213,7 @@ ga('send', 'pageview');
 <br /></li>
 </ul></li>
 
-<li><h5 id="鉴别引用类型">鉴别引用类型</h5>
+<li><p><strong>鉴别引用类型</strong></p>
 
 <ul>
 <li>鉴别函数直接用<code>typeof</code>，是函数则返回 function</li>
@@ -225,7 +227,7 @@ ga('send', 'pageview');
 <p>这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：</p>
 
 <ol>
-<li><h5 id="设置了原始封装类型">设置了原始封装类型</h5>
+<li><p><strong>设置了原始封装类型</strong></p>
 
 <ul>
 <li>原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。</li>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
 <br /></li>
 </ul></li>
 
-<li><h5 id="原始方法">原始方法</h5>
+<li><p><strong>原始方法</strong></p>
 
 <ul>
 <li>原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。</li>
@@ -299,7 +301,7 @@ console.log(firstChar);  <span style="color:#09f;font-style:italic">/* 输出 &#
 );</code></pre></td></tr></table>
 </div>
 </div>
-<p>区别：</p>
+<p><strong>区别：</strong></p>
 
 <ol>
 <li>函数声明会被提升至上下文的顶部。</li>
@@ -595,7 +597,7 @@ Person.prototype <span style="color:#555">=</span> {
 
 <p>当然，理论上可以改变内建对象的原型对象，比如给Array, String, Boolean的原型对象赋新值，但不推荐这么做。</p>
 
-<h3 id="第五章继承">第五章继承</h3>
+<h3 id="第五章-继承">第五章 继承</h3>
 
 <blockquote>
 <p>JavaScript内建的继承方法被称为原型对象链，也叫原型对象继承</p>
@@ -621,7 +623,7 @@ Person.prototype <span style="color:#555">=</span> {
 <pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">23</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">24</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">25</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">26</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">27</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">28</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">29</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">30</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">31</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">32</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">33</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">34</span></code></pre></td>
 <td style=";vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">var</span> person1 <span style="color:#555">=</span> {
-    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>
+    name<span style="color:#555">:</span> <span style="color:#c30">&#34;Li Bai&#34;</span>,
     occupation<span style="color:#555">:</span> <span style="color:#c30">&#34;Shi Ren&#34;</span>
 };
 
@@ -636,18 +638,18 @@ Person.prototype <span style="color:#555">=</span> {
                occupation<span style="color:#555">:</span> {
                    configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
                    enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
-                   value<span style="color:#555">:</span> <span style="color:#c30">&#34;Shi Ren,
-</span><span style="color:#c30">                   writable: true
-</span><span style="color:#c30">               }
-</span><span style="color:#c30">
-</span><span style="color:#c30">          });
-</span><span style="color:#c30">
-</span><span style="color:#c30">var person2 = Object.create(person1, {
-</span><span style="color:#c30">               //这里新创建自由属性name，会替换继承自person1的name属性
-</span><span style="color:#c30">               name: {  
-</span><span style="color:#c30">                   configurable: true,
-</span><span style="color:#c30">                   enumerable: true,
-</span><span style="color:#c30">                   value: &#34;</span>Du Fu<span style="color:#a00;background-color:#faa">&#34;</span>,
+                   value<span style="color:#555">:</span> <span style="color:#c30">&#34;Shi Ren&#34;</span>,
+                   writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
+               }
+
+          });
+
+<span style="color:#069;font-weight:bold">var</span> person2 <span style="color:#555">=</span> <span style="color:#366">Object</span>.create(person1, {
+               <span style="color:#09f;font-style:italic">//这里新创建自由属性name，会替换继承自person1的name属性
+</span><span style="color:#09f;font-style:italic"></span>               name<span style="color:#555">:</span> {  
+                   configurable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   enumerable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+                   value<span style="color:#555">:</span> <span style="color:#c30">&#34;Du Fu&#34;</span>,
                    writable<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
                    }
               });
@@ -876,7 +878,7 @@ console.log(person2 <span style="color:#069;font-weight:bold">instanceof</span> 
   
 </svg>
  上一个</span>
-        <span class='screen-reader-text'>上一篇文章: </span>Hugo建站心得</a>
+        <span class='screen-reader-text'>上一篇文章: </span>Hugo建站入门</a>
     </div><div class='next-entry sep-before'>
       <a href='/posts/2018/2-2/'>
         <span class='screen-reader-text'>下一篇: </span>2018年,你为什么应该成为一个web开发工程师？<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
@@ -964,7 +966,7 @@ console.log(person2 <span style="color:#069;font-weight:bold">instanceof</span> 
   </nav>
 </div>
           <div class='copyright'>
-  <p> &copy; 2017-2018 &hearts; 超越 Powered by <a href='https://gohugo.io/'>Hugo</a></p>
+  <p> &copy; 2017-2018 &hearts; <a href='http://www.zhaochaoyue.com'>超越</a> | Powered by <a href='https://gohugo.io/'>Hugo</a></p>
 </div>
 
         </div>

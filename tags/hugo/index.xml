@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 超越的主页</title>
+    <link>https://chaoyuezhao.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Jan 2018 22:15:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://chaoyuezhao.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo建站入门</title>
+      <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
+      <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/2018/1-25/</guid>
+      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦</description>
+    </item>
+    
+  </channel>
+</rss>

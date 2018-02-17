@@ -5,10 +5,19 @@
     <link>https://chaoyuezhao.github.io/posts/</link>
     <description>Recent content in Posts on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Feb 2018 17:20:16 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2018 17:42:26 +0800</lastBuildDate>
     
 	<atom:link href="https://chaoyuezhao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS闭包到底是什么鬼？</title>
+      <link>https://chaoyuezhao.github.io/posts/2018/2-17/</link>
+      <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/2018/2-17/</guid>
+      <description>先来看看一些文献给它下的定义： 你不知道的JavaScript： 当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用</description>
+    </item>
     
     <item>
       <title>2018年,你为什么应该成为一个web开发工程师？</title>
@@ -16,7 +25,7 @@
       <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
       
       <guid>https://chaoyuezhao.github.io/posts/2018/2-2/</guid>
-      <description>本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。 不过在此之前，我们先来做个简要的介绍，如果你点进来收听这个节目了，那么你很</description>
+      <description>本期节目翻译自YouTube视频 Why You Should Become A Web Developer in 2018 本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。 不过在此之前，我们先来做</description>
     </item>
     
     <item>
@@ -29,7 +38,7 @@
     </item>
     
     <item>
-      <title>Hugo建站心得</title>
+      <title>Hugo建站入门</title>
       <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
       <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
       
