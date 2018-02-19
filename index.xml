@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>JS闭包到底是什么鬼？</title>
+      <title>JS闭包到底是什么包？</title>
       <link>https://chaoyuezhao.github.io/posts/2018/2-17/</link>
       <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
       
       <guid>https://chaoyuezhao.github.io/posts/2018/2-17/</guid>
-      <description>先来看看一些文献给它下的定义： 你不知道的JavaScript： 当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用</description>
+      <description>先来看看文献中的定义： JavaScript权威指南： &amp;ldquo;函数定义时的作用域链到函数执行时依然有效。&amp;rdquo; MDN技术文档： &amp;</description>
     </item>
     
     <item>

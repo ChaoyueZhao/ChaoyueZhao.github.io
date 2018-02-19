@@ -4,17 +4,17 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='先来看看一些文献给它下的定义： 你不知道的JavaScript： 当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用'>
+<meta name='description' content='先来看看文献中的定义： JavaScript权威指南： &ldquo;函数定义时的作用域链到函数执行时依然有效。&rdquo; MDN技术文档： &'>
 
-<meta property='og:title' content='JS闭包到底是什么鬼？ • 超越的主页'>
-<meta property='og:description' content='先来看看一些文献给它下的定义： 你不知道的JavaScript： 当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用'>
+<meta property='og:title' content='JS闭包到底是什么包？ • 超越的主页'>
+<meta property='og:description' content='先来看看文献中的定义： JavaScript权威指南： &ldquo;函数定义时的作用域链到函数执行时依然有效。&rdquo; MDN技术文档： &'>
 <meta property='og:url' content='https://chaoyuezhao.github.io/posts/2018/2-17/'>
 <meta property='og:site_name' content='超越的主页'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://chaoyuezhao.github.io/image/JavaScript-Closure.png'><meta property='article:section' content='Posts'><meta property='article:tag' content='JavaScript'><meta property='article:published_time' content='2018-02-17T17:42:26&#43;08:00'/><meta property='article:modified_time' content='2018-02-17T17:42:26&#43;08:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@zcy521'><meta property='twitter:image' content='https://chaoyuezhao.github.io/image/JavaScript-Closure.png'>
 
 <meta name="generator" content="Hugo 0.32.4" />
 
-  <title>JS闭包到底是什么鬼？ • 超越的主页</title>
+  <title>JS闭包到底是什么包？ • 超越的主页</title>
   <link rel='canonical' href='https://chaoyuezhao.github.io/posts/2018/2-17/'>
   
   
@@ -113,7 +113,7 @@ ga('send', 'pageview');
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>JS闭包到底是什么鬼？</h1>
+      <h1 class='title'>JS闭包到底是什么包？</h1>
       
 
     </div>
@@ -160,55 +160,53 @@ ga('send', 'pageview');
   <div class='container entry-content'>
   
 
-<h3 id="先来看看一些文献给它下的-定义">先来看看一些文献给它下的<strong>定义</strong>：</h3>
+<h3 id="先来看看文献中的-定义">先来看看文献中的<strong>定义</strong>：</h3>
 
 <ul>
-<li><p><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md" target="_blank"><strong>你不知道的JavaScript</strong></a>：</p>
+<li><p><a href="https://book.douban.com/subject/10549733/" target="_blank"><strong>JavaScript权威指南</strong></a>：</p>
 
 <blockquote>
-<p>当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用域之外执行。</p>
+<p>&ldquo;函数定义时的作用域链到函数执行时依然有效。&rdquo;</p>
 </blockquote></li>
 
 <li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures" target="_blank"><strong>MDN技术文档</strong></a>：</p>
 
 <blockquote>
-<p>闭包是函数和声明该函数的词法环境的组合。</p>
+<p>&ldquo;闭包是函数和声明该函数的词法环境的组合。&rdquo;</p>
+</blockquote></li>
+
+<li><p><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md" target="_blank"><strong>你不知道的JavaScript</strong></a>：</p>
+
+<blockquote>
+<p>”当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用域之外执行。“</p>
 </blockquote></li>
 
 <li><p><a href="https://css-tricks.com/javascript-scope-closures/" target="_blank"><strong>CSS-Tricks</strong></a>：</p>
 
 <blockquote>
-<p>当你在一个函数内创建了另一个函数时，你就创建了一个闭包。内部的函数就是闭包。这个闭包通常会被返回，所以你能够在未来使用外部函数的变量。</p>
-</blockquote></li>
-
-<li><p><a href="https://book.douban.com/subject/10549733/" target="_blank"><strong>JavaScript权威指南</strong></a>：</p>
-
-<blockquote>
-<p>函数定义时的作用域链到函数执行时依然有效。</p>
+<p>&ldquo;当你在一个函数内创建了另一个函数时，你就创建了一个闭包。内部的函数就是闭包。这个闭包通常会被返回，所以你能够在未来使用外部函数的变量。 &ldquo;</p>
 </blockquote></li>
 </ul>
+
+<hr />
 
 <h3 id="想深入了解闭包-首先要搞清这些概念">想深入了解闭包，首先要搞清这些概念：</h3>
 
 <ul>
 <li><p><strong>词法作用域</strong></p>
 
-<blockquote>
-<p>顾名思义，就是定义在词法阶段的作用域。无论函数在哪里调用、何时被调用，它的词法作用域始终由函数被声明时所处的位置决定。</p>
-</blockquote></li>
+<p>顾名思义，就是定义在词法阶段的作用域。无论函数在哪里调用、何时被调用，它的词法作用域始终由函数被声明时所处的位置决定。</p></li>
 
 <li><p><strong>函数作用域</strong></p>
 
-<blockquote>
-<p>JS主要分全局作用域和函数作用域，函数作用域是根据“最小暴露”原则设计出来的，目的是为了隐藏私有变量，规避冲突。因为外部作用域无法访问函数内部的任何内容。</p>
-</blockquote></li>
+<p>JS主要分全局作用域和函数作用域，函数作用域是根据“最小暴露”原则设计出来的，目的是为了隐藏私有变量，规避冲突。因为外部作用域无法访问函数内部的任何内容。</p></li>
 
 <li><p><strong>内存垃圾回收机制</strong></p>
 
-<blockquote>
-<p>内存的生命周期有三步：分配内存、使用内存、不需要时释放内存。垃圾回收就是根据一定的算法来大体判定“不再需要”的内存，注意它具有局限性。</p>
-</blockquote></li>
+<p>内存的生命周期有三步：分配内存、使用内存、不需要时释放内存。垃圾回收就是根据一定的算法来大体判定“不再需要”的内存，注意它具有局限性。</p></li>
 </ul>
+
+<hr />
 
 <h3 id="举几个例子">举几个例子</h3>
 
@@ -227,17 +225,17 @@ ga('send', 'pageview');
     <span style="color:#069;font-weight:bold">return</span> bar;
 }
 
-<span style="color:#069;font-weight:bold">var</span> baz <span style="color:#555">=</span> foo();  <span style="color:#09f;font-style:italic">/* 这一步相当于把bar()赋值给了baz */</span>
+<span style="color:#069;font-weight:bold">var</span> baz <span style="color:#555">=</span> foo();  <span style="color:#09f;font-style:italic">/* 这一步相当于把bar赋值给了baz */</span>
 
-<span style="color:#09f;font-style:italic">//下面这一步相当于执行了bar(),bar()饮用了foo()的作用域，
-</span><span style="color:#09f;font-style:italic">//所以foo()没有被垃圾回收，bar()的对该作用域的引用就叫闭包。
+<span style="color:#09f;font-style:italic">//下面这一步相当于执行了bar(),bar()引用了foo()的作用域，
+</span><span style="color:#09f;font-style:italic">//所以foo()没有被内存管理系统当作垃圾回收，bar()对该作用域的引用就叫闭包。
 </span><span style="color:#09f;font-style:italic"></span>baz(); <span style="color:#09f;font-style:italic">/*  输出2  */</span> </code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>例子2</strong></p>
 <div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span></code></pre></td>
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span></code></pre></td>
 <td style=";vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> makeAdder(x) {
     <span style="color:#069;font-weight:bold">return</span> <span style="color:#069;font-weight:bold">function</span>(y) {
@@ -245,10 +243,12 @@ ga('send', 'pageview');
     };
 }
 
-<span style="color:#069;font-weight:bold">var</span> add3 <span style="color:#555">=</span> makeAdder(<span style="color:#f60">3</span>);
+<span style="color:#09f;font-style:italic">//下面这步相当于把内部函数赋值给了一个新值，并指定了外部函数的参数x的值，但内部函数y的值还没有指定。
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">var</span> add3 <span style="color:#555">=</span> makeAdder(<span style="color:#f60">3</span>);  
 <span style="color:#069;font-weight:bold">var</span> add9 <span style="color:#555">=</span> makeAdder(<span style="color:#f60">9</span>);
 
-console.log(add3(<span style="color:#f60">2</span>));  <span style="color:#09f;font-style:italic">/* 5 */</span> 
+<span style="color:#09f;font-style:italic">//最后这一步指定了内部函数的参数y的值，因此就可以返回x + y的值了。
+</span><span style="color:#09f;font-style:italic"></span>console.log(add3(<span style="color:#f60">2</span>));  <span style="color:#09f;font-style:italic">/* 5 */</span> 
 console.log(add9(<span style="color:#f60">2</span>));  <span style="color:#09f;font-style:italic">/* 11 */</span></code></pre></td></tr></table>
 </div>
 </div>
@@ -264,10 +264,12 @@ console.log(add9(<span style="color:#f60">2</span>));  <span style="color:#09f;f
                         }());</code></pre></td></tr></table>
 </div>
 </div>
+<hr />
+
 <h3 id="自己的话总结">自己的话总结</h3>
 
 <blockquote>
-<p>Javascript闭包就是一个母函数内部的子函数保存了对母函数的私有变量的引用，从而避免母函数的私有变量被内存垃圾回收机制清除掉,创造了一种私有变量永久储存的方式，有效避免了污染全局变量。子函数的这种引用可以在任何地方使用，即使不在函数作用域里也可以实现。这种引用机制就是闭包。</p>
+<p>JavaScript闭包就是一个母函数内部的子函数保存了对母函数的私有变量的引用，从而避免母函数的私有变量被内存垃圾回收机制清除掉，相当于创造了一种私有变量永久储存的方式，有效避免了私有变量污染全局变量。子函数的这种引用可以在任何地方使用，即使不在函数作用域里也可以实现。这种引用机制就是闭包。</p>
 </blockquote>
 
 </div>
