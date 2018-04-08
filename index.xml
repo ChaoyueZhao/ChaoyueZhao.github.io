@@ -5,10 +5,19 @@
     <link>https://chaoyuezhao.github.io/</link>
     <description>Recent content on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Feb 2018 17:42:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 17:42:26 +0800</lastBuildDate>
     
 	<atom:link href="https://chaoyuezhao.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>过敏 &#43; 编程 = ？？？</title>
+      <link>https://chaoyuezhao.github.io/posts/4-8/</link>
+      <pubDate>Sun, 08 Apr 2018 17:42:26 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/4-8/</guid>
+      <description>最近这一个多月，我又一次体验了过敏的可怕，呼吸困难和低烧让我无比难受，我一直不相信这是过敏导致的，去查了呼吸科、耳鼻喉，甚至还做了CT，可是</description>
+    </item>
     
     <item>
       <title>JS闭包到底是什么包？</title>
@@ -115,7 +124,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chaoyuezhao.github.io/about/</guid>
-      <description>##关于我### 我是谁？</description>
+      <description>###没读过法学的MBA毕业生不是一个好程序员!
+ 喜欢： 读武侠和推理小说、恐怖电影、撸刚睡醒的猫、禅宗思想、剑道（一段达成）；
+ 讨厌： 等人、打开一次性塑料袋、官僚主义（痛恨）；
+ 梦想： 当一天游乐场套头玩偶、在珠峰大本营观星、回到明朝当王爷（滑稽脸）；
+   “Be yourself; everyone else is already taken.” ― Oscar Wilde
+ </description>
     </item>
     
   </channel>

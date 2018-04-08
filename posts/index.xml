@@ -5,10 +5,19 @@
     <link>https://chaoyuezhao.github.io/posts/</link>
     <description>Recent content in Posts on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Feb 2018 17:42:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 17:42:26 +0800</lastBuildDate>
     
 	<atom:link href="https://chaoyuezhao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>过敏 &#43; 编程 = ？？？</title>
+      <link>https://chaoyuezhao.github.io/posts/4-8/</link>
+      <pubDate>Sun, 08 Apr 2018 17:42:26 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/posts/4-8/</guid>
+      <description>最近这一个多月，我又一次体验了过敏的可怕，呼吸困难和低烧让我无比难受，我一直不相信这是过敏导致的，去查了呼吸科、耳鼻喉，甚至还做了CT，可是</description>
+    </item>
     
     <item>
       <title>JS闭包到底是什么包？</title>

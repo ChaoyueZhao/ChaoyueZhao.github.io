@@ -235,7 +235,7 @@ ga('send', 'pageview');
 <p><strong>例子2</strong></p>
 <div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span></code></pre></td>
+<pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span></code></pre></td>
 <td style=";vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#069;font-weight:bold">function</span> makeAdder(x) {
     <span style="color:#069;font-weight:bold">return</span> <span style="color:#069;font-weight:bold">function</span>(y) {
@@ -243,7 +243,8 @@ ga('send', 'pageview');
     };
 }
 
-<span style="color:#09f;font-style:italic">//下面这步相当于把内部函数赋值给了一个新值，并指定了外部函数的参数x的值，但内部函数y的值还没有指定。
+<span style="color:#09f;font-style:italic">//下面这步相当于把内部函数赋值给了一个新值，
+</span><span style="color:#09f;font-style:italic">//并指定了外部函数的参数x的值，但内部函数y的值还没有指定。
 </span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">var</span> add3 <span style="color:#555">=</span> makeAdder(<span style="color:#f60">3</span>);  
 <span style="color:#069;font-weight:bold">var</span> add9 <span style="color:#555">=</span> makeAdder(<span style="color:#f60">9</span>);
 
@@ -269,7 +270,7 @@ console.log(add9(<span style="color:#f60">2</span>));  <span style="color:#09f;f
 <h3 id="自己的话总结">自己的话总结</h3>
 
 <blockquote>
-<p>JavaScript闭包就是一个母函数内部的子函数保存了对母函数的私有变量的引用，从而避免母函数的私有变量被内存垃圾回收机制清除掉，相当于创造了一种私有变量永久储存的方式，有效避免了私有变量污染全局变量。子函数的这种引用可以在任何地方使用，即使不在函数作用域里也可以实现。这种引用机制就是闭包。</p>
+<p>JavaScript闭包就是一个母函数内部的子函数保存了对母函数的私有变量的引用，从而避免母函数的私有变量被内存垃圾回收机制清除掉，相当于创造了一种私有变量永久储存的方式，有效避免了私有变量污染全局变量。子函数的这种引用可以在任何地方使用，即使不在最初定义的词法作用域里也可以实现。这种引用机制就是闭包。</p>
 </blockquote>
 
 </div>
@@ -312,6 +313,16 @@ console.log(add9(<span style="color:#f60">2</span>));  <span style="color:#09f;f
 </svg>
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span>2018年,你为什么应该成为一个web开发工程师？</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/posts/4-8/'>
+        <span class='screen-reader-text'>下一篇: </span>过敏 &#43; 编程 = ？？？<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
     </div></div>
 </nav>
 

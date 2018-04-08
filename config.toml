@@ -1,0 +1,104 @@
+baseURL = "https://chaoyuezhao.github.io"
+title = "超越的主页"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+theme = "minimo"
+
+
+disqusShortname = "ge-ren-wang-zhan"
+googleAnalytics = "UA-113143189-2"
+
+Paginate = 10
+preserveTaxonomyNames = true
+
+enableRobotsTXT = false # generate robots.txt
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+pygmentsUseClasses = false
+pygmentsStyle = "manni"
+PygmentsOptions="linenos='table', linenospecial=2" 
+
+
+# Missing translations will default to this content language
+defaultContentLanguage = "zh"
+
+[params.sidebar]
+enable = true
+sticky = true
+
+[params.info]
+description = ""
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "&hearts; <a href='http://www.zhaochaoyue.com'>超越</a>"
+startYear = "2017"
+suffix = " | Powered by <a href='https://gohugo.io/'>Hugo</a>"
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006-01-02"
+listDateFormat = ""
+hideEntryNavigation = ["page"] # boolean / array of sections
+recentPostsLength = 5
+hideSocialMenu = false
+showReadingTime = true
+noTermCloudShuffle = false
+homepageSections = ["recent_posts"]
+
+
+[params.opengraph.twitter]
+page = "zcy521" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+codepen = "Chaoyue"
+email = "me@zhaochaoyue.com"
+github = "ChaoyueZhao"
+twitter = "ZCY521"
+zhihu = "zhaochaoyue521"
+
+[params.social.config]
+platforms = ["github","twitter","email","codepen"]
+
+[taxonomies]
+author = "超越"
+category = "categories"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "归档"
+identifier = "posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+name = "分类"
+identifier = "categories"
+url = "/categories/"
+weight = 15
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+# edit this block for your own language
+[languages.zh]
+lang = "zh"
+languageName = "Chinese"
+weight = 1
