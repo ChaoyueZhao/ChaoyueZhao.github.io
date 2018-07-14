@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>超越的主页</title>
+    <title>Categories on 超越的主页</title>
     <link>https://chaoyuezhao.github.io/categories/</link>
-    <description>Recent content on 超越的主页</description>
+    <description>Recent content in Categories on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 01 Jun 2018 13:52:14 +0800</lastBuildDate>
     
@@ -11,12 +11,39 @@
     
     
     <item>
-      <title>安汉生平事迹考略</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/4-12/</link>
+      <title></title>
+      <link>https://chaoyuezhao.github.io/categories/</link>
       <pubDate>Fri, 01 Jun 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/4-12/</guid>
-      <description>最开始我只是对安汉抱有强烈的好奇心，不知不觉就开始研究他了，经历了一年的资料收集、半年的论文写作和一年的投稿历程，这篇文章终于得以在今年6月</description>
+      <guid>https://chaoyuezhao.github.io/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技术</title>
+      <link>https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>翻译</title>
+      <link>https://chaoyuezhao.github.io/categories/%E7%BF%BB%E8%AF%91/</link>
+      <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/categories/%E7%BF%BB%E8%AF%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>https://chaoyuezhao.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Wed, 02 May 2018 13:52:14 +0800</pubDate>
+      
+      <guid>https://chaoyuezhao.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
     </item>
     
   </channel>
