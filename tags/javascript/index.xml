@@ -2,29 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on 超越的主页</title>
-    <link>https://chaoyuezhao.github.io/tags/javascript/</link>
+    <link>http://zhaochaoyue.com/tags/javascript/</link>
     <description>Recent content in JavaScript on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 17 Feb 2018 17:42:26 +0800</lastBuildDate>
     
-	<atom:link href="https://chaoyuezhao.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zhaochaoyue.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JS闭包到底是什么包？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/2-17/</link>
+      <link>http://zhaochaoyue.com/post/2-17/</link>
       <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/2-17/</guid>
+      <guid>http://zhaochaoyue.com/post/2-17/</guid>
       <description>先来看看文献中的定义： JavaScript权威指南： &amp;ldquo;函数定义时的作用域链到函数执行时依然有效。&amp;rdquo; MDN技术文档： &amp;</description>
     </item>
     
     <item>
       <title>15分钟了解JS面向对象精要</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-29/</link>
+      <link>http://zhaochaoyue.com/post/1-29/</link>
       <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-29/</guid>
+      <guid>http://zhaochaoyue.com/post/1-29/</guid>
       <description>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧</description>
     </item>
     

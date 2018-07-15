@@ -2,29 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>论文 on 超越的主页</title>
-    <link>https://chaoyuezhao.github.io/tags/%E8%AE%BA%E6%96%87/</link>
+    <link>http://zhaochaoyue.com/tags/%E8%AE%BA%E6%96%87/</link>
     <description>Recent content in 论文 on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 01 Jun 2018 13:52:14 +0800</lastBuildDate>
     
-	<atom:link href="https://chaoyuezhao.github.io/tags/%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zhaochaoyue.com/tags/%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>安汉生平事迹考略</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/4-12/</link>
+      <link>http://zhaochaoyue.com/post/4-12/</link>
       <pubDate>Fri, 01 Jun 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/4-12/</guid>
+      <guid>http://zhaochaoyue.com/post/4-12/</guid>
       <description>最开始我只是对安汉抱有强烈的好奇心，不知不觉就开始研究他了，经历了一年的资料收集、半年的论文写作和一年的投稿历程，这篇文章终于得以在今年6月</description>
     </item>
     
     <item>
       <title>从“五百强”到“债转股”——中钢集团战略转型的成败</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-11/</link>
+      <link>http://zhaochaoyue.com/post/1-11/</link>
       <pubDate>Thu, 11 Jan 2018 23:50:15 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-11/</guid>
+      <guid>http://zhaochaoyue.com/post/1-11/</guid>
       <description>这篇文章是我研究生期间完成的一篇工商管理案例，写完后投稿给了中国管理案例中心参加一年一度的“百优案例”大赛，虽然没有入选百优案例，但是进入了</description>
     </item>
     

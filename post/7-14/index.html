@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.44" />
+  <meta name="author" content="赵超越">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试">
+
+  
+  <link rel="alternate" hreflang="zh-cn" href="http://zhaochaoyue.com/post/7-14/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="http://zhaochaoyue.com/index.xml" type="application/rss+xml" title="超越的主页">
+  <link rel="feed" href="http://zhaochaoyue.com/index.xml" type="application/rss+xml" title="超越的主页">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://zhaochaoyue.com/post/7-14/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ZCY521">
+  <meta property="twitter:creator" content="@ZCY521">
+  
+  <meta property="og:site_name" content="超越的主页">
+  <meta property="og:url" content="http://zhaochaoyue.com/post/7-14/">
+  <meta property="og:title" content="谷歌Mobile Web Specialist证书备考指南 | 超越的主页">
+  <meta property="og:description" content="2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试">
+  <meta property="og:locale" content="zh-cn">
+  
+  <meta property="article:published_time" content="2018-07-14T13:52:14&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-07-14T13:52:14&#43;08:00">
+  
+
+  
+
+  
+
+  <title>谷歌Mobile Web Specialist证书备考指南 | 超越的主页</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">超越的主页</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>主页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>项目</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>论文</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>联系</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">谷歌Mobile Web Specialist证书备考指南</h1>
+
+    
+
+<div class="article-metadata">
+
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-07-14 13:52:14 &#43;0800 CST" itemprop="datePublished">
+    <time datetime="2018-07-14 13:52:14 &#43;0800 CST" itemprop="dateModified">
+      2018-07-14
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="赵超越">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 分钟阅读时间
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=%e8%b0%b7%e6%ad%8cMobile%20Web%20Specialist%e8%af%81%e4%b9%a6%e5%a4%87%e8%80%83%e6%8c%87%e5%8d%97&amp;url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f7-14%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fzhaochaoyue.com%2fpost%2f7-14%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f7-14%2f&amp;title=%e8%b0%b7%e6%ad%8cMobile%20Web%20Specialist%e8%af%81%e4%b9%a6%e5%a4%87%e8%80%83%e6%8c%87%e5%8d%97"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f7-14%2f&amp;title=%e8%b0%b7%e6%ad%8cMobile%20Web%20Specialist%e8%af%81%e4%b9%a6%e5%a4%87%e8%80%83%e6%8c%87%e5%8d%97"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=%e8%b0%b7%e6%ad%8cMobile%20Web%20Specialist%e8%af%81%e4%b9%a6%e5%a4%87%e8%80%83%e6%8c%87%e5%8d%97&amp;body=http%3a%2f%2fzhaochaoyue.com%2fpost%2f7-14%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<blockquote>
+<p>2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试费用为99美元，考试通过后会在45天内收到电子证书。详细考试信息和报名地址见<a href="https://developers.google.com/training/certification/mobile-web-specialist/" target="_blank">Google Mobile Web Specialist考试官网</a>。</p>
+
+<p>官方文档介绍此考试是为具有3至4年前端开发经验的程序员设计的，谷歌官方为考试内容划定了复习范围。本文主要参考资料为考试官网的<a href="https://developers.google.com/training/certification/mobile-web-specialist/StudyGuide_MobileWebSpecialist.pdf" target="_blank">Study Guide</a>。</p>
+</blockquote>
+
+<h2 id="目录">目录</h2>
+
+<ol>
+<li>网站布局和样式基础</li>
+<li>前端网络</li>
+<li>无障碍</li>
+<li>渐进式web应用</li>
+<li>性能优化与缓存</li>
+<li>测试与调试</li>
+<li>ES2015概念和语法</li>
+<li>移动网页表单</li>
+</ol>
+
+<h3 id="一-网站布局和样式基础">一、网站布局和样式基础</h3>
+
+<p>无论使用何种设备，用户都希望看到具有响应式和视觉吸引力的网站。网络应用的布局和样式必须响应现有的显示，并且持续提供直观的功能。你将按照要求使用HTML、CSS和JavaScript来建造包括以下几项的响应式布局和样式：</p>
+
+<ol>
+<li>使用原生JavaScript来访问和操作DOM元素；</li>
+<li>恰当的document type声明和viewpoint标签；</li>
+<li>响应式的CSS grid布局；</li>
+<li>使用媒体查询来提供不同屏幕尺寸的流体断点；</li>
+<li>使用多媒体标签来显示视频或播放音频；</li>
+<li>通过移动设备尺寸和分辨率进行调整的响应式图片；</li>
+<li>任意平台上的包含大量点击目标的触摸和鼠标事件；</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/" target="_blank">Responsive Web Design</a></li>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries" target="_blank">Using medea queries</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">Video and audio content</a></li>
+<li><a href="https://cn.udacity.com/course/responsive-images--ud882" target="_blank">Responsive Images by Google</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent" target="_blank">Supporting both TouchEvent and MouseEvent</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Touch_events" target="_blank">Touch events</a></li>
+</ol>
+
+<h3 id="二-前端网络">二、前端网络</h3>
+
+<p>由于用户互动是基于可信赖的高效网络请求，你将被要求证明自己会通过以下方式使用JavaScript来建立可靠的前端网络协议：</p>
+
+<ol>
+<li>使用fetch()请求数据；</li>
+<li>检查响应参数，并将数据解析成可用的格式；</li>
+<li>将响应的数据渲染成页面；</li>
+<li>使用method和body参数配置POST请求到数据库；</li>
+<li>根据服务器的响应头，使用正确配置的跨域资源分享协议（CORS）的fetch请求；</li>
+<li>使用promise链来处理fetch()请求错误；</li>
+<li>使用调试和开发者工具诊断网络问题；</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/updates/2015/03/introduction-to-fetch" target="_blank">Introduction to fetch()</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">Using Fetch()</a></li>
+<li><a href="https://davidwalsh.name/fetch" target="_blank">David Walsh&rsquo;s blog on fetch</a></li>
+<li><a href="https://jakearchibald.com/2015/thats-so-fetch/" target="_blank">Jake Archibald&rsquo;s blog on fetch</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/primers/promises" target="_blank">JavaScrip Promise: an Introduction</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS" target="_blank">HTTP access control(CORS)</a></li>
+</ol>
+
+<h3 id="三-无障碍">三、无障碍</h3>
+
+<p>网页和网络应用应该为所有人提供无障碍访问，包括那些具有视力、行动、听力和认知障碍的人。使用HTML、CSS、Javascript，你会被要求展示你可以使用如下方式在你的网页和应用中做出无障碍访问的最佳实践：</p>
+
+<ol>
+<li>使用具有逻辑的tab顺序来进行tab导航</li>
+<li>使用跳过导航链接绕过导航栏和旁边</li>
+<li>避免页面上隐藏的内容阻挡导航栏</li>
+<li>使用能够提供页面逻辑结构的头部标签</li>
+<li>使用可视化内容的替代文本，比如alt, <label>, aria-label, 和 aria-labelledby</li>
+<li>在所有元素上应用对比色，并遵守最佳的无障碍实践</li>
+<li>有紧急信息时候使用aria-live来及时提醒用户</li>
+<li>使用语义标记在适当时保持内容和表示分离</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/accessibility/" target="_blank">Web Fundamentals – Accessibility</a></li>
+<li><a href="https://www.udacity.com/course/web-accessibility--ud891" target="_blank">Web Accessibility</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/learn/Accessibility/Mobile" target="_blank">Mobile Accessibility</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex" target="_blank">Using tabindex</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/accessibility/focus/" target="_blank">Focus</a></li>
+<li><a href="http://webaim.org/techniques/skipnav/" target="_blank">Skip Navigation Links</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA" target="_blank">ARIA</a></li>
+</ol>
+
+<h3 id="四-渐进式web应用">四、渐进式web应用</h3>
+
+<p>用户希望原生应用程序可脱机使用，并提供可以从他们的主页启动的功能丰富的体验。 你会被要求显示你可以通过以下方式使用service worker(服务工作线程)，HTML和JavaScript构建类似于渐进式Web应用程序的功能原生应用程序：</p>
+
+<ol>
+<li>开发一个可以离线使用的web应用，并通过service worker来缓存元素</li>
+<li>存储默认显示方向、主题颜色、显示图标（添加到主屏幕）和Web应用程序清单中的启动画面（或使用元标记）</li>
+<li>将关键应用程序功能和UI分离到可以独立于内容加载的应用程序shell中</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a></li>
+<li><a href="https://developers.google.com/web/ilt/pwa/" target="_blank">Progressive Web Apps Training</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/architecture/app-shell" target="_blank">Web Fundamentals - The App Shell Model</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/" target="_blank">Your First Progressive Web App</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers" target="_blank">Using Service Workers</a></li>
+</ol>
+
+<h3 id="五-性能优化与缓存">五、性能优化与缓存</h3>
+
+<p>尽管网络信号很差甚至缺失，用户仍然要求移动页面能够瞬间加载。因为很多用户都会面临高昂的流量费用，你必须减小应用的数据流量从而尽可能加快网页加载时间。你将被要求证明自己可以通过如下方式来处理网页性能审计的问题来减小页面加载时间以及维护一个响应式的用户体验。</p>
+
+<ol>
+<li>使用专用的Web worker来防止主线程阻塞</li>
+<li>通过以下方式来提供一个优化过的关键渲染路径：
+
+<ol>
+<li>使用压缩或缩小过的JavaScript、HTML和CSS来减少渲染阻塞</li>
+<li>在必要的页面使用行内CSS样式，按需求使用异步的方式加载额外的样式</li>
+<li>仅在必要的时候使用行内JavaScript来初始化页面</li>
+<li>有秩序的加载其余关键性资源，提前下载全部关键性资产来缩短关键路径长度</li>
+<li>减少DOM层级来最小化浏览器布局/回流时间</li>
+<li>使用浏览器的开发者工具来诊断网页在移动设备上的性能问题</li>
+<li>当资源准备就绪时，提前获取可加载的文件，为有意义的互动腾出时间</li>
+<li>提供适合Web应用程序数据持久性的客户端存储需求
+
+<ul>
+<li>session状态管理</li>
+<li>基于其加载时间和离线功能的影响来管理文件缓存</li>
+<li>使用IndexedDB 来储存离线模式下的动态内容</li>
+</ul></li>
+</ol></li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://www.udacity.com/course/offline-web-applications--ud899" target="_blank">Offline Web Applications by Google</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/" target="_blank">Web Fundamentals - Performance</a></li>
+<li><a href="https://jakearchibald.com/2014/offline-cookbook/" target="_blank">The Offline Cookbook</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Cache" target="_blank">Cache -MDN</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Storage" target="_blank">Storage</a></li>
+<li><a href="https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/" target="_blank">Local Storage And How To Use It On Websites</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API" target="_blank">IndexedDB API</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/network-performance/" target="_blank">Get Started with Analyzing Network Performance in Chrome DevTools</a></li>
+</ol>
+
+<h3 id="六-测试与调试">六、测试与调试</h3>
+
+<p>开发人员通常在高度迭代的部署环境中工作，依靠广泛的测试和调试以保持功能和代码完整性。你将会被要求证明你可以通过以下方法验证预期的行为并诊断常见的web应用程序bug：</p>
+
+<ol>
+<li>编写单元测试，首先验证一个功能的预期行为，然后迭代修改其代码，直到它通过这些测试</li>
+<li>在复杂的功能中设置断点来确定与预期功能不符合的地方</li>
+<li>使用console logs来输出相关的调试信息</li>
+<li>根据用户报告的问题复现并修复bug</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/" target="_blank">Get Started with Debugging JavaScript in Chrome DevTools</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/console/console-write" target="_blank">Diagnose and Log to Console</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/codelabs/debugging-service-workers/" target="_blank">Debugging Service Workers</a></li>
+</ol>
+
+<h3 id="七-es2015概念和语法">七、ES2015概念和语法</h3>
+
+<p>Web开发人员必须掌握让代码更简单更易读的JavaScript最新的功能。 因为可以使用polyfill来实现在不受支持的浏览器中编写 JavaScript ES2015的代码，开发人员开始使用新的功能和语法具有了更强大的动机。 您将被要求通过以下方式表明您理解并可以编写ES2015JavaScript代码：</p>
+
+<ol>
+<li>使用promise语法来创建异步功能并集成优雅的错误处理功能</li>
+<li>使用let、var、const来建立具有块级、函数级和一成不变的变量</li>
+<li>包含字符串插值和多行字符串的字符串文字</li>
+<li>使用箭头函数来创建同步功能并使用无限制的this</li>
+<li>使用函数默认参数来为没有参数的函数初始化默认值</li>
+<li>在each函数中使用可以遍历任意对象的for&hellip;of循环</li>
+<li>使用允许任意键值对的maps，包括可循环且包含非字符串键值的键值对</li>
+<li>仅设置唯一的、可降低性能的迭代元素</li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/primers/promises" target="_blank">JavaScript Promises: an Introduction</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings" target="_blank">Tempate literals</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">Arrow Functions</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Default_parameters" target="_blank">Default parameters</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank">For&hellip;of</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank">Map</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank">set</a></li>
+</ol>
+
+<h3 id="八-移动网页表单">八、移动网页表单</h3>
+
+<p>填写在线表单，尤其是在移动设备上，可能很困难。 为了改善用户体验，您将被要求证明您可以通过以下方式使用基本的HTML5，JavaScript和HTML5
+Constraint Validation API，来设计高效且安全的HTML Web表单：</p>
+
+<ol>
+<li>与input相关的合适的label标签</li>
+<li>设置恰当的input属性，包括type、name和autocomplete</li>
+<li>为移动表单设置的具有大面积触摸目标的input</li>
+<li>使用datalist元素来为用户提供具有提示内容的input</li>
+<li>input和DOM元素的前端验证，包括：
+
+<ul>
+<li>使用input的伪类来实时的验证表单错误</li>
+<li>提交前的表单验证（Constraint Validation API）</li>
+</ul></li>
+</ol>
+
+<p>学习资料（官方）：</p>
+
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ux/input/forms/" target="_blank">Create Amazing Forms</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/Constraint_validation" target="_blank">Constraint Validation</a></li>
+<li><a href="https://www.sitepoint.com/client-side-form-validation-html5/" target="_blank">Client-Side Form Validation with HTML5</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Data_form_validation" target="_blank">Data form validation</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms" target="_blank">HTML Forms</a></li>
+</ol>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="label label-default" href="http://zhaochaoyue.com/tags/%E8%80%83%E8%AF%95/">考试</a>
+  
+  <a class="label label-default" href="http://zhaochaoyue.com/tags/home/">home</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>相关</h3>
+      <ul>
+        
+        <li><a href="/post/2-2/">2018年,你为什么应该成为一个web开发工程师？</a></li>
+        
+        <li><a href="/post/1-29/">15分钟了解JS面向对象精要</a></li>
+        
+        <li><a href="/post/10-13/">入选互联网名人堂的三位中国人</a></li>
+        
+        <li><a href="/post/6-4/">传奇登山家埃德蒙·希拉里略传</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+
+    
+
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">引用</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

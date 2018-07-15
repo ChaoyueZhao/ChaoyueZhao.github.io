@@ -2,48 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on 超越的主页</title>
-    <link>https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>http://zhaochaoyue.com/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Jul 2018 13:52:14 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 17 Feb 2018 17:42:26 +0800</lastBuildDate>
     
-	<atom:link href="https://chaoyuezhao.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zhaochaoyue.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>谷歌Mobile Web Specialist证书备考指南</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/7-14/</link>
-      <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2018/7-14/</guid>
-      <description>2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试</description>
-    </item>
     
     <item>
       <title>JS闭包到底是什么包？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/2-17/</link>
+      <link>http://zhaochaoyue.com/post/2-17/</link>
       <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/2-17/</guid>
+      <guid>http://zhaochaoyue.com/post/2-17/</guid>
       <description>先来看看文献中的定义： JavaScript权威指南： &amp;ldquo;函数定义时的作用域链到函数执行时依然有效。&amp;rdquo; MDN技术文档： &amp;</description>
-    </item>
-    
-    <item>
-      <title>15分钟了解JS面向对象精要</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-29/</link>
-      <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-29/</guid>
-      <description>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧</description>
-    </item>
-    
-    <item>
-      <title>Hugo建站入门</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
-      <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-25/</guid>
-      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦</description>
     </item>
     
   </channel>

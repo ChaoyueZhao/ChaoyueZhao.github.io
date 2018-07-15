@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.44" />
+  <meta name="author" content="赵超越">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧">
+
+  
+  <link rel="alternate" hreflang="zh-cn" href="http://zhaochaoyue.com/post/1-29/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="http://zhaochaoyue.com/index.xml" type="application/rss+xml" title="超越的主页">
+  <link rel="feed" href="http://zhaochaoyue.com/index.xml" type="application/rss+xml" title="超越的主页">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://zhaochaoyue.com/post/1-29/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ZCY521">
+  <meta property="twitter:creator" content="@ZCY521">
+  
+  <meta property="og:site_name" content="超越的主页">
+  <meta property="og:url" content="http://zhaochaoyue.com/post/1-29/">
+  <meta property="og:title" content="15分钟了解JS面向对象精要 | 超越的主页">
+  <meta property="og:description" content="本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧">
+  <meta property="og:locale" content="zh-cn">
+  
+  <meta property="article:published_time" content="2018-01-29T17:20:16&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-01-29T17:20:16&#43;08:00">
+  
+
+  
+
+  
+
+  <title>15分钟了解JS面向对象精要 | 超越的主页</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">超越的主页</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>主页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>项目</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>论文</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>联系</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">15分钟了解JS面向对象精要</h1>
+
+    
+
+<div class="article-metadata">
+
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-01-29 17:20:16 &#43;0800 CST" itemprop="datePublished">
+    <time datetime="2018-01-29 17:20:16 &#43;0800 CST" itemprop="dateModified">
+      2018-01-29
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="赵超越">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    12 分钟阅读时间
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=15%e5%88%86%e9%92%9f%e4%ba%86%e8%a7%a3JS%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%b2%be%e8%a6%81&amp;url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f1-29%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fzhaochaoyue.com%2fpost%2f1-29%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f1-29%2f&amp;title=15%e5%88%86%e9%92%9f%e4%ba%86%e8%a7%a3JS%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%b2%be%e8%a6%81"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fzhaochaoyue.com%2fpost%2f1-29%2f&amp;title=15%e5%88%86%e9%92%9f%e4%ba%86%e8%a7%a3JS%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%b2%be%e8%a6%81"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=15%e5%88%86%e9%92%9f%e4%ba%86%e8%a7%a3JS%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%b2%be%e8%a6%81&amp;body=http%3a%2f%2fzhaochaoyue.com%2fpost%2f1-29%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧对精要二字。我反复读了三四遍，总结出了以下的知识点。</p>
+
+<h3 id="第一章-原始类型和引用类型">第一章 原始类型和引用类型</h3>
+
+<h4 id="一-两种类型">一、两种类型</h4>
+
+<ol>
+<li><p><strong>原始类型</strong></p>
+
+<blockquote>
+<p>通过 <code>var</code> 赋值给一个变量时，原始类型的值直接保存在变量中。</p>
+</blockquote>
+
+<ul>
+<li>布尔 （boolean）</li>
+<li>数字 （number）</li>
+<li>字符串 （string）</li>
+<li>空类型 （null）</li>
+<li>未定义 （undefined）
+
+<br />
+
+<br /></li>
+</ul></li>
+
+<li><p><strong>引用类型</strong></p>
+
+<blockquote>
+<p>通过<code>var</code>赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）</p>
+</blockquote>
+
+<ul>
+<li>Array （数组）</li>
+<li>Date （日期和时间）</li>
+<li>Error （错误）</li>
+<li>Function （函数）</li>
+<li>Object （通用对象）</li>
+<li>RegExp （正则表达式）</li>
+</ul></li>
+</ol>
+
+<h4 id="二-鉴别类型">二、鉴别类型</h4>
+
+<ol>
+<li><p><strong>鉴别原始类型</strong></p>
+
+<ul>
+<li>布尔、数字、字符串、未定义这四个原始类型直接用<code>typeof</code>鉴别，分别返回“boolean”、“number”、&rdquo;string&rdquo;、“undefined”。</li>
+<li>空类型需要用三等号与null进行比较 （<code>value === null</code>），返回true就是空类型，false则不是。
+
+<br /></li>
+</ul></li>
+
+<li><p><strong>鉴别引用类型</strong></p>
+
+<ul>
+<li>鉴别函数直接用<code>typeof</code>，是函数则返回 function</li>
+<li>用<code>typeof</code>鉴别非函数的引用类型时，都返回object，无法精确鉴别，所以需要用<code>instanceof</code>来鉴别。（注意：所有引用类型的instanceof Object 都返回true，因为instanceof可以用来鉴别继承类型，所有引用类型都继承自Object。）</li>
+<li>鉴别数组还可以直接用<code>Array.isArray(&quot;被鉴别的对象&quot;)</code>来实现，这个方法可以解决不同全局上下文的问题。</li>
+</ul></li>
+</ol>
+
+<h4 id="三-原始封装类型">三、原始封装类型</h4>
+
+<p>这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：</p>
+
+<ol>
+<li><p><strong>设置了原始封装类型</strong></p>
+
+<ul>
+<li>原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。</li>
+<li>原始封装类型具有方法，比如String的<code>toLowerCase()</code>、Number的<code>toFixed()</code>、Boolean的<code>toString()</code>，String的方法最多，也最常用。</li>
+<li>当读取字符串、数字或布尔值这三种原始类型时，相应的原始封装类型会被自动创建，并创建出一个原始封装类型的实例（对象），在这个实例上自然可以使用相应的原始封装类型的方法。使用结束后，JavaScript会自动销毁这个实例（自动打包）。
+
+<br /></li>
+</ul></li>
+
+<li><p><strong>原始方法</strong></p>
+
+<ul>
+<li>原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。</li>
+<li>注意：null和undefined没有方法。</li>
+</ul></li>
+</ol>
+
+<p>原书的代码例子很好的解释了这个概念：</p>
+
+<pre><code class="language-javascript">var name = &quot;Nicholas&quot;
+var firstChar = name.charAt(0);
+console.log(firstChar);    /* 输出 &quot;N&quot; */
+</code></pre>
+
+<p>上面是我们看到的结果，而背后发生的事如下：</p>
+
+<pre><code class="language-javascript">var name = &quot;Nicholas&quot;  /* 这时候就自动创建了原始封装类型String */
+var temp = new String(name);  /* 创建原始封装类型String的实例temp */
+var firstChar = temp.charAt(0);  /* 读取原始封装类型的方法，赋值给firstChar */
+temp = null;  /* 任务完成，销毁实例 */
+console.log(firstChar);  /* 输出 &quot;N&quot; */
+</code></pre>
+
+<h3 id="第二章-函数">第二章 函数</h3>
+
+<h4 id="一-函数是什么">一、函数是什么</h4>
+
+<p>在JavaScript里，函数就是对象，也就是一个引用类型Function的一个实例。让函数区别于其他对象的是函数自己的内部属性[[Call]]，typeof对含有[[Call]]的对象返回Function。除此之外，函数使用起来和其他对象没有区别，函数就是值。</p>
+
+<p>函数具有两种字面形式，分别为：</p>
+
+<ul>
+<li>函数声明：</li>
+</ul>
+
+<pre><code class="language-javascript">function add(num1, numb2) {
+    return num1 + num2;
+}
+</code></pre>
+
+<p>和</p>
+
+<ul>
+<li>函数表达式</li>
+</ul>
+
+<pre><code class="language-javascript">var add = function(num1, num2) {
+    return num1 + num2;
+);
+</code></pre>
+
+<p><strong>区别：</strong></p>
+
+<ol>
+<li>函数声明会被提升至上下文的顶部。</li>
+<li>函数表达式最后有一个分号。</li>
+</ol>
+
+<h4 id="二-函数的参数">二、函数的参数</h4>
+
+<p>这里有两对概念一定要区分：</p>
+
+<ol>
+<li>形参和实参</li>
+<li>function.length 和 arguments.length</li>
+</ol>
+
+<p>首先，形参用书中的话来讲就是“函数期望的参数”，也就是声明函数时候写入的参数，形参被保存在函数的length属性中。</p>
+
+<p>而实参，顾名思义，就是真正传入函数的参数，实参被保存在一个叫arguments的对象中。arguments对象具有两个类似数组的方法：</p>
+
+<ul>
+<li>arguments.length返回arguments值的个数；</li>
+<li>arguments[number]返回相应位置的值，类似数组的索引。</li>
+</ul>
+
+<p>注意： arguments对象不是数组。</p>
+
+<p>当实参大于形参的时候，多余的实参不起作用；当形参大于实参的时候，多余的形参会返回undefined</p>
+
+<h4 id="三-this对象">三、this对象</h4>
+
+<p>this出现在全局作用域的时候，代表全局对象，即浏览器里的window。this出现在函数作用域里的时候，代表调用该函数的对象。</p>
+
+<p>改变this值的三种方法：</p>
+
+<ol>
+<li>call()方法</li>
+<li>apply()方法</li>
+<li>bind()方法</li>
+</ol>
+
+<p>call()方法第一个参数指定一个新的this值，后面的参数是需要被传入的参数。例子：</p>
+
+<pre><code class="language-javascript">function sayNameFaoAll(label) {
+    console.log(label + &quot;:&quot; + this.name);
+}
+
+var person1 = {
+    name: &quot;Li Bai&quot;
+};
+
+var person2 = {
+    name: &quot;Du Fu&quot;
+};
+
+var name = &quot;Shi Ren&quot;;
+
+//这一步相当于直接sayNameForAll(&quot;global&quot;);
+sayNameForAll.call(this, &quot;global&quot;);  /* 输出 &quot;global: Shi Ren&quot; */
+
+//将this指向person1，并传入参数“person1”
+sayNameForAll.call(person1, &quot;person1&quot;);  /* 输出 &quot;person1: Li Bai&quot; */
+
+//将this指向person2，并传入参数“person2”
+sayNameForAll.call(person2, &quot;person2&quot;);  /* 输出 &quot;person2: Du Fu&quot; */
+</code></pre>
+
+<p>apply()和call()的工作方式一样，唯一区别是apply()只接受两个参数，第二个参数可以是数组对象或者arguments对象。</p>
+
+<p>bind()方法是ES5中新加的方法。与之前两个方法的用法基本相似，需要注意的是bind()返回的是一个新函数，通常赋值给一个变量，而call()和appy()则是直接引用原函数。例子：</p>
+
+<pre><code class="language-javascript">function sayNameForAll(label){
+    console.log(label + &quot;:&quot; + this.name);
+}
+
+var person1 = {
+    name: &quot;Li Bai&quot;
+};
+
+//这里赋值给一个新变量
+var sayNameForPerson1 = sayNameForAll.bind(person1);  
+
+//这里执行新函数
+sayNameForPerson1(&quot;person1&quot;);  /* 输出 &quot;person1:Li Bai&quot; */
+</code></pre>
+
+<h3 id="第三章-理解对象">第三章 理解对象</h3>
+
+<p>定义对象的属性：</p>
+
+<ul>
+<li>第一次定义时，JavaScript在对象上调用内部方法 [[Put]]</li>
+<li>赋予属性一个新值时，JavaScript调用内部方法 [[Set]]</li>
+</ul>
+
+<p>检测对象是否含有某个属性：</p>
+
+<ul>
+<li><p>in 操作符可以查找给定名称的属性，但不区分自有属性和原型属性，如果找到则返回true</p>
+
+<pre><code class="language-javascript">console.log(&quot;property&quot; in object); /* 返回 true 或 false */
+</code></pre></li>
+
+<li><p>所有对象都拥有hasWenProperty()方法，只检测是否存在自有属性</p>
+
+<pre><code class="language-javascript">console.log(object.hasWenProperty(&quot;property&quot;)); /* 返回 true 或 false */
+</code></pre></li>
+</ul>
+
+<p>删除对象的某个属性用 delete 操作符，会调用[[Delete]]内部方法</p>
+
+<pre><code class="language-javascript">delete property.object  /* 删除成功返回 true， 失败返回 false */
+</code></pre>
+
+<p>属性的特征[[Configurable]]规定了属性是否可以配置，默认是可以配置的。可以通过Object.defineProperty()方法改变：</p>
+
+<pre><code class="language-javascript">Object.defineProperty(object, &quot;property&quot;, {
+   configurable: false   /* 变为不可配置，属性描述对象与属性特征同名，不带中括号，首字母小写。 */
+})
+</code></pre>
+
+<p>属性枚举（遍历），可以用以下两种方法</p>
+
+<ul>
+<li>for (property in object)</li>
+<li>或者ES5引入的 Object.keys()方法，区别是这个方法可以返回属性名的数组</li>
+<li>属性的特征[[Enumerable]]规定了属性是否可以遍历，默认是可以枚举的。可以通过Object.defineProperty()方法改变：</li>
+</ul>
+
+<pre><code class="language-javascript">Object.defineProperty(object, &quot;property&quot;, {
+    enumerable: false  //变为不可枚举，属性描述对象与属性特征同名，不带中括号，首字母小写。
+})
+</code></pre>
+
+<p>注意：当使用Object.defineProperty()时，一定要给所有属性特征制定一个值，否则会被默认制定为false。</p>
+
+<p>用Object.defineProperties()可以为一个对象同时定义多个属性。</p>
+
+<p>获取对象的属性特征可以用 Object.getOwnPropertyDescription(object, &ldquo;property&rdquo;)，会返回一个属性描述对象，包含四个属性（两个通用，两个特殊）</p>
+
+<p>对象的属性类型有两种：</p>
+
+<ol>
+<li><p>数据属性</p>
+
+<ul>
+<li>数据属性包含一个值</li>
+<li>拥有通用特征[[Enumerable]]和[[Configurable]]</li>
+<li>拥有独特的属性特征 [[Value]]和[[Writable]]
+
+<ul>
+<li>属性的值保存在[[Value]]中</li>
+<li>[[Writable]]是个布尔值，表示该属性是否可以写入
+<br /></li>
+</ul></li>
+</ul></li>
+
+<li><p>访问器属性</p>
+
+<ul>
+<li>访问器属性不包含值，而是定义了一个getter和一个setter。访问器属性只需要getter和setter的任意一个，也可以都有。</li>
+<li>拥有通用特征[[Enumerable]]和[[Configurable]]</li>
+<li>拥有独特的属性特征[[Get]]和[[Set]]</li>
+</ul></li>
+</ol>
+
+<p>禁止修改对象的方法</p>
+
+<ol>
+<li>禁止扩展
+
+<ul>
+<li>使对象无法添加新属性</li>
+<li>代码是：Object.preventExtensions(object);</li>
+<li>用Object.isExtensible(object)来检测是否可以扩展</li>
+</ul></li>
+<li>封印对象
+
+<ul>
+<li>使对象无法添加新属性、无法删除属性或更改其类型，只能读写。（禁止扩展 + 不可配置）</li>
+<li>代码是： Object.seal(object);</li>
+<li>用Object.isSealed(object)来检测是否封印了</li>
+</ul></li>
+<li>冻结对象
+
+<ul>
+<li>使对象无法添加新属性、不能删除属性或更改类型、不能给属性赋值。（禁止扩展 + 不可配置 + 不能读写）</li>
+<li>代码是：Object.freeze(object);</li>
+<li>用Object.isFrozen(object)来检测是否冻结了</li>
+</ul></li>
+</ol>
+
+<h3 id="第四章-构造函数和原型对象">第四章 构造函数和原型对象</h3>
+
+<h4 id="一-构造函数">一、构造函数</h4>
+
+<blockquote>
+<p>构造函数就是用new创建对象时调用的函数</p>
+</blockquote>
+
+<p>例子：</p>
+
+<pre><code class="language-javascript">function Person(name) {   /* 构造函数首字母大写 */
+    this.name = name;
+    this.sayName = function(){
+        console.log(this.name);
+    };
+}
+
+//始终确保用new来调用构造函数
+var person1 = new Person1(&quot;Li Bai&quot;);
+var person2 = new Person2(&quot;Du Fu&quot;);
+
+console.log(person1.name);   /* &quot;Li Bai&quot; */ 
+console.log(person2.name);   /* &quot;Du Fu&quot; */ 
+
+person1.sayName();  /* 输出 &quot;Li Bai&quot; */   
+person2.sayName();  /* 输出 &quot;Du Fu */ 
+</code></pre>
+
+<blockquote>
+<p>使用构造函数的目的是为了轻松创建许多拥有相同属性和方法的对象</p>
+</blockquote>
+
+<h4 id="二-原型对象">二、原型对象</h4>
+
+<blockquote>
+<p>可以把原型对象看作是对象的基类</p>
+</blockquote>
+
+<p>构造函数创建出的新对象会拥有构造函数的原型对象。</p>
+
+<p>可以用Object.getPrototypeOf(object)方法读取[[Prototype]]属性的值，可以用object.isPrototypeOf(object)方法检查第一个object是否是第二个prototype的原型对象。</p>
+
+<p>重要：无法给原型对象的属性赋值，会变成创建一个同名自有属性。</p>
+
+<p>可以给构造函数中的原型对象创建新的属性，与在构造函数中创建新属性的区别是，调用原型对象上的新属性时，this值指向用new新生成的对象，而不是指向构造函数。</p>
+
+<p>可以用对象字面形式改写原型对象，但要注意手动把constructor属性（原型对象特有的属性）指向构造函数。（constructor属性是原型对象特有的属性，默认会指向Object）</p>
+
+<p>例子：</p>
+
+<pre><code class="language-javascript">function Person(name) {
+    this.name = name;
+}
+
+Person.prototype = {
+    constructor: Person,
+    
+    sayName: function() {
+        console.log(this.name);
+    },
+    
+    toString: function() {
+        return &quot;[Person &quot; + this.name + &quot;]&quot;;
+    }
+};
+</code></pre>
+
+<p>重要： 构造函数和对象实例之间没有直接联系，他们通过原型对象相连</p>
+
+<p>[[prototype]]属性是指向原型对象的指针。对原型对象的所有改变可以无缝立即生成为对象实例的属性，无论何时改变都可以，因为JavaScript查找对象属性每次都会先查找自有属性，然后再查找原型对象的属性。</p>
+
+<p>Object.freeeze和Object.seal只对自有属性生效，完全可以再改变原型对象的属性。</p>
+
+<p>当然，理论上可以改变内建对象的原型对象，比如给Array, String, Boolean的原型对象赋新值，但不推荐这么做。</p>
+
+<h3 id="第五章-继承">第五章 继承</h3>
+
+<blockquote>
+<p>JavaScript内建的继承方法被称为原型对象链，也叫原型对象继承</p>
+</blockquote>
+
+<p>所有的对象都继承自Object.prototype，也就是说Object.prototype是原型对象链的最顶端，它自己的[[prototype]]属性值为null。</p>
+
+<p>Object.prototype具有五种方法，其他对象都可以使用：</p>
+
+<ul>
+<li>hasOwnProperty()</li>
+<li>propertyIsEnumerable()</li>
+<li>isPrototypeOf()</li>
+<li>valueOf()</li>
+<li>toString()</li>
+</ul>
+
+<h4 id="对象继承">对象继承</h4>
+
+<p>使用var 生成一个对象的时候，JavaScript会隐式指定Object.prototype为对象的[[prototype]]。可以用Object.create()方法显式指定，例子：</p>
+
+<pre><code class="language-javascript">var person1 = {
+    name: &quot;Li Bai&quot;,
+    occupation: &quot;Shi Ren&quot;
+};
+
+var person1 = Object.create(Object.prototype, {
+               name: {
+                   configurable: true,
+                   enumerable: true,
+                   value: &quot;Li Bai&quot;,
+                   writable: true
+               }
+               
+               occupation: {
+                   configurable: true,
+                   enumerable: true,
+                   value: &quot;Shi Ren&quot;,
+                   writable: true
+               }
+
+          });
+
+var person2 = Object.create(person1, {
+               //这里新创建自由属性name，会替换继承自person1的name属性
+               name: {  
+                   configurable: true,
+                   enumerable: true,
+                   value: &quot;Du Fu&quot;,
+                   writable: true
+                   }
+              });
+
+person1.occupation();    /* 输出“Shi Ren” */
+person2.occupation();    /* 输出“Shi Ren” */
+</code></pre>
+
+<h4 id="构造函数继承">构造函数继承</h4>
+
+<p>首先要明白，创建构造函数时，JavaScript在背后隐式的做了这些事：</p>
+
+<pre><code class="language-javascript">//表面上声明构造函数：
+function Shiren() {
+    work1: &quot;Xie Shi&quot;;
+    work2: &quot;Xie Ci&quot;;
+}
+
+//背后逻辑：
+Shiren.prototype = Object.create(Object.prototype, {
+                       //constructor是自有属性，指向自身
+                       constructor: {
+                           configurable: true,
+                           enumerable: true,
+                           value: Shiren,
+                           writable: true
+                       }
+                    });
+</code></pre>
+
+<h4 id="构造函数继承-1">构造函数继承</h4>
+
+<blockquote>
+<p>方法是让新构造函数的原型对象变成被继承的构造函数的一个新实例</p>
+</blockquote>
+
+<p>例子：</p>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Juxing</span>(<span style="color:#a6e22e">chang</span>, <span style="color:#a6e22e">kuan</span>) {
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">chang</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">chang</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kuan</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kuan</span>;
+}
+
+<span style="color:#a6e22e">Juxing</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">mianJi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">chang</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kuan</span>;
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ZhengFangXing</span>(<span style="color:#a6e22e">bian</span>) {
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">chang</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">bian</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kuan</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">bian</span>;
+}
+
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#75715e">//10-13行的代码可以用“构造函数窃取”实现，这种方法也叫“伪类继承”
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ZhengFangXing</span>(<span style="color:#a6e22e">bian</span>) {
+</span><span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#a6e22e">Juxing</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">bian</span>, <span style="color:#a6e22e">bian</span>);
+</span><span style="display:block;width:100%;background-color:#3c3d38">}
+</span>
+<span style="color:#a6e22e">ZhengFangXing</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Juxing</span>();
+<span style="color:#a6e22e">ZhengFangXing</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ZhengFangXing</span>;
+
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#75715e">//20、21两行代码可以被替换为如下
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#75715e"></span><span style="color:#a6e22e">ZhengFangXing</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">Juxing</span>.<span style="color:#a6e22e">prototype</span>, {
+</span><span style="display:block;width:100%;background-color:#3c3d38">                       <span style="color:#a6e22e">constructor</span><span style="color:#f92672">:</span> {
+</span><span style="display:block;width:100%;background-color:#3c3d38">                           <span style="color:#a6e22e">configurable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38">                           <span style="color:#a6e22e">enumerable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38">                           <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ZhengFangXing</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38">                           <span style="color:#a6e22e">writable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38">                       }
+</span><span style="display:block;width:100%;background-color:#3c3d38">                    });
+</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ju</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Juxing</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">zheng</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ZhengFangXing</span>(<span style="color:#ae81ff">6</span>);
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ju</span>.<span style="color:#a6e22e">mianJi</span>());    <span style="color:#75715e">/* 50 */</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">zheng</span>.<span style="color:#a6e22e">mianJi</span>());   <span style="color:#75715e">/* 36 */</span>  
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="第六章-对象模式">第六章 对象模式</h3>
+
+<p>如何让对象的属性私有？这一章简要介绍了几种方法</p>
+
+<ol>
+<li><p>模块模式</p>
+
+<blockquote>
+<p>模块模式是一种用于创建拥有私有数据的单件对象的模式</p>
+</blockquote>
+
+<p>基本做法： 使用立调函数表达（IIFE）</p>
+
+<pre><code class="language-javascript">var yourObject = (function() {
+    
+      //私有数据变量，无法在外部访问
+      
+  return {
+      
+      //公共方法和属性，可以访问自己的私有数据
+          
+  }
+    
+}());
+</code></pre></li>
+
+<li><p>构造函数的私有成员</p>
+
+<blockquote>
+<p>用在同样需要私有属性的自定义类型上</p>
+</blockquote>
+
+<pre><code class="language-javascript">function Person(name) {  
+    var age = 25;  /* 本地变量 */
+        
+    this.name = name;
+        
+    this.getAge = function() {           
+        return age;            
+    };
+        
+    this.growOlder = function(){            
+        age++;  
+    };
+  }
+</code></pre></li>
+</ol>
+
+<h4 id="另一种伪继承方法-混入-mixin">另一种伪继承方法：混入（mixin）</h4>
+
+<blockquote>
+<p>函数mixin()接受两个参数：接受者 和 提供者。
+该函数的目的是将提供者所有可枚举属性复制给接收者</p>
+</blockquote>
+
+<p>例子：</p>
+
+<pre><code class="language-javascript">var person = mixin( new Person(), {
+    chaoDai: &quot;Tang Chao&quot;,
+    
+    sayChaoDai: function() {
+        console.log(this.name);      
+    } 
+});
+</code></pre>
+
+<p>这个例子表达的意思是：构造函数Person()的新实例person，混入了新的属性（chaoDai 和 sayChaoDai），而没有改变person的原型对象链。</p>
+
+<p>注意：提供者的访问器属性会自动变成接受者的数据属性</p>
+
+<h4 id="作用域安全的构造函数">作用域安全的构造函数</h4>
+
+<p>构造函数生成新实例如果不用 new， this值会强制指向全局对象， 严格模式下会抛出错误。可以通过以下方法来制造作用域安全的构造函数（也就是说用不用new都可以的构造函数）</p>
+
+<pre><code class="language-javascript">function Person(name) {
+
+    if (this instanceOf Person) {
+        this.name = name;  /* 当自己是被new调用时，正常设置name属性 */
+    } else {
+        return new Person(name);  /* 当不是被new调用时，则以new递归调用自己，以确保创建正确的实例 */
+    }
+}
+
+var person1 = new Person(&quot;Li Bai&quot;);
+var person2 = Person(&quot;Du Fu&quot;);
+
+console.log(person1 instanceof Person); /* true */ 
+console.log(person2 instanceof Person); /* true */ 
+</code></pre>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="label label-default" href="http://zhaochaoyue.com/tags/javascript/">JavaScript</a>
+  
+  <a class="label label-default" href="http://zhaochaoyue.com/tags/home/">home</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>相关</h3>
+      <ul>
+        
+        <li><a href="/post/10-13/">入选互联网名人堂的三位中国人</a></li>
+        
+        <li><a href="/post/6-4/">传奇登山家埃德蒙·希拉里略传</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+
+    
+
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">引用</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

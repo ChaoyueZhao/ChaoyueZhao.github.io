@@ -2,20 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>考试 on 超越的主页</title>
-    <link>https://chaoyuezhao.github.io/tags/%E8%80%83%E8%AF%95/</link>
+    <link>http://zhaochaoyue.com/tags/%E8%80%83%E8%AF%95/</link>
     <description>Recent content in 考试 on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 14 Jul 2018 13:52:14 +0800</lastBuildDate>
     
-	<atom:link href="https://chaoyuezhao.github.io/tags/%E8%80%83%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zhaochaoyue.com/tags/%E8%80%83%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>谷歌Mobile Web Specialist证书备考指南</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/7-14/</link>
+      <link>http://zhaochaoyue.com/post/7-14/</link>
       <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/7-14/</guid>
+      <guid>http://zhaochaoyue.com/post/7-14/</guid>
       <description>2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试</description>
     </item>
     

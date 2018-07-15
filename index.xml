@@ -2,161 +2,1864 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>超越的主页</title>
-    <link>https://chaoyuezhao.github.io/</link>
+    <link>http://zhaochaoyue.com/</link>
     <description>Recent content on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Jul 2018 13:52:14 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0800</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://chaoyuezhao.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>安汉纪念馆</title>
+      <link>http://zhaochaoyue.com/project/anhan-website/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/project/anhan-website/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>谷歌Mobile Web Specialist证书备考指南</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/7-14/</link>
+      <link>http://zhaochaoyue.com/post/7-14/</link>
       <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/7-14/</guid>
-      <description>2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试</description>
+      <guid>http://zhaochaoyue.com/post/7-14/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试费用为99美元，考试通过后会在45天内收到电子证书。详细考试信息和报名地址见&lt;a href=&#34;https://developers.google.com/training/certification/mobile-web-specialist/&#34; target=&#34;_blank&#34;&gt;Google Mobile Web Specialist考试官网&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;官方文档介绍此考试是为具有3至4年前端开发经验的程序员设计的，谷歌官方为考试内容划定了复习范围。本文主要参考资料为考试官网的&lt;a href=&#34;https://developers.google.com/training/certification/mobile-web-specialist/StudyGuide_MobileWebSpecialist.pdf&#34; target=&#34;_blank&#34;&gt;Study Guide&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;网站布局和样式基础&lt;/li&gt;
+&lt;li&gt;前端网络&lt;/li&gt;
+&lt;li&gt;无障碍&lt;/li&gt;
+&lt;li&gt;渐进式web应用&lt;/li&gt;
+&lt;li&gt;性能优化与缓存&lt;/li&gt;
+&lt;li&gt;测试与调试&lt;/li&gt;
+&lt;li&gt;ES2015概念和语法&lt;/li&gt;
+&lt;li&gt;移动网页表单&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;一-网站布局和样式基础&#34;&gt;一、网站布局和样式基础&lt;/h3&gt;
+
+&lt;p&gt;无论使用何种设备，用户都希望看到具有响应式和视觉吸引力的网站。网络应用的布局和样式必须响应现有的显示，并且持续提供直观的功能。你将按照要求使用HTML、CSS和JavaScript来建造包括以下几项的响应式布局和样式：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用原生JavaScript来访问和操作DOM元素；&lt;/li&gt;
+&lt;li&gt;恰当的document type声明和viewpoint标签；&lt;/li&gt;
+&lt;li&gt;响应式的CSS grid布局；&lt;/li&gt;
+&lt;li&gt;使用媒体查询来提供不同屏幕尺寸的流体断点；&lt;/li&gt;
+&lt;li&gt;使用多媒体标签来显示视频或播放音频；&lt;/li&gt;
+&lt;li&gt;通过移动设备尺寸和分辨率进行调整的响应式图片；&lt;/li&gt;
+&lt;li&gt;任意平台上的包含大量点击目标的触摸和鼠标事件；&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/design-and-ux/responsive/&#34; target=&#34;_blank&#34;&gt;Responsive Web Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34; target=&#34;_blank&#34;&gt;A Complete Guide to Flexbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries&#34; target=&#34;_blank&#34;&gt;Using medea queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content&#34; target=&#34;_blank&#34;&gt;Video and audio content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cn.udacity.com/course/responsive-images--ud882&#34; target=&#34;_blank&#34;&gt;Responsive Images by Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent&#34; target=&#34;_blank&#34;&gt;Supporting both TouchEvent and MouseEvent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/Touch_events&#34; target=&#34;_blank&#34;&gt;Touch events&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;二-前端网络&#34;&gt;二、前端网络&lt;/h3&gt;
+
+&lt;p&gt;由于用户互动是基于可信赖的高效网络请求，你将被要求证明自己会通过以下方式使用JavaScript来建立可靠的前端网络协议：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用fetch()请求数据；&lt;/li&gt;
+&lt;li&gt;检查响应参数，并将数据解析成可用的格式；&lt;/li&gt;
+&lt;li&gt;将响应的数据渲染成页面；&lt;/li&gt;
+&lt;li&gt;使用method和body参数配置POST请求到数据库；&lt;/li&gt;
+&lt;li&gt;根据服务器的响应头，使用正确配置的跨域资源分享协议（CORS）的fetch请求；&lt;/li&gt;
+&lt;li&gt;使用promise链来处理fetch()请求错误；&lt;/li&gt;
+&lt;li&gt;使用调试和开发者工具诊断网络问题；&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/updates/2015/03/introduction-to-fetch&#34; target=&#34;_blank&#34;&gt;Introduction to fetch()&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch&#34; target=&#34;_blank&#34;&gt;Using Fetch()&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidwalsh.name/fetch&#34; target=&#34;_blank&#34;&gt;David Walsh&amp;rsquo;s blog on fetch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jakearchibald.com/2015/thats-so-fetch/&#34; target=&#34;_blank&#34;&gt;Jake Archibald&amp;rsquo;s blog on fetch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/primers/promises&#34; target=&#34;_blank&#34;&gt;JavaScrip Promise: an Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS&#34; target=&#34;_blank&#34;&gt;HTTP access control(CORS)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;三-无障碍&#34;&gt;三、无障碍&lt;/h3&gt;
+
+&lt;p&gt;网页和网络应用应该为所有人提供无障碍访问，包括那些具有视力、行动、听力和认知障碍的人。使用HTML、CSS、Javascript，你会被要求展示你可以使用如下方式在你的网页和应用中做出无障碍访问的最佳实践：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用具有逻辑的tab顺序来进行tab导航&lt;/li&gt;
+&lt;li&gt;使用跳过导航链接绕过导航栏和旁边&lt;/li&gt;
+&lt;li&gt;避免页面上隐藏的内容阻挡导航栏&lt;/li&gt;
+&lt;li&gt;使用能够提供页面逻辑结构的头部标签&lt;/li&gt;
+&lt;li&gt;使用可视化内容的替代文本，比如alt, &lt;label&gt;, aria-label, 和 aria-labelledby&lt;/li&gt;
+&lt;li&gt;在所有元素上应用对比色，并遵守最佳的无障碍实践&lt;/li&gt;
+&lt;li&gt;有紧急信息时候使用aria-live来及时提醒用户&lt;/li&gt;
+&lt;li&gt;使用语义标记在适当时保持内容和表示分离&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/accessibility/&#34; target=&#34;_blank&#34;&gt;Web Fundamentals – Accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/web-accessibility--ud891&#34; target=&#34;_blank&#34;&gt;Web Accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/learn/Accessibility/Mobile&#34; target=&#34;_blank&#34;&gt;Mobile Accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex&#34; target=&#34;_blank&#34;&gt;Using tabindex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/accessibility/focus/&#34; target=&#34;_blank&#34;&gt;Focus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://webaim.org/techniques/skipnav/&#34; target=&#34;_blank&#34;&gt;Skip Navigation Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA&#34; target=&#34;_blank&#34;&gt;ARIA&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;四-渐进式web应用&#34;&gt;四、渐进式web应用&lt;/h3&gt;
+
+&lt;p&gt;用户希望原生应用程序可脱机使用，并提供可以从他们的主页启动的功能丰富的体验。 你会被要求显示你可以通过以下方式使用service worker(服务工作线程)，HTML和JavaScript构建类似于渐进式Web应用程序的功能原生应用程序：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;开发一个可以离线使用的web应用，并通过service worker来缓存元素&lt;/li&gt;
+&lt;li&gt;存储默认显示方向、主题颜色、显示图标（添加到主屏幕）和Web应用程序清单中的启动画面（或使用元标记）&lt;/li&gt;
+&lt;li&gt;将关键应用程序功能和UI分离到可以独立于内容加载的应用程序shell中&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/progressive-web-apps/&#34; target=&#34;_blank&#34;&gt;Progressive Web Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/ilt/pwa/&#34; target=&#34;_blank&#34;&gt;Progressive Web Apps Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/architecture/app-shell&#34; target=&#34;_blank&#34;&gt;Web Fundamentals - The App Shell Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/&#34; target=&#34;_blank&#34;&gt;Your First Progressive Web App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers&#34; target=&#34;_blank&#34;&gt;Using Service Workers&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;五-性能优化与缓存&#34;&gt;五、性能优化与缓存&lt;/h3&gt;
+
+&lt;p&gt;尽管网络信号很差甚至缺失，用户仍然要求移动页面能够瞬间加载。因为很多用户都会面临高昂的流量费用，你必须减小应用的数据流量从而尽可能加快网页加载时间。你将被要求证明自己可以通过如下方式来处理网页性能审计的问题来减小页面加载时间以及维护一个响应式的用户体验。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用专用的Web worker来防止主线程阻塞&lt;/li&gt;
+&lt;li&gt;通过以下方式来提供一个优化过的关键渲染路径：
+
+&lt;ol&gt;
+&lt;li&gt;使用压缩或缩小过的JavaScript、HTML和CSS来减少渲染阻塞&lt;/li&gt;
+&lt;li&gt;在必要的页面使用行内CSS样式，按需求使用异步的方式加载额外的样式&lt;/li&gt;
+&lt;li&gt;仅在必要的时候使用行内JavaScript来初始化页面&lt;/li&gt;
+&lt;li&gt;有秩序的加载其余关键性资源，提前下载全部关键性资产来缩短关键路径长度&lt;/li&gt;
+&lt;li&gt;减少DOM层级来最小化浏览器布局/回流时间&lt;/li&gt;
+&lt;li&gt;使用浏览器的开发者工具来诊断网页在移动设备上的性能问题&lt;/li&gt;
+&lt;li&gt;当资源准备就绪时，提前获取可加载的文件，为有意义的互动腾出时间&lt;/li&gt;
+&lt;li&gt;提供适合Web应用程序数据持久性的客户端存储需求
+
+&lt;ul&gt;
+&lt;li&gt;session状态管理&lt;/li&gt;
+&lt;li&gt;基于其加载时间和离线功能的影响来管理文件缓存&lt;/li&gt;
+&lt;li&gt;使用IndexedDB 来储存离线模式下的动态内容&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/offline-web-applications--ud899&#34; target=&#34;_blank&#34;&gt;Offline Web Applications by Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/performance/&#34; target=&#34;_blank&#34;&gt;Web Fundamentals - Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jakearchibald.com/2014/offline-cookbook/&#34; target=&#34;_blank&#34;&gt;The Offline Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/Cache&#34; target=&#34;_blank&#34;&gt;Cache -MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/Storage&#34; target=&#34;_blank&#34;&gt;Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/&#34; target=&#34;_blank&#34;&gt;Local Storage And How To Use It On Websites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API&#34; target=&#34;_blank&#34;&gt;IndexedDB API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/tools/chrome-devtools/network-performance/&#34; target=&#34;_blank&#34;&gt;Get Started with Analyzing Network Performance in Chrome DevTools&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;六-测试与调试&#34;&gt;六、测试与调试&lt;/h3&gt;
+
+&lt;p&gt;开发人员通常在高度迭代的部署环境中工作，依靠广泛的测试和调试以保持功能和代码完整性。你将会被要求证明你可以通过以下方法验证预期的行为并诊断常见的web应用程序bug：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;编写单元测试，首先验证一个功能的预期行为，然后迭代修改其代码，直到它通过这些测试&lt;/li&gt;
+&lt;li&gt;在复杂的功能中设置断点来确定与预期功能不符合的地方&lt;/li&gt;
+&lt;li&gt;使用console logs来输出相关的调试信息&lt;/li&gt;
+&lt;li&gt;根据用户报告的问题复现并修复bug&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/tools/chrome-devtools/javascript/&#34; target=&#34;_blank&#34;&gt;Get Started with Debugging JavaScript in Chrome DevTools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/tools/chrome-devtools/console/console-write&#34; target=&#34;_blank&#34;&gt;Diagnose and Log to Console&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/codelabs/debugging-service-workers/&#34; target=&#34;_blank&#34;&gt;Debugging Service Workers&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;七-es2015概念和语法&#34;&gt;七、ES2015概念和语法&lt;/h3&gt;
+
+&lt;p&gt;Web开发人员必须掌握让代码更简单更易读的JavaScript最新的功能。 因为可以使用polyfill来实现在不受支持的浏览器中编写 JavaScript ES2015的代码，开发人员开始使用新的功能和语法具有了更强大的动机。 您将被要求通过以下方式表明您理解并可以编写ES2015JavaScript代码：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用promise语法来创建异步功能并集成优雅的错误处理功能&lt;/li&gt;
+&lt;li&gt;使用let、var、const来建立具有块级、函数级和一成不变的变量&lt;/li&gt;
+&lt;li&gt;包含字符串插值和多行字符串的字符串文字&lt;/li&gt;
+&lt;li&gt;使用箭头函数来创建同步功能并使用无限制的this&lt;/li&gt;
+&lt;li&gt;使用函数默认参数来为没有参数的函数初始化默认值&lt;/li&gt;
+&lt;li&gt;在each函数中使用可以遍历任意对象的for&amp;hellip;of循环&lt;/li&gt;
+&lt;li&gt;使用允许任意键值对的maps，包括可循环且包含非字符串键值的键值对&lt;/li&gt;
+&lt;li&gt;仅设置唯一的、可降低性能的迭代元素&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/primers/promises&#34; target=&#34;_blank&#34;&gt;JavaScript Promises: an Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise&#34; target=&#34;_blank&#34;&gt;Promise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings&#34; target=&#34;_blank&#34;&gt;Tempate literals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34; target=&#34;_blank&#34;&gt;Arrow Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Default_parameters&#34; target=&#34;_blank&#34;&gt;Default parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of&#34; target=&#34;_blank&#34;&gt;For&amp;hellip;of&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map&#34; target=&#34;_blank&#34;&gt;Map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set&#34; target=&#34;_blank&#34;&gt;set&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;八-移动网页表单&#34;&gt;八、移动网页表单&lt;/h3&gt;
+
+&lt;p&gt;填写在线表单，尤其是在移动设备上，可能很困难。 为了改善用户体验，您将被要求证明您可以通过以下方式使用基本的HTML5，JavaScript和HTML5
+Constraint Validation API，来设计高效且安全的HTML Web表单：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;与input相关的合适的label标签&lt;/li&gt;
+&lt;li&gt;设置恰当的input属性，包括type、name和autocomplete&lt;/li&gt;
+&lt;li&gt;为移动表单设置的具有大面积触摸目标的input&lt;/li&gt;
+&lt;li&gt;使用datalist元素来为用户提供具有提示内容的input&lt;/li&gt;
+&lt;li&gt;input和DOM元素的前端验证，包括：
+
+&lt;ul&gt;
+&lt;li&gt;使用input的伪类来实时的验证表单错误&lt;/li&gt;
+&lt;li&gt;提交前的表单验证（Constraint Validation API）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;学习资料（官方）：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/fundamentals/design-and-ux/input/forms/&#34; target=&#34;_blank&#34;&gt;Create Amazing Forms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/Constraint_validation&#34; target=&#34;_blank&#34;&gt;Constraint Validation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/client-side-form-validation-html5/&#34; target=&#34;_blank&#34;&gt;Client-Side Form Validation with HTML5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Data_form_validation&#34; target=&#34;_blank&#34;&gt;Data form validation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms&#34; target=&#34;_blank&#34;&gt;HTML Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>
       <title>安汉生平事迹考略</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/4-12/</link>
+      <link>http://zhaochaoyue.com/post/4-12/</link>
       <pubDate>Fri, 01 Jun 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/4-12/</guid>
-      <description>最开始我只是对安汉抱有强烈的好奇心，不知不觉就开始研究他了，经历了一年的资料收集、半年的论文写作和一年的投稿历程，这篇文章终于得以在今年6月</description>
+      <guid>http://zhaochaoyue.com/post/4-12/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;最开始我只是对安汉抱有强烈的好奇心，不知不觉就开始研究他了，经历了一年的资料收集、半年的论文写作和一年的投稿历程，这篇文章终于得以在今年6月份的《渭南师范学院学报》上正式发表，看到自己的文章登上学术期刊，真的很欣慰。我希望这篇专业的历史考据论文可以减少人们对安汉的神化和污化，让大家看到一个最真实的安汉。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：安汉是民国著名农垦专家，对民国时期西北经济开发做出了重要贡献，他在农学教育、农垦学理论和农垦经济管理领域亦有非凡建树。安汉的生平事迹颇具传奇色彩，方志文献虽多有记述，却一直存在隐匿不清之处，且相互矛盾，严重影响了安汉研究的展开。通过援引新发现的档案和文献，匡正了安汉的出生日期、出国日期和死亡日期，补充了安汉留学法国时期的学习情况和重大事件，对安汉回国担任的教职和他与国立西北农林专科学校的关系进行了考证，并详细研究了安汉在黎坪垦区遇难的情况。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：安汉；勤工俭学；民国西北开发；黎坪垦区；&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;安汉（1897-1943），字杰三，陕西南郑县梁山人，民国著名农垦专家。早年留法学农，回国后积极倡导开发西北，多次参加考察西北农业的活动，曾任西北开发协会主席，著有《西北垦殖论》和《西北农业考察》，后期担任国营陕西黄龙山垦区管理局副局长和国营陕西黎坪垦区管理局局长。在黎坪垦区任上，安汉受到南郑县县长孙宗复和鄂陕甘边区警备总司令祝绍周的诬害，被以“包庇种烟和贪污”的罪名逮捕并枪决。此案一度震惊朝野，对陕西乃至全国都产生了较为深远的影响，是抗战时期发生的一大冤案。&lt;/p&gt;
+
+&lt;p&gt;安汉是民国时期难得的既有海外留学知识背景，又信奉实业救国的政府高级官员。他为人刚正不阿，铮铮铁骨，深得高级知识分子的敬佩。国民党元老于右任赠安汉对联“天地有正气，园林无伪情”。安汉的生平事迹散见于地方史志中，但各家记载彼此抵牾，失于简略。有关安汉留学法国、从事农学教育和黎坪垦区蒙难的情况，一直不得其详。本文通过新发现的档案和文献，对安汉生平事迹中一系列重要问题予以考辨，以纠正长期以来史料记载的谬误。&lt;/p&gt;
+
+&lt;h2 id=&#34;一-早年情况&#34;&gt;一、   早年情况&lt;/h2&gt;
+
+&lt;h3 id=&#34;一-出生年份&#34;&gt;(一) 出生年份&lt;/h3&gt;
+
+&lt;p&gt;安汉的出生年份存在争议，地方志向来有两种说法。《陕西省志·农牧志》 &lt;strong&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/strong&gt; 、《汉中地区志》 &lt;strong&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/strong&gt; 、《黄龙县志》 &lt;strong&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/strong&gt; 和《陕西近现代名人录》 &lt;strong&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/strong&gt; 记载为1896年，《陕西省志·人物志》 &lt;strong&gt;&lt;sup&gt;[5]&lt;/sup&gt;&lt;/strong&gt; 、《陕西省志·烟草志》 &lt;strong&gt;&lt;sup&gt;[6]&lt;/sup&gt;&lt;/strong&gt; 和《南郑县志》 &lt;strong&gt;&lt;sup&gt;[7]&lt;/sup&gt;&lt;/strong&gt; 记载为1897年。查找民国档案，在实业部人事档案中发现两份关于安汉的资料，其中记录于1931年1月的《现任公务员家庭状况》中的部分信息如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;官署：实业部；姓名：安汉；性别：男；别号：杰三；现职：技士；年龄：三十三岁；籍贯：陕西南郑县；现住址：南京细柳巷廿二号；永久住址：本县西街安宅。 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;记录于1933年4月的《现任公务员资格审查表》的相关信息如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;官署：实业部；姓名：安汉；别号：杰三；性别：男；年龄：三十五岁；籍贯：陕西南郑县；住址：本京新街口兴业里十三号。 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt;
+根据此档案的记录时间与档案中记载的安汉年龄可推算出，安汉出生年份应为1897年，且生日在4月之后。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;二-出生日期&#34;&gt;(二) 出生日期&lt;/h3&gt;
+
+&lt;p&gt;遗憾的是，目前公开出版的地方志和史书中尚未有关于安汉出生月份和日期的记录。不过，在南郑县当地有几本关于安汉的内部文献可以拿来参考。其中，《南郑县文史资料》第五辑“安汉与黎坪垦殖”一书中记载了安汉的出生日期，原文如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;安汉，字杰三，南郑县梁山乡人，生于公元1896年6月（农历五月初五），时清光绪22年。 &lt;strong&gt;&lt;sup&gt;[9]&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;此书由南郑县政协文史资料研究委员会编撰，于1988年10月出版，内部印发。虽然对安汉的出生年份记载有误，但这是第一个记录有安汉出生日期的文献。2007年2月，南郑县政协又出版了一本《陕西名人—西部开发先行者安汉》，其中对安汉生平的记载为：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;清光绪二十二年农历五月初五（公元1896年6月15日）端阳节那天，安怀善喜得第三个公子。家族亲友经过议论，取名“汉”，字“杰三”。 &lt;strong&gt;&lt;sup&gt;[10]&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;此外，安汉在南郑县的墓碑背后刻有《安汉生平简述》，相关文字如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;安汉，字杰三，南郑县梁山人，生于一八九六年农历五月初五，卒于一九四三年农历十月二十七日，享年四十七岁。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;可见，农历五月初五是安汉生日的唯一记载。&lt;/p&gt;
+
+&lt;p&gt;虽然汉中当地关于安汉的资料都指出安汉生于1896年，但这些资料大多是依据安汉后人和知情者的回忆所编，在严谨性和可信度上无法与民国实业部人事档案相提并论。因此，综合上文对安汉出生年份的考证可知，安汉的确切出生日期应为1897年农历五月初五，即公历1897年6月4日。&lt;/p&gt;
+
+&lt;h3 id=&#34;三-家庭与初等教育&#34;&gt;(三) 家庭与初等教育&lt;/h3&gt;
+
+&lt;p&gt;安汉生于南郑县一户富裕的地主家庭，父亲安辅国，字怀善，在政界就职 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; ，具体职位已难确考。安汉是安辅国和妻子赵氏6个子女中的第四个。安汉早年就读于汉中联立中学，之后前往西安，进入陕西省立甲种农业学校蚕科学习 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; ，这所学校的前身是1912年成立的三秦公学的蚕桑专修科和蚕桑简易科，之后相继改为陕西省农业学校、陕西省立第一职业学校和西安初级农业职业学校。甲种表示该校为省立且施行完全的普通实业教育（乙种是县立，施行简易实业教育），学生以就业为目的，毕业后不予升学机会 &lt;strong&gt;&lt;sup&gt;[11]325&lt;/sup&gt;&lt;/strong&gt; 。安汉1918年从该校毕业。显然，他并不满足于毕业后直接就业，而是选择了出国深造。&lt;/p&gt;
+
+&lt;h2 id=&#34;二-留学法国&#34;&gt;二、   留学法国&lt;/h2&gt;
+
+&lt;p&gt;国内史志资料对安汉留学法国情况的记载只有寥寥数句，仅指出了安汉的出国时间、就读学校和取得的学历，且各家说法并不统一。例如，关于安汉在法国就读学校的名称，《陕西省志·人物志》中记载为“朗西大学农学院” &lt;strong&gt;&lt;sup&gt;[5]480&lt;/sup&gt;&lt;/strong&gt; ，而《黄龙县志》却说是“里昂大学农学院（森林学硕士）” &lt;strong&gt;&lt;sup&gt;[3]638&lt;/sup&gt;&lt;/strong&gt; 。本文详细研究保存在法国国家图书馆中的一手史料，获得了全新的发现。&lt;/p&gt;
+
+&lt;h3 id=&#34;一-出发日期&#34;&gt;(一) 出发日期&lt;/h3&gt;
+
+&lt;p&gt;《陕西省志·人物志》、《黄龙县志》和《陕西近现代名人录》中，关于安汉留学法国的出发日期的记载都是“1918年9月” &lt;strong&gt;&lt;sup&gt;[3]638&lt;/sup&gt;&lt;/strong&gt; 、 &lt;strong&gt;&lt;sup&gt;[4]88&lt;/sup&gt;&lt;/strong&gt; 、 &lt;strong&gt;&lt;sup&gt;[5]480&lt;/sup&gt;&lt;/strong&gt; 。然而，考证了留法勤工俭学相关史料后发现，安汉是1920年12月15日与华法教育会组织的第二十一批留法勤工俭学生一起出发的 &lt;strong&gt;&lt;sup&gt;[12]128&lt;/sup&gt;&lt;/strong&gt; 。不过他既不属于“勤工”，也不属于“俭学” &lt;strong&gt;&lt;sup&gt;[12]325&lt;/sup&gt;&lt;/strong&gt; ，而是“国民党省级特派员” &lt;strong&gt;&lt;sup&gt;[13]461&lt;/sup&gt;&lt;/strong&gt; 。安汉乘坐的法属“智利号”邮轮从上海出发，途径香港、西贡、新加坡、科伦坡、吉布提，最终于1921年1月20日抵达法国南部港口马赛，整个旅程共36天 &lt;strong&gt;&lt;sup&gt;[12]136&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;h3 id=&#34;二-就读学校情况&#34;&gt;(二) 就读学校情况&lt;/h3&gt;
+
+&lt;p&gt;抵达法国后，安汉进入巴黎“榜来威克公学”学习。国内方志大多把这所学校等价于我国的“本科”，因此安汉就读的第二所学校自然被认为是培养硕士的院校。然而，这样简单地想象是不严谨的。虽然这所学校的具体情况已无从考证，但由于中法教育制度具有很大差别，仅从学校名称和入学时间来分析就可发现其中的错误。首先，“公学”（Public School）现在特指英国独特的精英教育学校，法国从未有过“公学”，“榜来威克公学”应属于当时翻译特例。其次，安汉在这所学校读了三年，根据学制可推测他读的是法国的Lycée。Lycée由拿破仑创建于1802年，是法国一种3年制的精英学校，现在表示高中。某些Lycée也含有大学预备班，属于高等教育。所以这所学校应称为“榜来威克高中”。&lt;/p&gt;
+
+&lt;p&gt;1923年秋，安汉考入了南锡农学与殖民学院的农学系（Institutagricole et colonial de Nancy）。该校创建于1901年，是法国的一座高等学府，专门培养能在东亚和非洲工作的农学家。该校注重培养学生在植物、动物、土壤、气候、风俗等方面的科学知识和技能，与南锡大学科学系有较深的渊源。现在这所学校已经更名为南锡国立农学与食品工业高等学校（&lt;a href=&#34;http://ensaia.univ-lorraine.fr/en&#34; target=&#34;_blank&#34;&gt;Ecole Nationale Supérieure d&amp;rsquo;Agronomie et des Industries Alimentaires Nancy&lt;/a&gt;）。&lt;/p&gt;
+
+&lt;h3 id=&#34;三-学习成绩&#34;&gt;(三) 学习成绩&lt;/h3&gt;
+
+&lt;p&gt;从该校通报上可知，安汉的学习成绩并不算优秀。1923年，农学系一年级学生共有20人，安汉成绩位于中间，名列第11名 &lt;strong&gt;&lt;sup&gt;[14]&lt;/sup&gt;&lt;/strong&gt; 。1924年秋，安汉继续在该校上二年级。由于有4名学生退学，二年级的学生总数变为16名。这一年安汉的成绩有所下滑，仅排在第14名 &lt;strong&gt;&lt;sup&gt;[15]&lt;/sup&gt;&lt;/strong&gt; 。南锡农学与殖民学院的学制是两年，在第二年就要参加毕业考试。令人意外的是，安汉没有出现在1925年获得毕业文凭的学生名单中 &lt;strong&gt;&lt;sup&gt;[16]&lt;/sup&gt;&lt;/strong&gt; ，仅在1925年10月获得了南锡农学与殖民学院颁发的“高等农学教育学业证书”（Certificat d&amp;rsquo;études Supérieures Agronomiques） &lt;strong&gt;&lt;sup&gt;[17]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;p&gt;这个“高等农学教育学业证书”到底是什么意思？经查询法国高等教育评分的相关资料后发现，早在1890年，法国教育部就颁布政令，确定了中等教育实施20分制。20分为满分，10分为及格分数。随后这一评分制度在法国中等教育和高等教育中得到普遍实施。对南锡农学与殖民学院来说，毕业成绩平均分12分以上的学生获得“工程师”文凭，平均分10-12分的学生获得“农学家”文凭，平均分10分以下的学生无法获得文凭，其中平均分8-10分的学生获得“高等农学教育学业证书”。这个证书表示学生修完了所有农学教育的课程，相当于结业证书或毕业证书。因此，地方志中说安汉是法国硕士毕业是不正确的，更恰当的记载应该是民国实业部的人事档案中的“法国南锡大学农学院毕业” &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;h3 id=&#34;四-留法足迹&#34;&gt;(四) 留法足迹&lt;/h3&gt;
+
+&lt;p&gt;安汉在法国度过了五、六年的时光，除了在校学习，他还参与了哪些活动呢？查找法国档案和文献中关于安汉的记载可谓大海捞针，所幸笔者还是找到了一鳞半爪。在南锡农学与殖民学院学习期间，安汉担任了南锡中国留学生协会的司库，负责财务工作 &lt;strong&gt;&lt;sup&gt;[14]217&lt;/sup&gt;&lt;/strong&gt; 。1924年，安汉加入了刚刚在法国成立的新中国农学会，是蚕学组、园艺组和应用植物组的组员 &lt;strong&gt;&lt;sup&gt;[18]&lt;/sup&gt;&lt;/strong&gt; 。此外，安汉在1924年10月加入了中国国民党 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;h2 id=&#34;三-教学生涯&#34;&gt;三、   教学生涯&lt;/h2&gt;
+
+&lt;h3 id=&#34;一-教职考证&#34;&gt;(一) 教职考证&lt;/h3&gt;
+
+&lt;p&gt;安汉1927年回国后，相继担任了一些教职。地方志的记载不尽相同，归纳起来主要有：陕西省立第一职业学校校长、西安中山学院讲师、国立西北农林专科学校教授、金陵大学教授、北平中法大学任教、西北大学生物学教授等。档案方面来看，安汉真正有据可查的教职只有陕西省立第一职业学校校长和西安中山学院讲师 &lt;strong&gt;&lt;sup&gt;[19]&lt;/sup&gt;&lt;/strong&gt; 。陕西省立第一职业学校的前身是安汉的母校陕西省甲种农业学校。1927年，安汉就任该校校长，1930年6月提出辞呈 &lt;strong&gt;&lt;sup&gt;[20]&lt;/sup&gt;&lt;/strong&gt; 。西安中山学院是国民党与共产党合作在原西北大学的基础上建立起来的，1927年3月1日正式成立，但很快由于国共合作破裂，当年7月中旬学校就被迫解散了，该院不设系科，只设各种学习班 &lt;strong&gt;&lt;sup&gt;[11]&lt;/sup&gt;&lt;/strong&gt; 722，安汉应为农政班讲师。
+为了彻底排除安汉在其他学校的任职经历，笔者仔细查阅了西北农林专科学校 &lt;strong&gt;&lt;sup&gt;[21]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[22]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[23]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[24]&lt;/sup&gt;&lt;/strong&gt; 、北平中法大学 &lt;strong&gt;&lt;sup&gt;[25]&lt;/sup&gt;&lt;/strong&gt; 和私立金陵大学 &lt;strong&gt;&lt;sup&gt;[26]&lt;/sup&gt;&lt;/strong&gt; 相应年份的教职工名册，没有发现安汉的名字，因此可知这些教职确实是误传。此外，根据《陕西省志·教育志》的记载，民国时期的西北大学经历过两次举办，两次停办。第一次于民国元年创办到民国四年停办（1912-1915），办学仅三年多时间，第二次民国十三年创办到民国十七年停办（1924-1928），先后办学也只三年多时间 &lt;strong&gt;&lt;sup&gt;[11]570&lt;/sup&gt;&lt;/strong&gt; 。安汉1927年回国时西北大学正面临第二次停办，安汉当时除了陕西省立第一职业学校校长和西安中山学院讲师两份教职以外，还有众多行政职务在身，如国民革命军冯总司令部建设部农务处主任、驻陕于总司令部参议，以及陕西省建设厅科长 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; ，况且安汉的专业是农学而非生物学，所以安汉担任西北大学生物学教授的记载也是误传。&lt;/p&gt;
+
+&lt;h3 id=&#34;二-安汉与西农&#34;&gt;(二) 安汉与西农&lt;/h3&gt;
+
+&lt;p&gt;安汉虽然不是国立西北农林专科学校的教师，但他与西农的关系却也值得考述一番。首先，安汉与西农的创始人国民党元老于右任的关系非常密切。1927年安汉刚回国，就受到于右任的重用，担任了国民军联军驻陕司令部参议 &lt;strong&gt;&lt;sup&gt;[8]&lt;/sup&gt;&lt;/strong&gt; ，后来于右任还多次向实业部、农林部举荐安汉 &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt; 。第二，1934年7月安汉受到于右任的委派，担任了西农甘青宁三省农场筹备特派员 &lt;strong&gt;&lt;sup&gt;[28]&lt;/sup&gt;&lt;/strong&gt; ，并对西北农、林、牧各业进行了科学考察。安汉一行人从西安出发，历时四个多月，行程一万三千里，最终为西农选定了6处农业试验场 &lt;strong&gt;&lt;sup&gt;[29]&lt;/sup&gt;&lt;/strong&gt; 。第三，1936年4月，安汉与李自发合著的《西北农业考察》由西北农林专科学校出版发行，此书后来成为了西农的指定教材 &lt;strong&gt;&lt;sup&gt;[7]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;p&gt;此外，安汉曾于1934年在《开发西北》上发表《对西北农林专科学校设施之意见》一文，阐述了他对西农建校科学而详细的建议，包括教育方针、组织、学系与课程、设备、教员、招生、学生待遇等方面 &lt;strong&gt;&lt;sup&gt;[30]&lt;/sup&gt;&lt;/strong&gt; ，具有非常长远的眼光。安汉在文中多次称西农为“本校”，可见他极有可能参与了西农早期建校的事务。另外一篇文章更有意思，1935年，《西北问题》杂志连续刊载了《国立西北农林专科学校筹备经过及现况》的文章，安汉在连载的第一篇文章前写有按语如下，&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;国立西北农林专校，业经中央决议创办，注意西北文化实业教育人士，无不关心及此。该校自民国二十二年秋季开始筹备以来，将近两年，现该校已作成总报告，内分设置、经费、教育及事业等项，凡筹备经过及进行情形，无不逐一详述。兹特介绍并稍作解注，由《西北问题》按期刊登，俾关心该校者得以先睹焉。杰三识 &lt;strong&gt;&lt;sup&gt;[31]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;《开发西北》和《西北问题》均是当时极具影响力的期刊，安汉在这两个期刊上发表关于西农的文章，不仅说明他十分关心西农的创建，而且体现出安汉与西农异常紧密的关系。尤其是安汉在有关西农建校筹备工作的文章前加按语，更非一般人所能为。因此可以说，虽然西农早期教职工名单中没有安汉，但在西农建校史上，安汉绝对可以称得上是一个功不可没的人物。&lt;/p&gt;
+
+&lt;h2 id=&#34;四-黎坪垦区蒙难&#34;&gt;四、 黎坪垦区蒙难&lt;/h2&gt;
+
+&lt;p&gt;现存方志资料对此案并无详细研究，虽然民间有不少当事人回忆录和纪念文章，但大都缺乏史料证据支持。笔者经过研究现存台湾中研院近代史档案馆的民国农林部档案，发现方志中对该案的具体日期节点和审理经过存在严重错误的记载，现就安汉蒙难的几个重要问题考证如下。&lt;/p&gt;
+
+&lt;h3 id=&#34;一-案件背景&#34;&gt;(一) 案件背景&lt;/h3&gt;
+
+&lt;p&gt;1938年3月，国营陕西黄龙山垦区成立，安汉被任命为垦区管理局副局长，自此开启了他5年多的垦区管理生涯。1939年，国民政府开始筹划设立陕西黎坪垦区，安汉得知后向上级申请希望能去黎坪垦区就职。因他从小在汉中长大，对当地情况较为熟悉，又曾受命亲自带队考察过黎坪垦区并提交了《黎坪垦区调查报告》，所以他的申请很快得到了黄龙山垦区管理局兼局长朱庆澜和陕西省主席蒋鼎文的支持。但是他们此时才得知，1939年8月25日上级已经决议通过任命赈济委员会秘书黄乃桢为黎坪垦区主任，于是又申请将两人对调。1939年11月，蒋介石批准了对调。1940年3月1日，安汉正式就任黎坪垦区主任 &lt;strong&gt;&lt;sup&gt;[32]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;p&gt;黎坪垦区地界陕西宁强、褒城、勉县、南郑与四川南江、广元6县之间，西起广元三道河，东迄褒城黄官岭，北至宁强元坝子，南至南江天场坪。交通困难，地势高，无霜期为150天，雨量丰沛，年降雨量达1000毫米至1250毫米，森林广布，土质肥美，矿产蕴藏甚富，山川秀丽，被称为“东方瑞士” &lt;strong&gt;&lt;sup&gt;[33]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;p&gt;在安汉和垦局工作人员的经营下，黎坪垦区经过三年多的发展取得了较为可观的成果。1943年8月，垦区人数达到5040人，开垦荒地46636亩，种植面积44160亩，收获产量27383担；垦区配套设施有国民小学2所，医务所1所，合作社和生产社26个，消费社2个，合作联社1个，互助合作社等 &lt;strong&gt;&lt;sup&gt;[34]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;p&gt;黎坪垦区地处川陕交界的山区，土匪出没无常，地方人事关系极其复杂。垦区管理局成立后，邻近县时常因为垦区划界和地方管辖权的问题与其产生纠纷，彼此时有争执。仅1943年上半年，农林部就处理了4起关于黎坪垦区管理局的案件。包括1起四川广元县起诉黎坪垦区侵犯管辖权的案件和3起宁强县控告垦区管理局越权干政的案件 &lt;strong&gt;&lt;sup&gt;[35]&lt;/sup&gt;&lt;/strong&gt; 。农林部派员详细调查后发现，这些纠纷大都查无实据，于是在1943年春计划将安汉调任，以免因地方之争影响公务，但是苦于找不到人顶替，“稍有技术资格的人员都不愿意来到这个安全毫无保障的政治漩涡之中，遂搁置。” &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;二-案件爆发&#34;&gt;(二) 案件爆发&lt;/h3&gt;
+
+&lt;p&gt;关于案件爆发时间，目前史志文献中对此案的记载都指出，安汉是在1943年“五月” &lt;strong&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[7]&lt;/sup&gt;&lt;/strong&gt; 、“端阳节” &lt;strong&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/strong&gt; 、“端午节后” &lt;strong&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[5]&lt;/sup&gt;&lt;/strong&gt; 被南郑县县长孙宗复带兵抓走的，但本文考察了农林部档案后发现，孙宗复带兵前往黎坪的时间是8月25日，扣押安汉的时间是8月28日。随后的9月3日，鄂陕甘边区警备总司令祝绍周给农林部部长沈鸿烈发去了电报，&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;黎坪垦区武装庇种鸦片，即中心区之石马山、郑家院亦到处种烟，经先后派张高级参谋、魏专员及南褒沔宁四县长率队搜割拍照备查并先将该局长安汉监视，请速派员星夜来汉会同办理善后 &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;9月4日沈鸿烈回复祝绍周，“安汉包庇种毒至为骇异，将派本部视察团长陈惕庐赶赴黎坪调查” &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt; 。同时，沈鸿烈致电陕西省主席熊斌，转发了祝绍周来电，请其详查真相。&lt;/p&gt;
+
+&lt;p&gt;9月5日，蒋介石发电报给沈鸿烈，言辞愤怒。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;据祝绍周司令电呈，黎坪垦区管理局局长安汉利用公款酿酒图利，包庇兵役抗粮抗捐，养匪自大，剥削垦民，包庇种烟，经派员查明该区中心农场石马山、郑家院等地种烟十五处，共计二百余亩之多，并有垦民及武装警兵守护，已将烟地拍照，烟苗运汉等语，查该局长安汉竟敢武装包庇种烟，自应尽法严惩，以维禁地，收该安汉及全案人犯物证，解渝交军法总监部审讯，免职安汉，查何人保荐 &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;9月6日，沈鸿烈接到黎坪垦区职员安仲峨（安汉兄长）从西安发来的电报，其中详细陈述了案件发生的经过。由此可知，农林部一早就已知道此案另有隐情，沈鸿烈当日即将此文转发给陕西省主席熊斌，请其并案详查，并派国家总动员会副处长董沐曾前往黎坪代理局务。安仲峨的电文如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1943年8月25日，南郑县长孙宗复突率武装团众千余人，及电台炮械兵种向黎坪垦区急进，并将邮电封锁。抵黄官岭后又控报祝总司令以垦区戒备森严请准加派武力二营，26日入山遇川境过路烟犯即诬为垦民，28日又将南郑垦区办事处员工扣押，交通断绝，垦民逃散，生命危在旦夕。查垦区禁政且经呈请钧部转知川陕省府并分电第六区专员公署办理，其在垦区附近烟毒亦经铲拿有案。孙县长向因垦区划界纠纷与安局长有隙，今竟藉烟毒问题诬陷垦区，统兵入山，封锁交通。深恐事情扩大，特急电钧部迅赐呈院，并电陕省政府转饬依法办理，以维垦务。职安仲峨叩，未艳 &lt;strong&gt;&lt;sup&gt;[27]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;三-罪名考证&#34;&gt;(三) 罪名考证&lt;/h3&gt;
+
+&lt;p&gt;安汉到底被冠以什么样的罪名？各种文献的记载并不统一。例如，《陕西省志·人物志》将此案命名为“黎坪垦区武装种植鸦片案” &lt;strong&gt;&lt;sup&gt;[5]&lt;/sup&gt;&lt;/strong&gt; ，《南郑县志》中记载汉中警备司令部以“武装种烟” &lt;strong&gt;&lt;sup&gt;[7]&lt;/sup&gt;&lt;/strong&gt; 的罪名将安汉逮捕监禁，《汉中地区志》说安汉“私种鸦片” &lt;strong&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/strong&gt; ，《黄龙县志》更是指出安汉“通共” &lt;strong&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/strong&gt; 。那么事实到底如何？&lt;/p&gt;
+
+&lt;p&gt;根据农林部档案，安汉1943年9月被捕后，鄂陕甘边区警备司令部对其进行了审讯，并起草了《黎坪垦区管理局局长安汉包庇种烟及贪污案侦察报告》，其中详细记录了审讯结果。侦查报告共分“烟案”和“贪污”两部分。烟案部分由五个单独案件组成，包括1940年的“纵放贩卖鸦片犯陈朝祥一案”和“纵放贩烟犯谭振云、李洪元、罗光寿等一案”，1941年8月的“包庇郭福春、郭福元种烟案”，1942年8月的“包庇警卫队长王朝恩等种烟案”，以及1943年夏秋的“包庇垦殖队长郭福春等种烟案”。贪污部分包括以下罪状，“强征食粮”、“勒征柴炭”、“强征民夫”、“违禁酿”、“挪用公款开设木厂”和“捏造报销侵吞经费” &lt;strong&gt;&lt;sup&gt;[36]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+
+&lt;h3 id=&#34;四-死亡日期&#34;&gt;(四) 死亡日期&lt;/h3&gt;
+
+&lt;p&gt;安汉卒日，所有史料的记载都是1943年10月27日。然而笔者考证出安汉的确切死亡日期应为1943年11月3日。最直接的证据来源于当时在西安出版的报纸。1943年11月6日，西安三大报纸《西京日报》、《西北文化日报》和《秦风工商日报》分别转发了中央社关于安汉死讯的电文 &lt;strong&gt;&lt;sup&gt;[37]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[38]&lt;/sup&gt;&lt;/strong&gt;  &lt;strong&gt;&lt;sup&gt;[39]&lt;/sup&gt;&lt;/strong&gt; 。《西京日报》原文如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;【南郑三日电】前黎坪垦区管理局长安汉，于垦区内包庇纵容种植鸦片，经最高当局令，派军法执行副总监秦德纯，偕审判组长莅汉，审讯属实，电奉委座批准就地正法。秦副总监于奉电后，当转命川陕甘边区总司令部代为执行，总部当于三日晨五时，将该安汉绑赴汉中西关处决。（中央社） &lt;strong&gt;&lt;sup&gt;[37]&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;此外，农林部的档案也能够佐证。安汉被羁押后，陕西省民政厅户政督导员王黎昌受命查勘黎坪垦局烟苗情况，于10月14日到达汉中。案件结束后，王黎昌将该案详细处理经过写成报告发给重庆农林部，其中关于安汉死亡日期的记录如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;该案于十月二十三日晨公开审判，职被邀做省政府代表参加观审，当晚审结，执法总监部即电请委员长核示，于十一月一日电复到汉，秦副总监等于二日离汉返渝，三日由边区总部遵命将安汉执行枪决，并将其罪状布告周知 &lt;strong&gt;&lt;sup&gt;[36]&lt;/sup&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.  《陕西省志·农牧志》，陕西：陕西人民出版社，1993年，第692-693页。
+2. 《汉中地区志》，陕西：三秦出版社，2005年，第2009-2011页。
+3. 《黄龙县志》，北京：陕西人民出版社，1995年，第637-638页。
+4. 《陕西近现代名人录》，陕西：西北大学出版社，1991年，第88-91页。
+5. 《陕西省志·人物志》，陕西：陕西人民出版社，2005年，第480-481页。
+6. 《陕西省志·烟草志》，陕西：陕西人民出版社，2006年，第566-567页。
+7. 《南郑县志》，北京：中国人民公安大学出版社，1990年，第668页。
+8. 《史浩然；安汉》，1931年2月-1936年2月，实业部档案17-02-051-03，台湾中央研究院近代史研究所档案馆藏。
+9. 《南郑县文史资料·第五辑》，中国人民政治协商会议陕西南郑县委员会文史资料研究委员会编，1988年10月，第1页，汉中市档案馆藏。
+10. 《陕西名人—西部开发先行者安汉》，中国人民政治协商会议陕西南郑县委员会文史资料研究委员会编，2007年2月，第2页，汉中市档案馆藏。
+11. 《陕西省志·教育志》，陕西：三秦出版社，2009年，第325页。
+12. 周永珍：《留法纪事：20世纪初中国留法史料辑录》，北京：国家图书馆出版社，2008年，第322页。
+13. 郑名桢：《留法勤工俭学运动》，太原：山西高校联合出版社，1994年，第461页。
+14. 《南锡农学与殖民学院通报》，1923年12月，第227页，法国国家图书馆藏。
+15. 《南锡农学与殖民学院通报》，1924年12月，第286页，法国国家图书馆藏。
+16. 《南锡农学与殖民学院通报》，1925年12月，第318页，法国国家图书馆藏。
+17. 《南锡农学与殖民学院通报》，1936年6月，第694页，法国国家图书馆藏。
+18. 《新中国农学会会务报告（第二次）》，1925年，里昂大学图书馆藏。
+19. 《本厅职员名册及书记考试名册》，1929年2月，陕西省建设厅档案72-1-172，陕西省档案馆藏。
+20. 《陕西省教育厅训令第四二二号》，《陕西教育周刊》，1930年6月，第3卷，第29期，第16页。
+21. 《农专筹委会及筹备处聘书底稿、聘各单位负责人及备案专家》，1934年， 西北国立农学院档案84-2-24，陕西省档案馆藏。
+22. 《农专1934年度教职员名册》，1935年7月， 西北国立农学院档案84-2-112，陕西省档案馆藏。
+23. 《一九三五年农专聘书》，1936年， 西北国立农学院档案84-2-106，陕西省档案馆藏。
+24. 《西农高职1936年度教职员一览表》，1937年4月， 西北国立农学院档案84-2-231，陕西省档案馆藏。
+25. 《私立中法大学民国十四年到廿四年的聘书登记簿》，1925年1月1日到1935年12月31日，J026-001-00044，北京市档案馆藏。
+26. 《私立金陵大学农学院概况》，1930年至1931年，MGTS/044335，国家图书馆微缩文献阅览室藏。
+27. 《黎坪管理局局长安汉被控经过及处理》，1943年9月，农林部档案20-26-018-17，台湾中央研究院近代史研究所档案馆藏。
+28. 《农专筹委会筹备处聘书底稿》，1934年7月， 西北国立农学院档案84-2-58，陕西省档案馆藏。
+29. 《国立西北农林专校勘定农场》，《农业周报》第3卷第4期，1934年。
+30. 安汉：《对于西北农林专科学校设施之意见》，《开发西北》第1卷第2期，1934年。
+31. 《国立西北农林专科学校筹备经过及现况》，《西北问题》第2卷第13/14期，1935 年。
+32. 《黎坪垦区人事》，1939年8月-1941年1月，经济部档案18-21-16-007-01，台湾中央研究院近代史研究所档案馆藏。
+33. 《黎坪垦区近况》，《陕行汇刊》，第5卷第1期，1941年2月，第66页。
+34. 王荣华，《危机中的转机：国民政府时期西北经济开发研究》，北京：中国社会科学出版社，2015年，第202页。
+35. 《黎坪垦区管理局局长安汉被控》，1943年7月，农林部档案20-26-018-08，台湾中央研究院近代史研究所档案馆藏。
+36. 《33年3月黎坪垦区管理局局长安汉包庇种烟及贪污案侦察报告》，1944年3月，农林部档案20-26-018—16，台湾中央研究院近代史研究所档案馆藏。
+37. 《安汉就地正法，在黎坪垦区包庇种烟，经秦副总监审讯属实》，《西京日报》，1943年11月6日，第3版。
+38. 《黎坪垦局包庇种烟，局长安汉伏法，昨晨在汉中西关执行》，《西北文化日报》，1943年11月6日，第2版。
+39. 《安汉伏法》，《秦风工商日报》，1943年11月6日，第3版。
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>安汉生平事迹考略</title>
+      <link>http://zhaochaoyue.com/publication/person-re-identification/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/publication/person-re-identification/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>我是如何成为前端开发工程师的？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/5-2/</link>
+      <link>http://zhaochaoyue.com/post/5-2/</link>
       <pubDate>Wed, 02 May 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/5-2/</guid>
-      <description>我本科学的法学，毕业后在北京一家央企做了5年国际工程市场开发，之后读了2年MBA，去年毕业后，我在家自学了7个月，上个月我入职了一家游戏公司</description>
+      <guid>http://zhaochaoyue.com/post/5-2/</guid>
+      <description>&lt;p&gt;我本科学的法学，毕业后在北京一家央企做了5年国际工程市场开发，之后读了2年MBA，去年毕业后，我在家自学了7个月，上个月我入职了一家游戏公司做前端开发，圆满完成了我的计划：30岁之前完成转行。&lt;/p&gt;
+
+&lt;p&gt;人生总是充满了机遇和挑战。每个人都会遇到各种困难，体验各种艰辛和无奈，但只要你有上进心和一点冒险精神，就一定能抓住宝贵的机会。&lt;/p&gt;
+
+&lt;p&gt;不到一年前我还在官僚气息浓厚的央企等待下班，那几年因为被领导边缘化，手里的业务全被分走了，最后一年多甚至一点事也没有，在我受够了领导的欺压，当着全办公室的人拍了他桌子，指着他鼻子骂之后，他气得再也不跟我说一句话，因为我是正式员工也无法开除我。所以我得以享受每天自由的时间，我把全部时间都投入了研究生期间的论文写作，三篇论文都顺利完成了。去年毕业后，我义无反顾的选择了离开这个像垃圾场、焚尸炉、养老院一样的早该破产的央企——中钢集团。&lt;/p&gt;
+
+&lt;p&gt;我的志向是中钢这样的破公司无法包容的。我入职3年就学会了全部业务，自此再无法进步，反而是卷进了一个又一个黑暗的政治泥潭，体验了中国式管理的丑陋肮脏，也明白了国企制度的巨大落后和根本性缺陷。&lt;/p&gt;
+
+&lt;p&gt;我一直相信自己是正确的，即使受到领导的孤立和栽赃，即使部门里所有同事都不愿理我的时候，我都没有怀疑过自己。我最自豪的就是当着所有人的面拍了领导的桌子，指着他鼻子骂了好几句，直到被同事拉开。就是这个领导，因为财务问题，今年初被外审人员查了，已经撤职。部门又换了一个新领导上台，只要想想就能知道之前受宠的那些同事的下场了，这些鼠目寸光的墙头草们实在是可悲又可笑。&lt;/p&gt;
+
+&lt;p&gt;来北京工作以后，我一直保持着巨大的上进心并持续学习着。我喜欢新鲜事物，尤其是新科技。那几年，每一期的苹果keynote大会我都会下载到iPad上反复观看，也会第一时间去买《乔布斯传》并津津有味地反复阅读，印象很深的是，一次晚上聚会，我正好带着几本刚收到的网购书准备拿回家，其中就有《乔布斯传》，一个女同事很不解地问我这有啥好看的，我回答道：我想看看别人是如何过完自己的一生的。我的办公室柜子里放了上百本书，有几次换工位，我用超市的购物车装了满满两车书，看到的同事无不惊异。我却每次都会不好意思，反而会感觉自己有些太另类了。&lt;/p&gt;
+
+&lt;p&gt;我的想法很多，我曾经想放弃一切，做一个业余观测天文学家，也想过投身学术事业，做一个自由的学者，不过最后我还是选择了互联网开发，因为它真的很有趣，不但有前途待遇也很好，我更向往的是国外科技公司的那种鄙视权威的精神。为此我专门做了一期电台节目，总结了为什么要当一名web开发工程师。&lt;/p&gt;
+
+&lt;p&gt;我是一个彻头彻尾的文科生，一个兴趣广泛的幻想者。我花了半年时间在家认真学习了web前端开发，顺利的找到了一个不错的公司。我知道肯定有很多人也在考虑转行，或者是在国企里忍受煎熬，我愿意分享我的学习历程，如果能启发到一个两个朋友的话，也算功德无量了。&lt;/p&gt;
+
+&lt;p&gt;web前端是一个入门非常友好的领域，你只需要一两个月就能学会HTML、CSS和JavaScript基础知识，如果脱产学习的话，甚至只要两三周就能学完。网上的入门教程数不胜数，大多数都是免费的。推荐几个我常去的：Freecodecamp，Codecademy, Udacity, Udemy&lt;/p&gt;
+
+&lt;p&gt;你也可以直接去看文档，把w3school和MDN的基础文档刷上几遍就可以算是入门了。之后就可以开始打造自己的作品集（portfolio），这对于零基础的同学非常重要，你能从这些项目中得到宝贵的经验，不过这也是个非常花费时间和精力的事。&lt;/p&gt;
+
+&lt;p&gt;在我的学习历程中，走过一段弯路。学完基础后，我自以为是的认为JavaScript很简单，于是开始深入学习CSS，啃下了一本最新的全英文的CSS3权威指南，后来又开始捣鼓个人网站，一开始用WordPress做网站，后来转向Hugo做静态网站，这些是我的兴趣点，虽然多学点东西没坏处，可是却并不利于迅速找到工作。&lt;/p&gt;
+
+&lt;p&gt;后来我发现自己根本没有深入理解JavaScript，于是开始大量看书，印象最深的是那本《JavaScript面向对象精要》，反复看了五六遍，又写了一篇读书笔记，之后才豁然开朗，感觉自己真是井底之蛙。&lt;/p&gt;
+
+&lt;p&gt;恶补了一个月左右的JS后，就开始边刷面试题边找工作了。刷面试题是非常重要的，可以说直接决定面试成败。当然理解原理是前提，不过我的经验是把一些常见的题背下来，这样就可以在面试时候从容地脱口而出。如果遇到笔试题，则只能通过自己的理解和积累来应对了。我背过的题且面试问到过的有：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如何提高web性能？&lt;/li&gt;
+&lt;li&gt;H5新特性有哪些？&lt;/li&gt;
+&lt;li&gt;get和post方法有什么区别？&lt;/li&gt;
+&lt;li&gt;CSS3选择器有哪些？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这些问题都可以单独深入研究，不过应付面试只需要把主干答案背下来就行了，细节的了解就行。&lt;/p&gt;
+
+&lt;p&gt;我面试过两家问算法题的，这对前端新手并不友好，我答的都不太好。所以完全可以熟悉下常见的算法题，万一你中意的公司问到了呢？我被问到的题是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;用JS写出两种数组去重的方法。（在白板上答题）&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;用JS破译莫斯代码。（面试官笔记本登录codewar网站，直接在上面做。要先读一长段问题说明，所以相当于同时考验英文阅读理解）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;我一共面试了8家公司，只有两家给了offer，可以说面试也是一个调整自己学习方向和状态的好机会，多参加几次就可以熟悉一些套路，也可以增加面试经验，提高面试成功率。&lt;/p&gt;
+
+&lt;p&gt;零零散散说了不少，最后再讲三条我认为对我顺利转行很重要的东西。&lt;/p&gt;
+
+&lt;p&gt;第一个是英语阅读和听力水平。由于我这七八年一直在不断学习英语，现在看英文博客和YouTube视频没有压力，这也帮助我更有效率的学习web开发，我订阅了frontendfocus和freecodecamp的邮件周报，每次都会认真阅读，此外一有空也会看订阅的medium daily digest。这样真的提高很快。当遇到问题时，我首先会用英文在Google上搜，其次会用中文在谷歌上搜，最后才用中文在百度上搜，事实证明英文Google几乎每次都能找到解决方法，我这样的新手遇到的问题，很多人都遇到过并分享出来了，国外社区在分享知识这一点上做的太好了。&lt;/p&gt;
+
+&lt;p&gt;第二个就是好奇心。我属于那种天生好奇心特别强的人，小时候会不停的问爸爸妈妈各种问题，直到她们不耐烦不理我。学习web开发也是，每天都会去GitHub上看看有什么新东西，经常会被某个repo吸引，然后花时间去深入了解其功能和使用方法。在Twitter上也关注了一大堆技术大牛，新东西总会让我有学习的欲望，这也是我能够一直进步的一个原因。&lt;/p&gt;
+
+&lt;p&gt;最后一个就是耐得住寂寞的心。学习编程是需要静下心来认真思考的，尤其是理解编程原理的时候。我经常会花很多时间研究一段代码，遇见不懂的立刻各种搜索，或者各种翻书。时间长了难免会觉得枯燥，夜深人静的时候写代码也会觉得很孤单，这就需要家人朋友的支持了，多和朋友聊聊天，准备面试时候请朋友考考自己，这样会让自己心态更好。&lt;/p&gt;
+
+&lt;p&gt;web开发是一个日新月异的领域，每天都有新的技术出现，我觉得这简直就是新人最好的福利，因为你永远都会和互联网老兵处于同一起跑线去学习新东西，而每一项新技术都是你最好的反超机会，不是吗？&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>过敏 &#43; 编程 = ？？？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/4-8/</link>
+      <link>http://zhaochaoyue.com/post/4-8/</link>
       <pubDate>Sun, 08 Apr 2018 17:42:26 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/4-8/</guid>
-      <description>最近这一个多月，我又一次体验了过敏的可怕，呼吸困难和低烧让我无比难受，我一直不相信这是过敏导致的，去查了呼吸科、耳鼻喉，甚至还做了CT，可是</description>
+      <guid>http://zhaochaoyue.com/post/4-8/</guid>
+      <description>&lt;p&gt;最近这一个多月，我又一次体验了过敏的可怕，呼吸困难和低烧让我无比难受，我一直不相信这是过敏导致的，去查了呼吸科、耳鼻喉，甚至还做了CT，可是都查不出来啥大问题，于是再次怀疑是不是过敏，又去世纪坛医院过敏科复查，医生听了症状后非常肯定的说就是过敏，说每个人症状不同，有的人可能就是流鼻涕，像我这样的属于严重的，而且低烧也很常见。（后来我发现国外把花粉过敏叫Hay Fever），医生开了两种药让每天早晚按时吃，我将信将疑又查了一次过敏源，之前对柏树超级过敏的指标依然非常高，无奈只有老实吃药，减少外出。好在吃了药果然有效果，我也乐观了些。&lt;/p&gt;
+
+&lt;p&gt;过敏导致我最近效率比较低，症状严重的那两周几乎啥也做不了，每天身体上忍受着呼吸困难和浑身不适，心里还在担心着是不是得了什么绝症，期待着去医院能检查出来或者自己能好，所以那时候一天就是郁闷地躺在沙发上看电影。&lt;/p&gt;
+
+&lt;p&gt;有一部电影印象非常深刻，叫《背靠背，脸对脸》，是西安电影制片厂94年出品的一部讽刺片，导演是杨建新，牛振华主演，讲述了文化馆代馆长如何绞尽脑汁升职的故事。影片里处处展现了中国社会的潜规则和职场上的勾心斗角，看完真的大呼精彩，其中有一幕是代馆长王双立在挤走了调来的新馆长老马后，立即和他老婆去老马家问候送礼，还邀请老马和文化馆员工一起去外地旅游。这一幕真的太深刻了，电影的剧照也是王双立夫妇和老马这个场景，真的体现出了“背靠背，脸对脸”的精髓，就是这种两面三刀、虚情假意让我想起了之前中钢的部门领导的嘴脸，二十多年过去了中国这种社会环境真的是一点也没变，可悲。&lt;/p&gt;
+
+&lt;p&gt;这几天把 &lt;a href=&#34;http://www.anhan.org.cn&#34; target=&#34;_blank&#34;&gt;安汉纪念馆&lt;/a&gt; 用Facebook开发的开源项目Docusaurus重建了，没有了那些动画和效果，页面清爽了不少，最主要是用七牛云CDN把文件托管了，性能得到了极大提高。&lt;/p&gt;
+
+&lt;p&gt;这个网站的资源是我花费两年多业余时间往返于各大档案馆、图书馆收集而来，去年2月还专门前往台湾中央研究院近代史档案馆花了3天时间查档拍照，其中还包括通过法国的热心华人、汉学家找到的法国资料，一句话就是。得来费了老大功夫。&lt;/p&gt;
+
+&lt;p&gt;我去年基于这些史料写出了一篇历史学术论文《安汉生平事迹考略》已经被《渭南师范学院学报》录用，我的工作也算告一段落。去年开始建这个网站时候就把不少资料放上去了，这次我终于决定完全公开我收集到的所有文件，我想这应该就是开源精神吧。&lt;/p&gt;
+
+&lt;p&gt;过敏症好转后，我继续开始深入学习web开发技术，最近在读这些书：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#39;https://book.douban.com/subject/26382780/&#39; target=&#39;_blank&#39;&gt;JavaScript设计模式与开发实战&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://book.douban.com/subject/26599677/&#39; target=&#39;_blank&#39;&gt;高性能Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://book.douban.com/subject/27072230/&#39; target=&#39;_blank&#39;&gt;深入理解ES6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://book.douban.com/subject/30143702/&#39; target=&#39;_blank&#39;&gt;Javascript忍者秘籍（第2版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://book.douban.com/subject/1827702/&#39; target=&#39;_blank&#39;&gt;点石成金&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;想做的项目特别多，学习计划列了一大堆，可是每天的时间真的不够用，感觉很快就过去了，晚上睡觉时候经常会觉得一天啥也没干很不想睡，于是思考下明天要做啥（失眠一会），再睡不着了就听听ASMR。&lt;/p&gt;
+
+&lt;p&gt;最后分享一些最近看到的句子共勉：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Be yourself; everyone else is already taken.
+&amp;mdash; Oscar Wilde&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t cry because it&amp;rsquo;s over, smile because it happened.
+&amp;mdash; Dr. Seuss&lt;/p&gt;
+
+&lt;p&gt;Life exercise: Don&amp;rsquo;t spend money or sleep in real bed for as long as possibel.
+&amp;mdash; yan&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>
       <title>JS闭包到底是什么包？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/2-17/</link>
+      <link>http://zhaochaoyue.com/post/2-17/</link>
       <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/2-17/</guid>
-      <description>先来看看文献中的定义： JavaScript权威指南： &amp;ldquo;函数定义时的作用域链到函数执行时依然有效。&amp;rdquo; MDN技术文档： &amp;</description>
+      <guid>http://zhaochaoyue.com/post/2-17/</guid>
+      <description>
+
+&lt;h3 id=&#34;先来看看文献中的-定义&#34;&gt;先来看看文献中的&lt;strong&gt;定义&lt;/strong&gt;：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/10549733/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;JavaScript权威指南&lt;/strong&gt;&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;函数定义时的作用域链到函数执行时依然有效。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;MDN技术文档&lt;/strong&gt;&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;闭包是函数和声明该函数的词法环境的组合。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;你不知道的JavaScript&lt;/strong&gt;&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;”当函数可以记住并访问所在的词法作用域时，就产生了闭包，即使函数是在当前词法作用域之外执行。“&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://css-tricks.com/javascript-scope-closures/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;CSS-Tricks&lt;/strong&gt;&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;当你在一个函数内创建了另一个函数时，你就创建了一个闭包。内部的函数就是闭包。这个闭包通常会被返回，所以你能够在未来使用外部函数的变量。 &amp;ldquo;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;想深入了解闭包-首先要搞清这些概念&#34;&gt;想深入了解闭包，首先要搞清这些概念：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;词法作用域&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;顾名思义，就是定义在词法阶段的作用域。无论函数在哪里调用、何时被调用，它的词法作用域始终由函数被声明时所处的位置决定。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;函数作用域&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;JS主要分全局作用域和函数作用域，函数作用域是根据“最小暴露”原则设计出来的，目的是为了隐藏私有变量，规避冲突。因为外部作用域无法访问函数内部的任何内容。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;内存垃圾回收机制&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;内存的生命周期有三步：分配内存、使用内存、不需要时释放内存。垃圾回收就是根据一定的算法来大体判定“不再需要”的内存，注意它具有局限性。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;举几个例子&#34;&gt;举几个例子&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;例子1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function foo() {
+    car a = 2;
+    
+    function bar() {
+        console.log(a);
+    }
+    
+    return bar;
+}
+
+var baz = foo();  /* 这一步相当于把bar赋值给了baz */
+
+//下面这一步相当于执行了bar(),bar()引用了foo()的作用域，
+//所以foo()没有被内存管理系统当作垃圾回收，bar()对该作用域的引用就叫闭包。
+baz(); /*  输出2  */ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;例子2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function makeAdder(x) {
+    return function(y) {
+        return x + y;
+    };
+}
+
+//下面这步相当于把内部函数赋值给了一个新值，
+//并指定了外部函数的参数x的值，但内部函数y的值还没有指定。
+var add3 = makeAdder(3);  
+var add9 = makeAdder(9);
+
+//最后这一步指定了内部函数的参数y的值，因此就可以返回x + y的值了。
+console.log(add3(2));  /* 5 */ 
+console.log(add9(2));  /* 11 */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;例子3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;//立即调用函数的返回值赋值给myCounter
+var myCounter = (function() {
+                        var counter = 0;
+                        return function(){ return counter++;};
+                        }());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;自己的话总结&#34;&gt;自己的话总结&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript闭包就是一个母函数内部的子函数保存了对母函数的私有变量的引用，从而避免母函数的私有变量被内存垃圾回收机制清除掉，相当于创造了一种私有变量永久储存的方式，有效避免了私有变量污染全局变量。子函数的这种引用可以在任何地方使用，即使不在最初定义的词法作用域里也可以实现。这种引用机制就是闭包。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>
       <title>2018年,你为什么应该成为一个web开发工程师？</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/2-2/</link>
+      <link>http://zhaochaoyue.com/post/2-2/</link>
       <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/2-2/</guid>
-      <description>本期节目翻译自YouTube视频 Why You Should Become A Web Developer in 2018 本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。 不过在此之前，我们先来做</description>
+      <guid>http://zhaochaoyue.com/post/2-2/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;本期节目翻译自YouTube视频 &lt;a href=&#34;https://www.youtube.com/watch?v=Szq9oCf6Uq8&#34; target=&#34;_blank&#34;&gt;Why You Should Become A Web Developer in 2018&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。&lt;/p&gt;
+
+&lt;p&gt;不过在此之前，我们先来做个简要的介绍，如果你点进来收听这个节目了，那么你很可能知道web开发工程师大概是做什么的，不过如果你不知道，如果你是随机点进这个节目的，那么让我告诉你：web开发工程师是一个专注于开发网站和网页应用的程序员，仅此而已，那么你现在知道web开发工程师是干嘛的了。&lt;/p&gt;
+
+&lt;p&gt;我们继续聊，这里是我总结出的成为一个web开发工程师的五大原因。&lt;/p&gt;
+
+&lt;h4 id=&#34;第一个原因-高薪&#34;&gt;第一个原因：高薪&lt;/h4&gt;
+
+&lt;p&gt;很多人避免谈论这个话题，首先金钱背后有很多恶名，但是我想为它澄清一下，我们所有人都喜欢金钱，我们都需要金钱，更多金钱代表更多安全，更多自由，更多时间，每个人都需要赚钱谋生，web开发恰好就是最赚钱的职业之一。&lt;/p&gt;
+
+&lt;p&gt;web开发工程师在美国的平均年薪达到87,000美金，而且不同地区会有所波动，如果你像我一样生活在芝加哥，平均年薪是78,000美金，但是如果你生活在加州，硅谷的所在地，很多大型公司在那里起步，那里的年薪很多都是从10万美金起的，你看到很多程序员赚到20万美金年薪也不会觉得意外。我听到很多很多故事，关于人们赚到20万或者更多，事实上三天前我读到了一个故事，关于一个叫Sikh的家伙，他在Airbnb拿到25万美金，他并没有很丰富的经验，只有大概两三年的经验，但他拿到了25万美元年薪，这真是了不起。&lt;/p&gt;
+
+&lt;h4 id=&#34;第二个原因-不需要文凭&#34;&gt;第二个原因：不需要文凭&lt;/h4&gt;
+
+&lt;p&gt;好，金钱说的差不多了，我们继续说第二个原因，那就是web开发不需要一个大学文凭。如果你想要进入法律行业，你必须去大学读法学专业，然后你可以成为一名律师，如果你要进入医药行业，同样要去大学读四年药学，然后当三年实习医生，之后你才能作为一名医生开始你的工作。我想应该是这样吧。&lt;/p&gt;
+
+&lt;p&gt;但是当谈到web开发和编程，文凭绝对不是一个必要条件，好吧，这是一个你可以做出的选择，当今世界，由于有互联网，你可以学到成为web开发工程师需要掌握的所有东西，有很多慕课网站，很多教程，有YouTube视频，YouTube上有太多东西供你学习，有一大把的在线资源，像Udacity、Coursera、MIT、freecodecamp、code academy，有很多很多网站可以供你学习编程。&lt;/p&gt;
+
+&lt;p&gt;你还可以参加编程培训班。我知道很多培训班毕业生找到了大公司的好工作，赚到很多钱。所以说到web开发，它让你有的可选，你并不需要像其他人一样专门去读一个大学的计算机专业。不过这是个具有争议的话题，很多科班出身的程序员不喜欢听人这样说，因为你知道他们感觉到他们在大学里什么也没学到，我不是说你应该放弃你的学业，如果你想去大学拿到那个文凭，去吧，因为当你应聘工作的时候，文凭将永远成为你的加分项。但是我这里说的是，在这个行业里，你有选择权，因为用人公司更关心你能做什么，而不是你在某所大学有什么文凭。&lt;/p&gt;
+
+&lt;h4 id=&#34;第三个原因-工作机会多&#34;&gt;第三个原因： 工作机会多&lt;/h4&gt;
+
+&lt;p&gt;第三个原因是，市场上有海量的工作机会，对优秀的开发人员有一个巨大的缺口，你永远不会担心找不到工作。根据美国劳工部的统计数据，到2020年，美国大约有100万个电脑编程的工作缺口。这是多么疯狂啊，这是1后面6个0啊，所以你永远不用担心这个，因为有大量工作在那等着你。随着我们的世界不断发展，科技会保持快速前进，更多的事物将被程序化，在线教育取代了学校的教授，法律软件取代了律师和会计，所以最起码在很长一段时间里，用人市场将保持对程序员的高需求。&lt;/p&gt;
+
+&lt;h4 id=&#34;第四个原因-自己当老板&#34;&gt;第四个原因： 自己当老板&lt;/h4&gt;
+
+&lt;p&gt;第四个原因，这个原因让我非常兴奋，那就是，你将会成为你自己的老板。如果你不想为一个公司工作，你不必勉强自己，你可以成为你自己的老板。如果你想成立自己的web开发中介，或者做一个自由职业者，你不必再每天七点起床，8点出门，在早高峰开一个小时车，一半的时间在担心自己会迟到。所以你不必那样做，你可以在你想工作的时候工作，自己决定做什么、怎么做。&lt;/p&gt;
+
+&lt;p&gt;自由职业者让我最喜欢的是，你从事的是非常具有创造性的工作，如果你不想做一个很无聊的项目或者不能让你产生共鸣的项目，你可以不做。你可以挑那些你想做的事情去做，你可以挑选自己喜欢的人共事，你可以真正的发挥自己的创造力，你甚至不需要一间办公室，你只需要你自己的笔记本，这就够了。你可以去星巴克，在哪里做一天开发，这就是我长期以来做的事。我会去星巴克，点一大杯冰摩卡，然后为我的项目写一天代码，有时候我回去Dunkin&amp;rsquo;，有时候我会去Red Bull，或者直接去图书馆，所以你可以选择你想去的地方，所有的地方都是你的办公室，只要那里有网络，桌子和电源，就是这样。&lt;/p&gt;
+
+&lt;h4 id=&#34;第五个原因-超级有趣&#34;&gt;第五个原因： 超级有趣&lt;/h4&gt;
+
+&lt;p&gt;最后一个，也是我最喜欢的原因。web开发超级超级有趣。 有一些事我很喜欢做，比如和朋友出去做一些疯狂的事，或者吃好吃的食物，但他们必须超级超级辣。我喜欢喝红牛或者咖啡，然后几个小时几个小时的不停写代码。&lt;/p&gt;
+
+&lt;p&gt;有关web开发和编程的一件事是，你永远也不会觉得无聊。永远有新东西出来需要你去学习，永远有新的挑战去检验你，你永远需要成长。别误解我，有时候确实压力挺大，但是这是好的压力，人们认为压力是不好的，但是压力也有好坏之分，好的压力是你知道你在做的事，这些事在短期内是一种压力，但当你完成了他们，你会得到一种满足感，我超爱那种感觉，当我完成了一个项目或者解决了一个编程挑战，我就感觉到超级爽，没有什么能比那种感觉更好的了。&lt;/p&gt;
+
+&lt;h4 id=&#34;另一个原因-不依赖os&#34;&gt;另一个原因：不依赖OS&lt;/h4&gt;
+
+&lt;p&gt;除了以上五个原因，事实上我还有另外一个原因，你应该成为web开发工程师的另外一个原因是，你不需要依赖操作系统。如果你正在开发安卓应用，比必须学习java，那ios怎么办，你得要学ios语言像swift，如果你要开发Mac的应用，你必须同时开发Windows的版的应用，当然现在有很多框架让这些事变得简单多了，但是问题的实质是，你仍然需要把它做好，因为有不同的操作系统不同的平台。&lt;/p&gt;
+
+&lt;p&gt;但是web开发，可以应用于任何设备，不管是手机、平板、笔记本、台式机，你只要打开浏览器，输入网页地址，boom，他就在那了。你的网页或者应用专门使用JavaScript开发，是我最爱的语言。另外，你可以开发移动应用，使用react和react native，开发桌面应用用electrons，所以我认为能够开发移动和桌面应用使用一个web语言像JavaScript，这超级酷，所以如果你还是不想成为一个web开发工程师，我真不知道该说什么了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;本地收听：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+  &lt;source src=&#34;http://zhaochaoyue.com/audio/dian-tai-1.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  抱歉，您的浏览器不支持音频播放哦，请访问喜马拉雅听书专辑&lt;a href=&#34;http://www.ximalaya.com/34993184/album/12419451?feed=reset&#34; target=&#34;_blank&#34;&gt;《web开发电台》&lt;/a&gt;收听
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;关注电台专辑：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ximalaya.com/34993184/album/12419451&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/25659205/35661314-4c66741e-074c-11e8-92c3-81c4e74b064f.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;喜马拉雅FM&#34; title=&#34;喜马拉雅FM&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>15分钟了解JS面向对象精要</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-29/</link>
+      <link>http://zhaochaoyue.com/post/1-29/</link>
       <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-29/</guid>
-      <description>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧</description>
-    </item>
+      <guid>http://zhaochaoyue.com/post/1-29/</guid>
+      <description>
+
+&lt;p&gt;本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧对精要二字。我反复读了三四遍，总结出了以下的知识点。&lt;/p&gt;
+
+&lt;h3 id=&#34;第一章-原始类型和引用类型&#34;&gt;第一章 原始类型和引用类型&lt;/h3&gt;
+
+&lt;h4 id=&#34;一-两种类型&#34;&gt;一、两种类型&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;原始类型&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;通过 &lt;code&gt;var&lt;/code&gt; 赋值给一个变量时，原始类型的值直接保存在变量中。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;布尔 （boolean）&lt;/li&gt;
+&lt;li&gt;数字 （number）&lt;/li&gt;
+&lt;li&gt;字符串 （string）&lt;/li&gt;
+&lt;li&gt;空类型 （null）&lt;/li&gt;
+&lt;li&gt;未定义 （undefined）
+
+&lt;br /&gt;
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;引用类型&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;通过&lt;code&gt;var&lt;/code&gt;赋值给一个变量时，变量并不包含该引用类型的值，而是保存了一个指向该引用类型的对象（实例）的指针。js提供了以下这些内建引用类型。）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Array （数组）&lt;/li&gt;
+&lt;li&gt;Date （日期和时间）&lt;/li&gt;
+&lt;li&gt;Error （错误）&lt;/li&gt;
+&lt;li&gt;Function （函数）&lt;/li&gt;
+&lt;li&gt;Object （通用对象）&lt;/li&gt;
+&lt;li&gt;RegExp （正则表达式）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;二-鉴别类型&#34;&gt;二、鉴别类型&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;鉴别原始类型&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;布尔、数字、字符串、未定义这四个原始类型直接用&lt;code&gt;typeof&lt;/code&gt;鉴别，分别返回“boolean”、“number”、&amp;rdquo;string&amp;rdquo;、“undefined”。&lt;/li&gt;
+&lt;li&gt;空类型需要用三等号与null进行比较 （&lt;code&gt;value === null&lt;/code&gt;），返回true就是空类型，false则不是。
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;鉴别引用类型&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;鉴别函数直接用&lt;code&gt;typeof&lt;/code&gt;，是函数则返回 function&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;typeof&lt;/code&gt;鉴别非函数的引用类型时，都返回object，无法精确鉴别，所以需要用&lt;code&gt;instanceof&lt;/code&gt;来鉴别。（注意：所有引用类型的instanceof Object 都返回true，因为instanceof可以用来鉴别继承类型，所有引用类型都继承自Object。）&lt;/li&gt;
+&lt;li&gt;鉴别数组还可以直接用&lt;code&gt;Array.isArray(&amp;quot;被鉴别的对象&amp;quot;)&lt;/code&gt;来实现，这个方法可以解决不同全局上下文的问题。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;三-原始封装类型&#34;&gt;三、原始封装类型&lt;/h4&gt;
+
+&lt;p&gt;这一章的难点在于理解“原始封装类型”，首先要知道，原始类型不是对象，JavaScript为了让原始类型看上去像对象一样（提供一致性体验），做了以下几件事：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;设置了原始封装类型&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;原始封装类型共有三种：分别是String, Number 和 Boolean，它们都属于“特殊引用类型”。&lt;/li&gt;
+&lt;li&gt;原始封装类型具有方法，比如String的&lt;code&gt;toLowerCase()&lt;/code&gt;、Number的&lt;code&gt;toFixed()&lt;/code&gt;、Boolean的&lt;code&gt;toString()&lt;/code&gt;，String的方法最多，也最常用。&lt;/li&gt;
+&lt;li&gt;当读取字符串、数字或布尔值这三种原始类型时，相应的原始封装类型会被自动创建，并创建出一个原始封装类型的实例（对象），在这个实例上自然可以使用相应的原始封装类型的方法。使用结束后，JavaScript会自动销毁这个实例（自动打包）。
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;原始方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;原始封装类型的创建、生成实例、销毁实例都是在后台执行的，所以表面上看好像是原始类型变成了对象一样可以使用方法。&lt;/li&gt;
+&lt;li&gt;注意：null和undefined没有方法。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;原书的代码例子很好的解释了这个概念：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var name = &amp;quot;Nicholas&amp;quot;
+var firstChar = name.charAt(0);
+console.log(firstChar);    /* 输出 &amp;quot;N&amp;quot; */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面是我们看到的结果，而背后发生的事如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var name = &amp;quot;Nicholas&amp;quot;  /* 这时候就自动创建了原始封装类型String */
+var temp = new String(name);  /* 创建原始封装类型String的实例temp */
+var firstChar = temp.charAt(0);  /* 读取原始封装类型的方法，赋值给firstChar */
+temp = null;  /* 任务完成，销毁实例 */
+console.log(firstChar);  /* 输出 &amp;quot;N&amp;quot; */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;第二章-函数&#34;&gt;第二章 函数&lt;/h3&gt;
+
+&lt;h4 id=&#34;一-函数是什么&#34;&gt;一、函数是什么&lt;/h4&gt;
+
+&lt;p&gt;在JavaScript里，函数就是对象，也就是一个引用类型Function的一个实例。让函数区别于其他对象的是函数自己的内部属性[[Call]]，typeof对含有[[Call]]的对象返回Function。除此之外，函数使用起来和其他对象没有区别，函数就是值。&lt;/p&gt;
+
+&lt;p&gt;函数具有两种字面形式，分别为：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;函数声明：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function add(num1, numb2) {
+    return num1 + num2;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;和&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;函数表达式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var add = function(num1, num2) {
+    return num1 + num2;
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;区别：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;函数声明会被提升至上下文的顶部。&lt;/li&gt;
+&lt;li&gt;函数表达式最后有一个分号。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;二-函数的参数&#34;&gt;二、函数的参数&lt;/h4&gt;
+
+&lt;p&gt;这里有两对概念一定要区分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;形参和实参&lt;/li&gt;
+&lt;li&gt;function.length 和 arguments.length&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先，形参用书中的话来讲就是“函数期望的参数”，也就是声明函数时候写入的参数，形参被保存在函数的length属性中。&lt;/p&gt;
+
+&lt;p&gt;而实参，顾名思义，就是真正传入函数的参数，实参被保存在一个叫arguments的对象中。arguments对象具有两个类似数组的方法：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;arguments.length返回arguments值的个数；&lt;/li&gt;
+&lt;li&gt;arguments[number]返回相应位置的值，类似数组的索引。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意： arguments对象不是数组。&lt;/p&gt;
+
+&lt;p&gt;当实参大于形参的时候，多余的实参不起作用；当形参大于实参的时候，多余的形参会返回undefined&lt;/p&gt;
+
+&lt;h4 id=&#34;三-this对象&#34;&gt;三、this对象&lt;/h4&gt;
+
+&lt;p&gt;this出现在全局作用域的时候，代表全局对象，即浏览器里的window。this出现在函数作用域里的时候，代表调用该函数的对象。&lt;/p&gt;
+
+&lt;p&gt;改变this值的三种方法：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;call()方法&lt;/li&gt;
+&lt;li&gt;apply()方法&lt;/li&gt;
+&lt;li&gt;bind()方法&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;call()方法第一个参数指定一个新的this值，后面的参数是需要被传入的参数。例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function sayNameFaoAll(label) {
+    console.log(label + &amp;quot;:&amp;quot; + this.name);
+}
+
+var person1 = {
+    name: &amp;quot;Li Bai&amp;quot;
+};
+
+var person2 = {
+    name: &amp;quot;Du Fu&amp;quot;
+};
+
+var name = &amp;quot;Shi Ren&amp;quot;;
+
+//这一步相当于直接sayNameForAll(&amp;quot;global&amp;quot;);
+sayNameForAll.call(this, &amp;quot;global&amp;quot;);  /* 输出 &amp;quot;global: Shi Ren&amp;quot; */
+
+//将this指向person1，并传入参数“person1”
+sayNameForAll.call(person1, &amp;quot;person1&amp;quot;);  /* 输出 &amp;quot;person1: Li Bai&amp;quot; */
+
+//将this指向person2，并传入参数“person2”
+sayNameForAll.call(person2, &amp;quot;person2&amp;quot;);  /* 输出 &amp;quot;person2: Du Fu&amp;quot; */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;apply()和call()的工作方式一样，唯一区别是apply()只接受两个参数，第二个参数可以是数组对象或者arguments对象。&lt;/p&gt;
+
+&lt;p&gt;bind()方法是ES5中新加的方法。与之前两个方法的用法基本相似，需要注意的是bind()返回的是一个新函数，通常赋值给一个变量，而call()和appy()则是直接引用原函数。例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function sayNameForAll(label){
+    console.log(label + &amp;quot;:&amp;quot; + this.name);
+}
+
+var person1 = {
+    name: &amp;quot;Li Bai&amp;quot;
+};
+
+//这里赋值给一个新变量
+var sayNameForPerson1 = sayNameForAll.bind(person1);  
+
+//这里执行新函数
+sayNameForPerson1(&amp;quot;person1&amp;quot;);  /* 输出 &amp;quot;person1:Li Bai&amp;quot; */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;第三章-理解对象&#34;&gt;第三章 理解对象&lt;/h3&gt;
+
+&lt;p&gt;定义对象的属性：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第一次定义时，JavaScript在对象上调用内部方法 [[Put]]&lt;/li&gt;
+&lt;li&gt;赋予属性一个新值时，JavaScript调用内部方法 [[Set]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;检测对象是否含有某个属性：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;in 操作符可以查找给定名称的属性，但不区分自有属性和原型属性，如果找到则返回true&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;console.log(&amp;quot;property&amp;quot; in object); /* 返回 true 或 false */
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;所有对象都拥有hasWenProperty()方法，只检测是否存在自有属性&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;console.log(object.hasWenProperty(&amp;quot;property&amp;quot;)); /* 返回 true 或 false */
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;删除对象的某个属性用 delete 操作符，会调用[[Delete]]内部方法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;delete property.object  /* 删除成功返回 true， 失败返回 false */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;属性的特征[[Configurable]]规定了属性是否可以配置，默认是可以配置的。可以通过Object.defineProperty()方法改变：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;Object.defineProperty(object, &amp;quot;property&amp;quot;, {
+   configurable: false   /* 变为不可配置，属性描述对象与属性特征同名，不带中括号，首字母小写。 */
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;属性枚举（遍历），可以用以下两种方法&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;for (property in object)&lt;/li&gt;
+&lt;li&gt;或者ES5引入的 Object.keys()方法，区别是这个方法可以返回属性名的数组&lt;/li&gt;
+&lt;li&gt;属性的特征[[Enumerable]]规定了属性是否可以遍历，默认是可以枚举的。可以通过Object.defineProperty()方法改变：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;Object.defineProperty(object, &amp;quot;property&amp;quot;, {
+    enumerable: false  //变为不可枚举，属性描述对象与属性特征同名，不带中括号，首字母小写。
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：当使用Object.defineProperty()时，一定要给所有属性特征制定一个值，否则会被默认制定为false。&lt;/p&gt;
+
+&lt;p&gt;用Object.defineProperties()可以为一个对象同时定义多个属性。&lt;/p&gt;
+
+&lt;p&gt;获取对象的属性特征可以用 Object.getOwnPropertyDescription(object, &amp;ldquo;property&amp;rdquo;)，会返回一个属性描述对象，包含四个属性（两个通用，两个特殊）&lt;/p&gt;
+
+&lt;p&gt;对象的属性类型有两种：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;数据属性&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数据属性包含一个值&lt;/li&gt;
+&lt;li&gt;拥有通用特征[[Enumerable]]和[[Configurable]]&lt;/li&gt;
+&lt;li&gt;拥有独特的属性特征 [[Value]]和[[Writable]]
+
+&lt;ul&gt;
+&lt;li&gt;属性的值保存在[[Value]]中&lt;/li&gt;
+&lt;li&gt;[[Writable]]是个布尔值，表示该属性是否可以写入
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;访问器属性&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;访问器属性不包含值，而是定义了一个getter和一个setter。访问器属性只需要getter和setter的任意一个，也可以都有。&lt;/li&gt;
+&lt;li&gt;拥有通用特征[[Enumerable]]和[[Configurable]]&lt;/li&gt;
+&lt;li&gt;拥有独特的属性特征[[Get]]和[[Set]]&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;禁止修改对象的方法&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;禁止扩展
+
+&lt;ul&gt;
+&lt;li&gt;使对象无法添加新属性&lt;/li&gt;
+&lt;li&gt;代码是：Object.preventExtensions(object);&lt;/li&gt;
+&lt;li&gt;用Object.isExtensible(object)来检测是否可以扩展&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;封印对象
+
+&lt;ul&gt;
+&lt;li&gt;使对象无法添加新属性、无法删除属性或更改其类型，只能读写。（禁止扩展 + 不可配置）&lt;/li&gt;
+&lt;li&gt;代码是： Object.seal(object);&lt;/li&gt;
+&lt;li&gt;用Object.isSealed(object)来检测是否封印了&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;冻结对象
+
+&lt;ul&gt;
+&lt;li&gt;使对象无法添加新属性、不能删除属性或更改类型、不能给属性赋值。（禁止扩展 + 不可配置 + 不能读写）&lt;/li&gt;
+&lt;li&gt;代码是：Object.freeze(object);&lt;/li&gt;
+&lt;li&gt;用Object.isFrozen(object)来检测是否冻结了&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;第四章-构造函数和原型对象&#34;&gt;第四章 构造函数和原型对象&lt;/h3&gt;
+
+&lt;h4 id=&#34;一-构造函数&#34;&gt;一、构造函数&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;构造函数就是用new创建对象时调用的函数&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function Person(name) {   /* 构造函数首字母大写 */
+    this.name = name;
+    this.sayName = function(){
+        console.log(this.name);
+    };
+}
+
+//始终确保用new来调用构造函数
+var person1 = new Person1(&amp;quot;Li Bai&amp;quot;);
+var person2 = new Person2(&amp;quot;Du Fu&amp;quot;);
+
+console.log(person1.name);   /* &amp;quot;Li Bai&amp;quot; */ 
+console.log(person2.name);   /* &amp;quot;Du Fu&amp;quot; */ 
+
+person1.sayName();  /* 输出 &amp;quot;Li Bai&amp;quot; */   
+person2.sayName();  /* 输出 &amp;quot;Du Fu */ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;使用构造函数的目的是为了轻松创建许多拥有相同属性和方法的对象&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;二-原型对象&#34;&gt;二、原型对象&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;可以把原型对象看作是对象的基类&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;构造函数创建出的新对象会拥有构造函数的原型对象。&lt;/p&gt;
+
+&lt;p&gt;可以用Object.getPrototypeOf(object)方法读取[[Prototype]]属性的值，可以用object.isPrototypeOf(object)方法检查第一个object是否是第二个prototype的原型对象。&lt;/p&gt;
+
+&lt;p&gt;重要：无法给原型对象的属性赋值，会变成创建一个同名自有属性。&lt;/p&gt;
+
+&lt;p&gt;可以给构造函数中的原型对象创建新的属性，与在构造函数中创建新属性的区别是，调用原型对象上的新属性时，this值指向用new新生成的对象，而不是指向构造函数。&lt;/p&gt;
+
+&lt;p&gt;可以用对象字面形式改写原型对象，但要注意手动把constructor属性（原型对象特有的属性）指向构造函数。（constructor属性是原型对象特有的属性，默认会指向Object）&lt;/p&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function Person(name) {
+    this.name = name;
+}
+
+Person.prototype = {
+    constructor: Person,
     
-    <item>
-      <title>Hugo建站入门</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-25/</link>
-      <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
+    sayName: function() {
+        console.log(this.name);
+    },
+    
+    toString: function() {
+        return &amp;quot;[Person &amp;quot; + this.name + &amp;quot;]&amp;quot;;
+    }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重要： 构造函数和对象实例之间没有直接联系，他们通过原型对象相连&lt;/p&gt;
+
+&lt;p&gt;[[prototype]]属性是指向原型对象的指针。对原型对象的所有改变可以无缝立即生成为对象实例的属性，无论何时改变都可以，因为JavaScript查找对象属性每次都会先查找自有属性，然后再查找原型对象的属性。&lt;/p&gt;
+
+&lt;p&gt;Object.freeeze和Object.seal只对自有属性生效，完全可以再改变原型对象的属性。&lt;/p&gt;
+
+&lt;p&gt;当然，理论上可以改变内建对象的原型对象，比如给Array, String, Boolean的原型对象赋新值，但不推荐这么做。&lt;/p&gt;
+
+&lt;h3 id=&#34;第五章-继承&#34;&gt;第五章 继承&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript内建的继承方法被称为原型对象链，也叫原型对象继承&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所有的对象都继承自Object.prototype，也就是说Object.prototype是原型对象链的最顶端，它自己的[[prototype]]属性值为null。&lt;/p&gt;
+
+&lt;p&gt;Object.prototype具有五种方法，其他对象都可以使用：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;hasOwnProperty()&lt;/li&gt;
+&lt;li&gt;propertyIsEnumerable()&lt;/li&gt;
+&lt;li&gt;isPrototypeOf()&lt;/li&gt;
+&lt;li&gt;valueOf()&lt;/li&gt;
+&lt;li&gt;toString()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;对象继承&#34;&gt;对象继承&lt;/h4&gt;
+
+&lt;p&gt;使用var 生成一个对象的时候，JavaScript会隐式指定Object.prototype为对象的[[prototype]]。可以用Object.create()方法显式指定，例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var person1 = {
+    name: &amp;quot;Li Bai&amp;quot;,
+    occupation: &amp;quot;Shi Ren&amp;quot;
+};
+
+var person1 = Object.create(Object.prototype, {
+               name: {
+                   configurable: true,
+                   enumerable: true,
+                   value: &amp;quot;Li Bai&amp;quot;,
+                   writable: true
+               }
+               
+               occupation: {
+                   configurable: true,
+                   enumerable: true,
+                   value: &amp;quot;Shi Ren&amp;quot;,
+                   writable: true
+               }
+
+          });
+
+var person2 = Object.create(person1, {
+               //这里新创建自由属性name，会替换继承自person1的name属性
+               name: {  
+                   configurable: true,
+                   enumerable: true,
+                   value: &amp;quot;Du Fu&amp;quot;,
+                   writable: true
+                   }
+              });
+
+person1.occupation();    /* 输出“Shi Ren” */
+person2.occupation();    /* 输出“Shi Ren” */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;构造函数继承&#34;&gt;构造函数继承&lt;/h4&gt;
+
+&lt;p&gt;首先要明白，创建构造函数时，JavaScript在背后隐式的做了这些事：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;//表面上声明构造函数：
+function Shiren() {
+    work1: &amp;quot;Xie Shi&amp;quot;;
+    work2: &amp;quot;Xie Ci&amp;quot;;
+}
+
+//背后逻辑：
+Shiren.prototype = Object.create(Object.prototype, {
+                       //constructor是自有属性，指向自身
+                       constructor: {
+                           configurable: true,
+                           enumerable: true,
+                           value: Shiren,
+                           writable: true
+                       }
+                    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;构造函数继承-1&#34;&gt;构造函数继承&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;方法是让新构造函数的原型对象变成被继承的构造函数的一个新实例&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;15
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;16
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;17
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;18
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;19
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;20
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;21
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;22
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;23
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;24
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;25
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;26
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;27
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;28
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;29
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;30
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;31
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;32
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;33
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;34
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;35
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;36
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;37
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;38
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;chang&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;kuan&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;chang&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;chang&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;kuan&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;kuan&lt;/span&gt;;
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;mianJi&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;chang&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;kuan&lt;/span&gt;;
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;chang&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;kuan&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;;
+}
+
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//10-13行的代码可以用“构造函数窃取”实现，这种方法也叫“伪类继承”
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;) {
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;bian&lt;/span&gt;);
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;}
+&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;();
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;;
+
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//20、21两行代码可以被替换为如下
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Object.&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt;, {
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                       &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                           &lt;span style=&#34;color:#a6e22e&#34;&gt;configurable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                           &lt;span style=&#34;color:#a6e22e&#34;&gt;enumerable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                           &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                           &lt;span style=&#34;color:#a6e22e&#34;&gt;writable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                       }
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;                    });
+&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ju&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Juxing&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;zheng&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ZhengFangXing&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;);
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ju&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;mianJi&lt;/span&gt;());    &lt;span style=&#34;color:#75715e&#34;&gt;/* 50 */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;zheng&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;mianJi&lt;/span&gt;());   &lt;span style=&#34;color:#75715e&#34;&gt;/* 36 */&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;第六章-对象模式&#34;&gt;第六章 对象模式&lt;/h3&gt;
+
+&lt;p&gt;如何让对象的属性私有？这一章简要介绍了几种方法&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;模块模式&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;模块模式是一种用于创建拥有私有数据的单件对象的模式&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;基本做法： 使用立调函数表达（IIFE）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var yourObject = (function() {
+    
+      //私有数据变量，无法在外部访问
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-25/</guid>
-      <description>Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦</description>
+  return {
+      
+      //公共方法和属性，可以访问自己的私有数据
+          
+  }
+    
+}());
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;构造函数的私有成员&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;用在同样需要私有属性的自定义类型上&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function Person(name) {  
+    var age = 25;  /* 本地变量 */
+        
+    this.name = name;
+        
+    this.getAge = function() {           
+        return age;            
+    };
+        
+    this.growOlder = function(){            
+        age++;  
+    };
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;另一种伪继承方法-混入-mixin&#34;&gt;另一种伪继承方法：混入（mixin）&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;函数mixin()接受两个参数：接受者 和 提供者。
+该函数的目的是将提供者所有可枚举属性复制给接收者&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var person = mixin( new Person(), {
+    chaoDai: &amp;quot;Tang Chao&amp;quot;,
+    
+    sayChaoDai: function() {
+        console.log(this.name);      
+    } 
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个例子表达的意思是：构造函数Person()的新实例person，混入了新的属性（chaoDai 和 sayChaoDai），而没有改变person的原型对象链。&lt;/p&gt;
+
+&lt;p&gt;注意：提供者的访问器属性会自动变成接受者的数据属性&lt;/p&gt;
+
+&lt;h4 id=&#34;作用域安全的构造函数&#34;&gt;作用域安全的构造函数&lt;/h4&gt;
+
+&lt;p&gt;构造函数生成新实例如果不用 new， this值会强制指向全局对象， 严格模式下会抛出错误。可以通过以下方法来制造作用域安全的构造函数（也就是说用不用new都可以的构造函数）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function Person(name) {
+
+    if (this instanceOf Person) {
+        this.name = name;  /* 当自己是被new调用时，正常设置name属性 */
+    } else {
+        return new Person(name);  /* 当不是被new调用时，则以new递归调用自己，以确保创建正确的实例 */
+    }
+}
+
+var person1 = new Person(&amp;quot;Li Bai&amp;quot;);
+var person2 = Person(&amp;quot;Du Fu&amp;quot;);
+
+console.log(person1 instanceof Person); /* true */ 
+console.log(person2 instanceof Person); /* true */ 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
       <title>从“五百强”到“债转股”——中钢集团战略转型的成败</title>
-      <link>https://chaoyuezhao.github.io/posts/2018/1-11/</link>
+      <link>http://zhaochaoyue.com/post/1-11/</link>
       <pubDate>Thu, 11 Jan 2018 23:50:15 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2018/1-11/</guid>
-      <description>这篇文章是我研究生期间完成的一篇工商管理案例，写完后投稿给了中国管理案例中心参加一年一度的“百优案例”大赛，虽然没有入选百优案例，但是进入了</description>
+      <guid>http://zhaochaoyue.com/post/1-11/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;这篇文章是我研究生期间完成的一篇工商管理案例，写完后投稿给了中国管理案例中心参加一年一度的“百优案例”大赛，虽然没有入选百优案例，但是进入了全国案例库也算不错。写这篇文章的时候，我即将辞职离开工作了7年的中钢集团，对这家公司我真的是又爱又恨，爱的是它给我提供了一个国际视野的工作平台，让我在离开学校后可以急速的成长进步，恨的是无处不在的官僚体制和压抑的工作环境。无论怎样，在中钢集团度过的这七年时光让我无法忘怀，那么这篇文章就算是送给它的一份礼物吧。这篇案例共分正文和使用说明两部分，使用说明部分由我和导师共同合作完成。这里放出正文部分，供感兴趣的朋友免费阅览。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;摘  要&lt;/strong&gt;： 通过重组并购国内老牌冶金相关制品生产企业和国外大型矿产资源，中钢集团从传统钢铁贸易商转型为向钢铁生产企业提供全方位综合配套服务的大型跨国集团公司，创造了独一无二的“中钢模式”，并在短短几年内跻身世界500强。然而，由于企业规模迅速膨胀，急速增高的负债率严重影响了中钢集团的稳定发展。与此同时，一心想要做大做强的中钢集团忽视经营风险而导致巨额资金被民营钢企占用，最终造成了严重财务危机，不得不通过债转股的方式避免破产。本案例不仅对大型跨国企业的经营发展具有借鉴作用，也为研究和讨论企业的战略管理提供了教学材料。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;： 中钢集团；战略转型；“中钢模式”；债转股&lt;/p&gt;
+
+&lt;h2 id=&#34;0-引言&#34;&gt;0. 引言&lt;/h2&gt;
+
+&lt;p&gt;2011年5月下旬的一天早上，在北京中关村中钢大厦39层宽阔豪华的总经理办公室里，56岁的黄天文正站在透明玻璃墙边，欣赏着北京西山的晚春美景。&lt;/p&gt;
+
+&lt;p&gt;“黄总，这是今天的报纸。”秘书小王像往常一样轻轻地敲门进来，把当天的《参考消息》、《环球时报》和《China Daily》放在了屋里的办公桌上。黄天文转过身来，看到已经空荡荡的办公桌，心中略过一丝惆怅。&lt;/p&gt;
+
+&lt;p&gt;距离国资委宣布免除他担任中钢集团总经理职务已经过去了一个多礼拜了，如今的他正在办理工作交接和离职手续。在不到60岁的时候突然被免职，这对央企掌门人来说并不常见。&lt;/p&gt;
+
+&lt;p&gt;“对了黄总，刚才又有几家媒体打来电话说想要预约采访您，您看怎么办？”小王说着小心翼翼地把泡好的西湖龙井放在沙发旁边的茶几上。&lt;/p&gt;
+
+&lt;p&gt;“你告诉他们，最近不接受采访了。”黄天文走过去端起了茶杯，然后一边喝着茶，一边在办公室里踱步。&lt;/p&gt;
+
+&lt;p&gt;他顺着玻璃墙走到办公室的另一头，这里摆放着他来到中钢以后获得的荣誉。&lt;/p&gt;
+
+&lt;p&gt;“2007年中国十大并购人物”、&lt;/p&gt;
+
+&lt;p&gt;“2008年度最具影响力的25位企业领袖”、&lt;/p&gt;
+
+&lt;p&gt;“2008年中国改革开放30年金属矿产业十大领军人物”、&lt;/p&gt;
+
+&lt;p&gt;“2009年中国经济十大人物”。&lt;/p&gt;
+
+&lt;p&gt;这些曾经光鲜亮丽的奖章和证书如今已变得黯然无光。黄天文看到它们，心里特别不是滋味。&lt;/p&gt;
+
+&lt;p&gt;2003年底，黄天文正式调任中钢集团总裁。在短短的7年多时间里，他对中钢集团进行了“专业化、国际化、实体化和信息化”的重大改革。通过不断进行国内外的重组并购，成功地将中钢集团从商贸型企业转变为生产服务型企业。不过从2008年开始，隐藏在中钢集团疯狂扩张和迅速崛起背后的巨大风险日益凸显出来，中钢集团不断被媒体爆出经营丑闻。2010年国资委和国家审计署分别成立专门的工作小组入驻中钢集团展开调查。&lt;/p&gt;
+
+&lt;p&gt;想到这里，黄天文回到气派的办公桌，在抽屉里拿出了前几天国家审计署刚刚公布的对中钢集团2007年到2009年度财务收支情况的审计结果翻看起来。&lt;/p&gt;
+
+&lt;p&gt;“中钢集团所属公司虚增销售收入19.82亿元。”&lt;/p&gt;
+
+&lt;p&gt;“中钢国际控股进行的3个境外投资项目，未严格执行国家境外投资活动报告制度。”&lt;/p&gt;
+
+&lt;p&gt;“中钢集团被合作伙伴占用资金88.07亿元，截至2010年6月底未对风险状况进行系统评估，未形成有针对性的风险应对预案。”&lt;/p&gt;
+
+&lt;p&gt;看到审计结果上一条条罪状，黄天文不禁心痛起来。自己一手打造的中钢神话难道就这样轰然倒台了吗？中钢和自己的未来到底该何去何从？他陷入了深深的沉思……&lt;/p&gt;
+
+&lt;h2 id=&#34;1-背景&#34;&gt;1.背景&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-1-中钢的历史沿革&#34;&gt;1.1 中钢的历史沿革&lt;/h3&gt;
+
+&lt;p&gt;中国中钢集团公司是国务院国资委监管的钢铁矿产行业大型央企。如今的中钢集团是陆续由多家独立公司联合组成的，它的前身是中国冶金工贸集团公司。&lt;/p&gt;
+
+&lt;p&gt;1980年1月，中国冶金进出口总公司经国务院和国家进出口管理委员会批准成立。其主要业务包括冶金工业补偿贸易、合资经营项目的对外业务；冶金部所属企业日常零星的专用设备、仪器、仪表、技术专利和备品、备件的进口业务；国家计划之外冶金部所属企业长线和积压产品的出口业务；冶金工业技术、劳务、援外和冶金企业生产的备品备件的出口业务。&lt;/p&gt;
+
+&lt;p&gt;1980年7月，中国冶金钢材加工公司经国家经济委员会批准成立，负责按照国家计划组织和管理调坯轧材事宜，合理安排大中小企业的钢材生产，按品种、按质、按量、按期完成国家规定的生产任务和供货合同。&lt;/p&gt;
+
+&lt;p&gt;1987年9月，中国国际钢铁投资公司经国务院批准成立，负责为增加一千万吨钢的生产能力，统一从国外筹措资金，引进技术、设备、原材料和备品备件，并组织“以产顶进”，偿还贷款。1988年1月，中国钢铁炉料总公司经国家经济委员会批准成立，负责经营国家委托冶金部管理的炉料物资。&lt;/p&gt;
+
+&lt;p&gt;1993年2月，国务院经济贸易办公室批准由中国冶金进出口总公司、中国冶金钢材加工公司、中国国际钢铁投资公司和中国钢铁炉料总公司共同组建成立中国钢铁工贸集团。1998年之后，国家冶金工业局又将为冶金行业提供地质、矿山、节能、耐火材料、安全环保和金属制品技术支撑的6家研究院及承担成套设备及备件保障的中国冶金设备总公司等十多家企事业单位陆续划入中钢集团。&lt;/p&gt;
+
+&lt;p&gt;2003年底，中钢集团已经成为一家以贸易为主的拥有71家二级公司（国内60，海外11）的大型集团公司。2003年12月29日，国资委宣布任命黄天文为中钢集团总经理、党委书记。长达7年半的黄天文时代正式开启。&lt;/p&gt;
+
+&lt;h3 id=&#34;1-2-黄天文走马上任&#34;&gt;1.2 黄天文走马上任&lt;/h3&gt;
+
+&lt;p&gt;“只有找到企业的灵魂，才能让全集团所有单位都朝着明确的奋斗目标迈进。这是明确中钢集团战略定位和战略目标的第一要务！”2004年初，在中钢集团干部会议上，刚上任不久的黄天文正式提出了对中钢集团重新定位的改革计划。&lt;/p&gt;
+
+&lt;p&gt;黄天文毕业于美国赛顿霍尔大学，任职中钢之前曾担任中国五矿集团副总裁，具有较为丰富的央企高层管理经验。就职中钢几个月后他便发现，中钢集团子公司所处的行业过于分散，业务范围交叉重叠。但是宏观的看，他们又都与钢铁行业息息相关。从矿石的开发、贸易，到钢厂设备制造和冶金工程承包，再到炉料和钢材的贸易、物流，中钢集团的业务几乎涉及到了钢铁生产企业所需要的全部服务范围。黄天文深信，要想振兴中钢，必须扬长避短，大力发挥中钢集团在钢铁服务业独一无二的优势。因此，黄天文提出了将中钢打造成世界一流钢铁生产服务商的目标。&lt;/p&gt;
+
+&lt;p&gt;“黄总是一个很有亲和力的领导，和人说话总是面带微笑。”人力资源部总经理李国强（化名）回忆起黄天文时这样说到。“他特别地雷厉风行，不打官腔，执行力强。”&lt;/p&gt;
+
+&lt;p&gt;目前兼任董事会职工代表的李国强已经在中钢集团工作二十多年了。作为一名资深的中层干部，李国强曾得到黄天文的信任，参与和执行了中钢集团战略转型的许多具体事务，虽然现在距离黄天文被免职已经过去6年了，不过他对中钢转型历程中的很多细节依然历历在目。2004年9月，中钢集团由“中国钢铁工贸集团”改名为“中国中钢集团公司”。李国强清楚地记得，他接到黄天文的第一个工作任务就是在所有下属子公司名字前加上“中钢集团”四个字。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/sinosteel-logo.png&#34; alt=&#34;中钢logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;图1 中钢集团LOGO图标&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“国强，要改变集团大而不强的问题，不提升凝聚力是不行的。”黄天文语气平和又充满激情的对电话那头的李国强说道，“给子公司们带上中钢的帽子，一来可以让他们有更多的归属感，二来也方便了统一管理，为集团战略改革做好准备。”“好的，黄总，我们会尽快完成任务。”李国强知道这标志着中钢集团的战略转型正式开始。&lt;/p&gt;
+
+&lt;h2 id=&#34;2-转型历程&#34;&gt;2.转型历程&lt;/h2&gt;
+
+&lt;h3 id=&#34;2-1-瘦身-与-增肌&#34;&gt;2.1 “瘦身”与“增肌”&lt;/h3&gt;
+
+&lt;p&gt;中钢集团的诞生是国家通过行政命令的方式把几家钢铁贸易公司和钢铁相关服务商集中起来而实现的，这其中当然不乏一些不良资产。黄天文希望中钢集团摆脱计划经济的包袱，运用市场经济的方法，提高集团的运营效率。因此，优化和处置集团内的不良资产就成了战略转型的首要任务。&lt;/p&gt;
+
+&lt;p&gt;“黄总改革中钢的决心很大，仅在2004年一年就通过歇业关闭、清理整顿、落实处置和改革方案等多种方式将集团内的企业数量减少到43家，总数共减少了28家。”李国强说。自从黄天文上任以来，他一直处于极度忙碌的状态。“那几年我几乎没有好好休过一个周末。”&lt;/p&gt;
+
+&lt;p&gt;在处置不良资产的同时，黄天文将“冶金矿产资源开发与加工、冶金原料和产品的贸易物流、相关工程技术服务与设备制造”确定为集团四大主业。此外，黄天文还对集团内子公司的构架进行了大幅度调整。为了明确专业分工，中钢集团在国内合并组建了14家专业公司力求达到核心商品和服务的专业化。同时，在境外设立了12家地区公司以发挥靠近市场、贴近客户的优势。&lt;/p&gt;
+
+&lt;p&gt;做完了“瘦身”，接下来就是“增肌”了。从2005年开始，中钢集团接连进行了国内外一系列的并购重组。李国强作为受到信任的干部，直接参与了许多并购重组的谈判过程。他还领导专项小组，负责并购重组后人力资源事务的处理工作。&lt;/p&gt;
+
+&lt;p&gt;“黄总为中钢集团设计了一条独特的发展路线，那就是成为钢铁生产企业的综合服务商。为了实现这个目标，必须运用重组并购的办法，把钢铁生产企业需要的全部配套服务系统性的加入到集团中来。中钢集团本身已有的优势是贸易物流、冶金工业设计和工程承包，但是在矿产资源和冶金相关产品制造方面还非常欠缺。”&lt;/p&gt;
+
+&lt;p&gt;李国强说起这段历史，脸上显露出一种得意的神态。&lt;/p&gt;
+
+&lt;p&gt;“那时候我是直接参与并购重组中的人事事务的，从我国东北到西南，从南非到澳洲，中钢集团那些年简直像蒙古铁骑一样，攻无不克，战无不胜。那几年整个集团总部的员工都意气风发，感觉像是站在了世界之巅一样无所不能。”&lt;/p&gt;
+
+&lt;p&gt;在国内方面，中钢集团重组了吉林炭素集团、洛阳耐火材料厂、吉林铁合金厂、邢台机械轧辊厂、西安冶金机械公司、衡阳冶金机械总厂、吉林机电厂和广西八一铁合金厂。&lt;/p&gt;
+
+&lt;p&gt;这八家老牌国企都是在钢铁生产支撑领域具有重要影响力的企业，但是由于种种原因，经营的并不好。黄天文把他们重组进中钢集团，就是要弥补中钢集团在碳素、铁合金、耐火材料和冶金装备领域的短板，扩大中钢作为钢铁服务集成商的业务范围，增强中钢集团的实业化。&lt;/p&gt;
+
+&lt;h3 id=&#34;2-2-收购海外矿产资源&#34;&gt;2.2 收购海外矿产资源&lt;/h3&gt;
+
+&lt;p&gt;2005年到2006年，李国强跟随黄天文到澳洲和南非对矿产资源进行了数次考察。&lt;/p&gt;
+
+&lt;p&gt;“中钢集团的老本行是做贸易，尤其是铁矿石、高炉原料和铁合金的进口和销售，这一度是中钢集团最赚钱的买卖。但黄总不满足于此，他想要获得矿产资源的所有权，就是通过投资境外矿山来打通钢铁服务产业的上游。不过，这对当时实力并不雄厚的中钢集团来说，确实是一个高风险的投资。”&lt;/p&gt;
+
+&lt;p&gt;李国强记得2005年中旬他和中钢集团高层陪同黄天文前往澳洲参观Midwest铁矿项目时候，他们一行人站在巨大的露天铁矿开采现场的制高点上，面对着富含赤铁矿的红土地和广阔无边的蓝天，黄天文激情澎湃地对随行人员说到：&lt;/p&gt;
+
+&lt;p&gt;“我国钢铁工业的发展势头与其所拥有的资源具有强烈的反差，尤其是铁、铬、锰、镍这些资源的短缺最为严重。对于这些国民经济建设的紧缺资源，仅仅依靠传统的贸易渠道获得是很不稳定的，我们必须抓住机遇，通过境外投资，获得国内经济发展长期需要的战略资源。”&lt;/p&gt;
+
+&lt;p&gt;此情此景，让李国强至今记忆犹新。很快，中钢集团的海外并购就正式展开了。&lt;/p&gt;
+
+&lt;p&gt;2005年10月18日，中钢集团在澳洲与澳洲Midwest矿业公司签署了共同开发铁矿资源的协议，这是中国第一个在澳洲投资占50%股权比例的项目，也是中国第一个参与科研、勘探和开发全过程的铁矿项目。该项目投产后能实现每年3000万吨铁矿石的生产能力，这将使中钢集团的铁矿石供应能力得到极大的提升。&lt;/p&gt;
+
+&lt;p&gt;2006年11月3日，中钢集团与世界最大的铬矿生产商南非Samancor公司就合作开发南非铬矿资源签署了多项法律协议。该项目建成后，冶炼厂每年能够产出可销售铬矿100万吨、铬铁31万吨。中钢同时还收购了津巴布韦最大的铬矿企业Zimasco公司，如果算上中钢上世纪合资开发的南非ASA铬矿，中钢总共控制的铬矿资源超过2亿吨，是中国国内铬矿储量的20多倍。这将大大增强中钢集团为不锈钢和高端钢铁产品制造企业供应原料的能力。&lt;/p&gt;
+
+&lt;p&gt;2008年9月，经过300多天多边激烈厮杀，中钢集团获得澳洲Midwest矿业公司全部的股权，实现了将“中西部矿业”完全的私有化，中钢集团对“中西部矿业”的敌意并购正式完成。这是我国第一起成功的海外矿产资源的敌意并购，由于并购过程复杂曲折，在国内外都引起了轰动，中钢集团因此声名鹊起。&lt;/p&gt;
+
+&lt;p&gt;Midwest矿业公司拥有4个赤铁矿和3个磁铁矿项目，总计控制赤铁矿资源超过6亿吨，平均品位约为58%—59%；磁铁矿资源超过13亿吨，远景储量近100亿吨，平均品位为45%—50%。黄天文曾经这样评价过该项目：“这次收购使中钢集团获得了大约20亿吨的优质铁矿资源，为企业下一步的健康稳定发展和我国钢铁工业长远科学发展的资源供应，奠定了坚实的基础。”[1]&lt;/p&gt;
+
+&lt;p&gt;此外，中钢集团在澳大利亚的PNN铀矿项目和印尼的镍矿开发也取得了重大突破。&lt;/p&gt;
+
+&lt;p&gt;“不得不说，黄总给中钢集团带来了巨大的变化，员工们内心都充满了对未来的美好憧憬。”李国强说。&lt;/p&gt;
+
+&lt;h3 id=&#34;2-3-成果初现-风险凸显&#34;&gt;2.3 成果初现,风险凸显&lt;/h3&gt;
+
+&lt;p&gt;到2008年年初，中钢集团的战略转型已经初步达成。&lt;/p&gt;
+
+&lt;p&gt;经过五年大刀阔斧的改革，中钢集团由结构较为单一的贸易物流企业，转变为向钢铁生产企业提供产前、产中、产后全方位服务，集钢铁生产原料、设备及备件供应、钢铁产品贸易及物流、科技研发及工程总承包、投资咨询及招标、期货经纪为一体的综合性跨国企业集团。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/sinosteel-jiegou.png&#34; alt=&#34;中钢集团组织结构图&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;图2 中钢集团2008年组织机构图&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;2008年底，在一个国企改革高端访谈节目里，黄天文用一句话总结了中钢战略转型以后的业务特点，“中钢集团没有一家钢厂，不生产一吨钢，但我们为整个钢铁行业服务，所有的钢厂都离不开中钢这样的企业。”[2]&lt;/p&gt;
+
+&lt;p&gt;此后几年，中钢集团的规模继续飞速扩张，在2011年初达到了顶峰。中钢集团的主营业务收入从2003年的130亿元上升为2010年1831亿元人民币。通过投资矿产资源，中钢集团铬矿进口和萤石出口位列全国第一；铁矿石进口位列全国第二、商贸企业第一；锰矿进口位列全国第二；镍矿石和铁合金进口、焦炭出口位列全国第三。&lt;/p&gt;
+
+&lt;p&gt;在冶金设备制造方面，中钢集团成为了世界第二、亚洲第一大冶金轧辊供应商；世界第四、中国第一大碳素制品供应商；中国第五、冶金行业最大设备供应商；中国最大、品种最全耐火材料制品供应商；中国最大铁合金制造商；世界第二、中国最大的碳化硅制品供应商。2011年，中钢集团位列中国企业500强第40位，美国《财富》杂志发布的世界500强第354位。&lt;/p&gt;
+
+&lt;p&gt;然而，就在中钢集团的战略转型受到普遍赞誉之时，隐藏在急速转型背后的巨大风险正在加速发酵。中钢集团内部高管也分成了两派，一派极力拥护黄天文，支持继续扩大规模。另一派偏保守，认为经营模式风险大，批评黄天文好大喜功。显然，直到国资委和审计署入住中钢以前，黄天文的权威还是无人能撼动的。&lt;/p&gt;
+
+&lt;p&gt;“08年的中钢，就像一座由众多材料快速堆砌而成的规模宏大的宫殿，虽然外表华丽，内部却漏洞重重，甚至随时有坍塌的危险。”李国强说到。由于负责人事工作，李国强一直保持着相对中立的立场。但是他明白反对黄天文的声音正变得越来越大，中钢内部已经产生了无法缝合的裂痕。而即将到来的一场严重的财务灾难，彻底让中钢集团战略转型的潜在风险暴露无遗。&lt;/p&gt;
+
+&lt;h2 id=&#34;3-风险失控&#34;&gt;3. 风险失控&lt;/h2&gt;
+
+&lt;h3 id=&#34;3-1-河北纵横的失败&#34;&gt;3.1 河北纵横的失败&lt;/h3&gt;
+
+&lt;p&gt;“中钢模式”是中钢集团战略转型后最典型也最具争议的业务模式。黄天文极力促成的河北纵横钢铁公司位于沧州的综合钢厂项目就是“中钢模式”的第一块试金石。&lt;/p&gt;
+
+&lt;p&gt;“每一位新入职中钢集团总部的正式员工都会被带到37层的展厅进行参观学习，沧州纵横钢厂的大型全景沙盘就放在展厅的中心位置。沧州纵横项目曾经是中钢集团践行‘钢铁生产综合服务商’的最佳范本，没想到之后却变成了最大的负担。”李国强略显尴尬的说到。&lt;/p&gt;
+
+&lt;p&gt;河北纵横钢铁公司是一家实力较强的民营钢铁生产企业。2007年，河北纵横决定在河北省沧州市黄骅新港新建一家集焦化、烧结、炼铁、炼钢和轧钢于一体的综合性钢铁企业，设计年产板材600万吨。项目总投资160亿元。&lt;/p&gt;
+
+&lt;p&gt;因看好其前景，中钢集团与河北纵横签署了全方位合作协议，中钢集团旗下的专业公司将负责除生产以外钢厂运行的所有流程。其中，中钢设备公司负责新建钢厂的设计、设备采购和土建施工的总承包，中钢贸易公司负责矿石原料的供应，中钢炉料公司负责焦炭、焦煤和铁合金等高炉原料的供应，中钢货运公司负责进货和运输，而中钢钢铁公司则负责钢材的包销。这种利用中钢集团内部公司系统性的解决钢铁生产企业所需要的所有服务的业务模式，被称为“中钢模式”。&lt;/p&gt;
+
+&lt;p&gt;为了促成该项目尽快启动，中钢集团为河北纵横垫资100亿作为启动资金。纵横钢厂俨然成了中钢集团自己的企业。&lt;/p&gt;
+
+&lt;p&gt;然而，对于纵横钢厂的经营决策、成本管理和财务管理，中钢集团却没有太多的控制权和话语权。由于河北纵横管理粗放，钢材的生产进度严重受阻，中钢的垫资长期被占无法偿还，之后双方不得不由债务关系转至融资贸易关系，这对中钢集团自身的发展造成了巨大的压力。截至2011年一季度末，河北纵横总计占用中钢集团资金超过70亿元，审计署所说的中钢集团被占用资金的最大“客户”就是河北纵横。&lt;/p&gt;
+
+&lt;h3 id=&#34;3-2-山西中宇的泥潭&#34;&gt;3.2 山西中宇的泥潭&lt;/h3&gt;
+
+&lt;p&gt;“如果说中钢集团与河北纵横合作被占资是‘倒霉’的话，那山西中宇项目的40亿资金黑洞就是彻底的经营失败。”李国强心痛地说到。“山西中宇项目彻底暴漏了‘中钢模式’的巨大风险，也反映了集团内部管理的混乱。”&lt;/p&gt;
+
+&lt;p&gt;中钢集团与民营钢铁企业山西中宇的合作同样始于2007年。这一年5月双方签署了战略合作协议，根据协议要求，中钢集团下属的中钢钢铁公司将包销山西中宇未来五年生产的所有钢材，包括山西中宇扩建后的产量。相应的，中钢集团需要提前两个月向山西中宇预付货款。按照最初的设想，山西中宇月产钢量为20万吨，依照当时钢材价格5000元/吨计算，每月销售收入约10亿元，中钢集团需要预付20亿元，以保证山西中宇的正常运转。以20亿元的预付货款换取每年100多亿元的销售收入，这看似是一个双赢的合作。&lt;/p&gt;
+
+&lt;p&gt;然而，祸不单行，山西中宇的经营生产遇到了更加严重的问题。由于其一直处于边建设边生产的状态，很多新建设备质量并不好。高炉中很多设备不配套，造成原材料极大浪费，成本大幅增加。此外，两头欠债的山西中宇运营资金极其紧张，很多生产设备很难正常维护，这造成了极大的安全隐患，再加上其长期管理不善，导致常常无法如期向中钢交货。&lt;/p&gt;
+
+&lt;p&gt;与河北纵横类似，中钢集团对山西中宇的日常经营没有权力干涉。根据双方的合作协议，即使山西中宇无法按时按量产出钢材，中钢仍然必须向其提供高额的预付款。&lt;/p&gt;
+
+&lt;p&gt;“当时集团的高层领导已经认识到山西中宇项目的风险，2008年初一直在讨论解决方案。”李国强回忆。但是截至2008年3月，中钢共计向山西中宇付款超过60亿元，而山西中宇只向中钢累计发货不到28亿元，余额26亿元被一直拖欠。“得知这一结果，我们才明白事态已经非常严重了。”李国强心有余悸的说。&lt;/p&gt;
+
+&lt;p&gt;迫于无奈，从2008年2月开始，中钢集团开始对山西中宇进行委托管理。中钢接管山西中宇之后，不得不同时承接山西中宇欠下的银行贷款、税款以及其他债权人的债务。令人震惊的是，除了最大债权人中钢自己，山西中宇还有1600多家债权人，债务总额达到52亿元，因为债务问题的涉诉案件多达100多起。苦于没有钢厂管理人才，中钢集团又在2008年8月找到国丰钢铁让其“代管”山西中宇。到2009年下半年，由于不堪忍受诸多经营风险，国丰最终选择退出。&lt;/p&gt;
+
+&lt;p&gt;“山西中宇的项目简直是一团糟，就像中钢集团身上的毒瘤，从07年开始越长越大，最终变得无法摆脱。”李国强无奈的说。&lt;/p&gt;
+
+&lt;p&gt;截至2010年5月31日，中钢集团总计被山西中宇占用资金近40亿元，这严重阻碍了中钢集团整体上市的进程，使得中钢集团本已非常脆弱的资金链几近断裂。&lt;/p&gt;
+
+&lt;h3 id=&#34;4-债务危机&#34;&gt;4. 债务危机&lt;/h3&gt;
+
+&lt;p&gt;战略转型带来了中钢集团规模和业务的迅速扩张，与此同时，中钢集团的负债率也变得居高不下。2003年底黄天文刚来的时候，中钢集团的注册资本仅为2亿元，银行对其授信金额也只有17亿元。在此情形下，中钢集团2003年近1000万吨的铁矿石贸易量中，有一部分只能借助客户资金才得以完成。为扩大业务量，中钢集团不得不提高银行贷款在融资中的比例。在2009年底的时候，中钢集团铁矿石贸易量已经超过4000万吨，占用资金逾400亿元人民币，其中借贷资金所占比例最高。&lt;/p&gt;
+
+&lt;p&gt;财务成本不断增高的同时，中钢集团的利润来源却严重不平衡，整体的盈利能力始终无法实现突破。中钢集团的大部分利润依然来自贸易及矿产开发业务，而集团内的其他企业不少都处于亏损状态。&lt;/p&gt;
+
+&lt;p&gt;2008年金融危机爆发后，全球铁矿石价格暴跌，延续了40多年的国际铁矿石定价体系发生动摇，中钢集团的铁矿石贸易利润也随之急剧下降。2007年到2009年是中钢集团的主营业务收入增长最快的三年，但是相应的利润却从07年的30.9亿元急速下降到09年的5.8亿元。扣除政府补助、汇兑收益等非经营性收益后，2009年主营业务亏损达到3.8亿元。2010年三大铁矿石生产商撕毁了已经存在了40年的国际铁矿石交易长协定价机制，铁矿石价格迅速上涨接近100%。受此影响，至2010年底，中钢集团在铁矿石贸易代理业务上所获利润率已低至不足1%。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/iron-ore-price.png&#34; alt=&#34;铁矿石价格&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;图3 铁矿石价格走势&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;雪上加霜的是，2010年中钢集团并购的澳洲Midwest矿业公司项目出现了严重问题。虽然中钢集团成功并购了澳洲Midwest矿业公司，但是开采铁矿需要修建的配套铁路和港口等基础设施的建设权却掌握在其他公司手中。由于种种原因，配套铁路和港口的建设迟迟得不到开展，导致中钢集团无法进行矿山的开发。2011年6月23日，中钢集团宣布，暂停澳洲Midwest矿业公司的全部铁矿项目，中钢集团因此一年损失1亿美元。&lt;/p&gt;
+
+&lt;p&gt;由于巨额资金被占，加上行业低迷和经营不善，中钢集团的债务压力不断攀升。2008年至2011年，中钢集团资产负债率逐年升高，分别为89.99%、90.65%、91.14%和96.22%。为维持良好信誉以保证持续融资，中钢集团须按时支付每年10亿－20亿元人民币的银行贷款利息。此外，按照中钢集团与中国进出口银行签订的关于并购澳洲Midwest矿业公司的贷款合同，从2011年6月开始，中钢集团需要偿还进出口银行约14亿美元贷款本金，这使得中钢集团的经营跌入了最低谷。&lt;/p&gt;
+
+&lt;h2 id=&#34;5-尾声&#34;&gt;5. 尾声&lt;/h2&gt;
+
+&lt;p&gt;2011年8月31日国资委宣布了对贾宝军的任命，这宣告了黄天文时代的正式结束。武钢出身的贾宝军接替黄天文掌管摇摇欲坠的中钢，但只维持了3年又被国资委免职，2014年11月28日国资委任命原五矿副总裁徐思伟接班。&lt;/p&gt;
+
+&lt;p&gt;黄天文的继任者们努力想要扭转中钢集团的颓势，但是却始终无法力挽狂澜。作为中钢集团的主体公司，中钢股份2010年至2012年连续亏损，2013年虽然实现利润总额7.43亿元，但主营业务仍在亏损，亏损额为7.22亿元。2014年下半年，受铁矿石价格断崖式暴跌、钢铁产能过剩及管理经营不佳影响，中钢集团陷入了濒临破产的边缘。&lt;/p&gt;
+
+&lt;p&gt;2014年底，中钢集团及其所属72家子公司总负债超过1000亿元，其中金融机构债务近750亿元，涉及境内外80多家银行和信托、金融租赁公司。2015年10月10日，因为现金流枯竭，无力兑付本息，中钢集团宣布对2010年发行的20亿元的企业债券的回售登记期进行延长。截止2017年2月21日，该债券的回售登记期已经被延长了26次。&lt;/p&gt;
+
+&lt;p&gt;2016年9月27日，中钢集团债务重组方案正式获得国家批准。2016年12月9日，中国银行等六家银行作为中钢集团债委会主席行与中钢集团正式签署了债务重组框架协议，中钢集团本息总额600多亿元的债务将进行整体重组，中钢集团成为我国第一家进行债转股的中央企业。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;（案例正文字数：9149）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;[1]摘自腾讯网：&lt;a href=&#34;http://finance.qq.com/a/20090413/001611.htm&#34; target=&#34;_blank&#34;&gt;http://finance.qq.com/a/20090413/001611.htm&lt;/a&gt;，2009年4月13日。&lt;/p&gt;
+
+&lt;p&gt;[2]摘自和讯网：&lt;a href=&#34;http://news.hexun.com/2008/zghtw/index.html&#34; target=&#34;_blank&#34;&gt;http://news.hexun.com/2008/zghtw/index.html&lt;/a&gt;，2008年12月24日。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>辞职三个月学习总结</title>
+      <link>http://zhaochaoyue.com/post/12-24/</link>
+      <pubDate>Sun, 24 Dec 2017 19:35:02 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/12-24/</guid>
+      <description>&lt;p&gt;写博客的好处是可以认真反思一下自己。&lt;/p&gt;
+
+&lt;p&gt;今天恍然发现，如果从离职开始计算，我完全脱产自学编程已经快4个月了。这段时间到底学了什么？做了什么新项目？先来看看统计数据吧。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;教程&lt;/strong&gt;：学习了29个在线教程，其中18个已完成，11个未完成。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;书籍&lt;/strong&gt;：看了8本技术书，其中完成度超过80%的有4本。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;项目&lt;/strong&gt;：完成了一个静态网页设计；在GitHub开始了一个互联网名人堂翻译项目；开发了一个民国人物纪念网站 &lt;a href=&#34;http://www.anhan.org.cn&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;安汉纪念馆&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;如果我现在还是学生，那么可以说这三个月学习效率还不错。然而现实是，我就快要到而立之年了，而且还打算尽快找到工作，这样看来这三个月的学习根本无法令人满意。目前我面临一个选择：是要继续加强基础知识的学习，还是尽快学习JS框架方便找工作？&lt;/p&gt;
+
+&lt;p&gt;这个选择确实不容易做出，如果要加强基础知识的话，是否要从计算机专业的教科书补起？数据结构、算法、编程思想这些都是基础中的基础，但是对于一个自学编程的人来说，也许应该更工作导向一些？随便点开一个网站中招聘前端工程师的岗位要求，几乎必有“熟悉并使用过Angular、React或Vue等框架”。为了找工作有时候还是得妥协，但是这么短的时间怎么可能达到“熟练掌握”或者“精通”？其实找工作、写简历、准备面试也是程序员需要学习的一大领域，慢慢明白这里面的门道很多的，找工作暂且按下不表，先来说说我的选择吧。&lt;/p&gt;
+
+&lt;p&gt;我的选择是深入学习JavaScript和CSS3。原因如下，学习了三个多月，发现自己JS用的很少，目前自己做的大多数工作都可以归为“网页设计”，离真正的“网页开发”还很远。主要是因为手写JS代码太少了，大部分时间是在用HTML和CSS，再结合上Bootstrap，偶尔找一些好用的库和API，然而JavaScript才属于前端的编程语言，不深入掌握原生代码，怎么好意思叫自己Web工程师？&lt;/p&gt;
+
+&lt;p&gt;另外，随着学习的深入，我发现CSS3真的很博大精深，很多复杂的东西，真正学好并不容易，而网页布局又无法离开它，所以我计划下一步的学习方案是啃下《JavaScript权威指南》和《CSS3权威指南（第四版）英文版》。《JavaScript权威指南》有三分之一都是参考资料，实际上主要内容也就700页左右，英文版的最新CSS3权威指南PDF版有一千七百多页，但是挑实用章节的重点难点看的话，也就一千页左右。我争取今年内把这两本大部头拿下。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>从“五百强”到“债转股”——中钢集团战略转型的成败</title>
+      <link>http://zhaochaoyue.com/publication/clothing-search/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/publication/clothing-search/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>入选互联网名人堂的三位中国人</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/10-13/</link>
+      <link>http://zhaochaoyue.com/post/10-13/</link>
       <pubDate>Fri, 13 Oct 2017 13:46:56 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2017/10-13/</guid>
-      <description>简介 互联网名人堂（The Internet Hall of Fame）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献</description>
+      <guid>http://zhaochaoyue.com/post/10-13/</guid>
+      <description>
+
+&lt;h3 id=&#34;简介&#34;&gt;简介&lt;/h3&gt;
+
+&lt;p&gt;互联网名人堂（&lt;a href=&#34;https://www.internethalloffame.org&#34; target=&#34;_blank&#34;&gt;The Internet Hall of Fame&lt;/a&gt;）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献的人物，被认为是全球互联网社群的最高荣誉。&lt;/p&gt;
+
+&lt;p&gt;互联网名人堂的获奖人分为三类：
+* 互联网创始人/先驱（Pioneers）
+* 互联网创新者/改革者（Innovators）
+* 推动全球互联者（Global Connectors）&lt;/p&gt;
+
+&lt;p&gt;除了2015和2016年为了使入选者更多参与进来而暂停2年，互联网名人堂每年公布一次入选名单。&lt;/p&gt;
+
+&lt;p&gt;以下是被选入互联网名人堂的三位中国人的官方简介，更多获奖者中文简介请访问我的GitHub仓库&lt;a href=&#34;https://github.com/ChaoyueZhao/Internet-Hall-of-Fame&#34; target=&#34;_blank&#34;&gt;Internet-Hall-of-Fame 中文翻译计划&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2013年入选推动全球互联者&#34;&gt;2013年入选推动全球互联者&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.internethalloffame.org/sites/default/files/inductees/Qh%20Hu.jpg&#34; alt=&#34;胡启恒&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;胡启恒-qiheng-hu-https-www-internethalloffame-org-inductees-qiheng-hu&#34;&gt;胡启恒 (&lt;a href=&#34;https://www.internethalloffame.org/inductees/qiheng-hu&#34; target=&#34;_blank&#34;&gt; Qiheng Hu &lt;/a&gt;) ###&lt;/h3&gt;
+
+&lt;p&gt;胡启恒女士带领“中国国家计算机与网络设施（NCFC）”工程团队将互联网带进了中国大陆。1994年，身为中国科学院副主席的胡启恒访问了美国国家科学基金会（NSF）并举行了会谈，促成了中国与国际互联网的第一条TCP/IP全功能链接。1997年，她成立了中国互联网络信息中心（CNNIC），并担任其工作委员会主任委员超过10年。这个委员会让企业、政府和学者协作起来支持中国互联网络信息中心的工作，从而管理中国互联网资源的运行和发展。她是中国互联网协会（ISC）理事长，中国互联网协会在胡启恒的帮助下于2001年建立，是一个拥有超过400会员的民间协会。作为中国互联网协会的领导人，胡启恒女士助力于慈善事业的开展，帮助边远贫困地区的学生获得互联网接入和使用互联网应用。&lt;/p&gt;
+
+&lt;p&gt;胡启恒女士还投身于国际互联网事务。她是编号分配机构（ICANN）的国际域名委员会和联合国互联网治理工作小组（WGIG）的成员。胡启恒女士在莫斯科受到工业过程自动控制系统专业的工程师教育，之后获得了技术科学副博士学位。她在美国凯斯西储大学担任了两年客座教授。作为中国最早的模式识别和人工智能研究者之一，胡启恒女士现在是中国科学院研究员和中国工程院院士。&lt;/p&gt;
+
+&lt;h2 id=&#34;2014年入选互联网创新者-改革者&#34;&gt;2014年入选互联网创新者/改革者&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.internethalloffame.org/sites/default/files/inductees/Hualin_Qian.jpg&#34; alt=&#34;钱华林&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;钱华林&lt;/strong&gt; &lt;strong&gt;(&lt;a href=&#34;https://www.internethalloffame.org/inductees/hualin-qian&#34; target=&#34;_blank&#34;&gt; Hualin Qian &lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;钱华林教授是中国许多大型互联网相关项目的负责人。他带领团队完成了1994年中美最早的一次互联网连接。同一年，他的团队完成了中国顶级域名.cn的建设，他担任该顶级域名的技术和行政联络员。他的团队在1984年开发了中国第一个X.25网络，在1986年开发了中国第一个基于计算机平台的数据/语音/传真系统。钱华林也是1990年亚运会计算机网络和体育应用系统的首席设计师。&lt;/p&gt;
+
+&lt;p&gt;自2002年以来，钱华林服务于由中国国家发展与改革委员会成立的一个推动部署中国IPv6的专家委员会。作为专家组的一员，他从2007年开始监督指导由中国科技部支持的基础研究项目。 他也是计算机与网络技术期刊的编委会成员。&lt;/p&gt;
+
+&lt;p&gt;目前，钱华林担任中国互联网络信息中心（CNNIC）首席科学家，中国科学院研究员，也是CNNIC指导委员会的成员。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2017年入选推动全球互联者&#34;&gt;2017年入选推动全球互联者&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.internethalloffame.org/sites/default/files/inductees/Jianping%20Wu.png&#34; alt=&#34;吴建平&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;吴建平&lt;/strong&gt; &lt;strong&gt;(&lt;a href=&#34;https://www.internethalloffame.org/inductees/jianping-wu&#34; target=&#34;_blank&#34;&gt; Jianping Wu &lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;吴建平博士在促进中国和亚太地区互联网技术、部署以及教育方面扮演了先锋式的角色，并帮助中国和亚太地区提高了在全球互联网中的地位，增强了相互的联系。&lt;/p&gt;
+
+&lt;p&gt;自1994年开始，他领导了中国第一个网际网络主干CERNET（中国教育和科研计算机网）的设计、开发和改进的工作，使之成为全国最大的学术网络。他也是推动和部署中国IPv6的一位领导者，提出了中国下一代互联网示范工程（China Next Generation Internet Project）来促进中国下一代网际网络主干的开发，并领导了中国第一个大型IPv6网际网络主干和世界上最大的native IPv6网络之一的CNGI-CERNET2（“中国下一代互联网示范工程-第二代中国教育和科研计算机网）的开发。&lt;/p&gt;
+
+&lt;p&gt;他坚持不懈地鼓励中国的科学家参与国际互联网的开发工作，对亚太地区和欧亚大陆开发先进的网络起到了重要的作用。&lt;/p&gt;
+
+&lt;p&gt;他是清华大学计算机技术与科学系教授和主任，中国工程院院士。&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>如何成为一名程序员——善用搜索的艺术</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/8-31/</link>
+      <link>http://zhaochaoyue.com/post/8-31/</link>
       <pubDate>Thu, 31 Aug 2017 23:39:38 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2017/8-31/</guid>
-      <description>大四秋季学期的我，正经历着严重的自信心不足的问题。我慢慢明白自己并不希望成为一名学术研究人员。统计学让我很头大，永无止境且枯燥的学术研究让我</description>
+      <guid>http://zhaochaoyue.com/post/8-31/</guid>
+      <description>&lt;p&gt;大四秋季学期的我，正经历着严重的自信心不足的问题。我慢慢明白自己并不希望成为一名学术研究人员。统计学让我很头大，永无止境且枯燥的学术研究让我倍感无聊。我是那种成果导向的人，喜欢实实在在的产品，并有规定的截止日期，具有二元性：成功或者失败。进入大学的最后一年，我又有了新的感悟。我学习的所有技能都是为做研究服务的，如果我不打算从事学术研究，那么……我将一无所有！&lt;/p&gt;
+
+&lt;p&gt;在美国的文理学院（liberal arts college）主修计算机科学并不意味着你就是一名“黑客”。你可以简单的将它比喻为：在不同的部门购物。第一次在一个计算机入门课里看到command line，你发现你喜欢使用它。也可以意味着，你将要选择一两个编程语言，也许在你拿到学位的时候，你会写你自己的shell，创建你自己的解释器，甚至从头设计一个数据库系统。文理学校计算机科学专业为你提供了研究计算机科学的必备的条件，但这与软件工程区别很大。就像比较一个理疗师与一个运动员一样。当然，理疗师知道你拉伤了哪一块肌肉，知道如何更好地保护你的身体，但是你无法让他们替代运动员上场比赛。作为我们学校一名计算机科学专业的学生，当然，我学习了计算机语言的结构和解释，可是我从没有听过“前端工程师”或“全栈”这些词。架构设计是什么？从没听过Xcode，git是不是用来确保你的同伴可以访问你已经写好的代码的？框架？你是否只需要HTML和JavaScript？API到底是什么鬼？&lt;/p&gt;
+
+&lt;p&gt;一个接一个的招聘岗位要求iOS或Android编程经验，或者自己设计的网页清单。这些我一样都没有，坦率地讲，我甚至不知道该从哪里开始。我没有出生在一个科技背景的家庭，我爸爸还不会打字。我怀疑我的兄弟们是否精通什么技术。我妈妈仍然在等我放假回家给她MP3里拷贝新的音乐。我可以在网上选几个教程，但我如何能弥补我与那些人的差距？那些上过科技高中的人？或者他们父母都是搞软件开发的人？或者那些有自己的服务器的人？还有那些7年级就黑了自己中学电脑系统的人？我要怎么和那些有科技特权的人竞争？&lt;/p&gt;
+
+&lt;p&gt;我找了一个和计算机科学不相关的工作。建议拥有Bash的知识，但是不强求。更坏的是，我放弃了这个工作。我的Python编程经验让我能够胜过那些IT咨询台岗位的应聘者。我经历过帮助老人用电脑。我至少应该找到一个工作，那才像样。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;剧透：我有一份谷歌的工作邀请。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在我大四那年的九月中旬，所有事情都开始改变了：不知怎么，我成了上面说过的那些人的朋友。&lt;/p&gt;
+
+&lt;p&gt;最初我没把这位朋友放太当回事。我第一次见他，他正在编写代码挖掘Craigslist中所有免费的家具的列表（顺便提一句，这是违法的）。那时候，我甚至不知道数据挖掘是什么。之后碰到了黑客松（hackathon）。我一直想去，但是我一直没有参加过的朋友，而且我无法自己参加。我什么都不懂。谁愿意带上一个像我一样没用的人？但是我还是害羞地问我这个朋友是否能带我去——只是旁观——了解到我将会对他们完全没用——他笑了，说他明白，然后我们就去了。&lt;/p&gt;
+
+&lt;p&gt;他是我脑海中一个有能力的黑客的最佳例子。最牛逼的是，他用从没用过的工具把各种东西组织到一&lt;/p&gt;
+
+&lt;p&gt;起。是的，他在网上搜索花的时间比他写代码的时间多，但是通过网上搜索和之前对这方面的基本了解，他完成了一个相当复杂的App。他知道Twilio属于哪一级，知道在哪里应用它，甚至没有之前的知识，他也能把事情办好。&lt;/p&gt;
+
+&lt;p&gt;我绝望了。他是怎么变得这么厉害能无中生有把事情搞定的？&lt;/p&gt;
+
+&lt;p&gt;我郁闷地度过了这学期剩下的时间，到了冬天，我又开始恐慌了。为了能让自己找到工作，我试着学了一些Code Academy的编程课程。嗯，还不错。我尝试做了自己第一个网页，很糟糕，只有一个静止页面，满是盒子和恶心的配色，不过也算回事。我明白了，就像我的那些编程好的朋友，当我遇到问题的时候，我所需要做的就是……谷歌一下。&lt;/p&gt;
+
+&lt;p&gt;“如何在CSS中把一个div居中？”“如何在HTML中平铺背景图片？”“如何链接一个PDF？”有时候一个很简单的问题要花好几个小时才能搞定，但是我开始明白答案就在那里。所以我继续坚持这样做。没过多久，我已经足够自信地开始尝试做小项目了—从我们学校网站挖掘数据制作一个自动平均成绩计算器。哈哈，我成功了！还不懒！对吧？就像这样，我开始一步一步自信起来。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;一点建议：如果你刚开始编程，我建议你从JavaScript/HTML/CSS开始，因为网上有很多关于他们的帮助文件和问答。你很可能发现网上有人已经完成了你想做的事情。还有，完成几个在线课程吧。即使他们看起来没什么效果，最起码他们能教会你那些你谷歌搜索时候必须要知道的名词。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;受到这次小小成功的鼓励，我召集了一群志同道合的同学（同样没有软件开发经验的朋友）一起参加我的第二次黑客松。就在这里，我再次顿悟了：原来我懂得比我的朋友多。突然间，我成了一个专家。我可以掌握这门语言，我知道需要做什么，知道事情应该朝哪个方向进行。距离我随机做了几个在线课程仅仅过了两周，人们已经开始认为我比他们更能干了。当然，我离那些真正有能力的朋友还差得很远，但是我慢慢开始明白，我与他们的差距也许正如我同学与我的差距一样。&lt;/p&gt;
+
+&lt;p&gt;真的，就是这样！&lt;/p&gt;
+
+&lt;p&gt;我在一个软件开发公司参加了一个暑期实习。我对我的编程能力比之前更加有信心了，但是我需要确信我具有了能以此为业的能力。因此我捡起了iOS开发、Ruby on Rails和Angular。我可以让蓝牙设备在手机上进行各种操作。我熟悉了git，与Cordova进行了亲密对话，学会了Heroku，我甚至涉猎了一些Android开发。然而最重要的是，我知道经验固然重要，却不是全部。差距不是无法克服的，因为我可以学习。&lt;/p&gt;
+
+&lt;p&gt;说真的，如果没有软件开发的知识我也许同样能够通过谷歌的面试。一个扎实的计算机科学知识背景是他们所想要的，我的学校给了我这些。但是我从来没想过去谷歌应聘。显然我没有那条件。&lt;/p&gt;
+
+&lt;p&gt;我花了很长时间才明白，我错了。&lt;/p&gt;
+
+&lt;p&gt;成为一名软件开发者的壁垒是真实存在的。生于软件开发家庭，或者很早就接触编程的人们具有这样的自信：这让让他们乐于处理新鲜事物并保持学习。而在我们眼里，他们只是变得越来越强。去年，我看到了这个差距，我放弃了。但是我们所需要的仅仅是不要绝望。重要的并不是我们已经知道的，而是我们应该如何学习。是那种一直坐在电脑前想办法解决问题的坚毅的精神、是仔细研究每一行代码知道你明白是怎么回事的态度，是关于搜索方法、例子和错误，直到一切开始变得有意义的过程。&lt;/p&gt;
+
+&lt;p&gt;剩下的东西，自然会来到。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://okepi.wordpress.com/2014/08/21/how-to-become-a-programmer-or-the-art-of-googling-well/&#34; target=&#34;_blank&#34;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>剑玉的历史</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/7-31/</link>
+      <link>http://zhaochaoyue.com/post/7-31/</link>
       <pubDate>Mon, 31 Jul 2017 14:04:53 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/posts/2017/7-31/</guid>
-      <description>现代的剑玉是由一头是尖状一头是杯状的短木棒、两头是杯状的木质沙漏和一个底部有洞的球制成。木棒两边的杯装部分被称为“大杯”和“小杯”。一根大约</description>
-    </item>
-    
-    <item>
-      <title>传奇登山家埃德蒙·希拉里略传</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/6-4/</link>
-      <pubDate>Sun, 04 Jun 2017 20:25:30 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2017/6-4/</guid>
-      <description>埃德蒙·珀西瓦尔·希拉里（Hillary, Edmund Percival）（1919-2008），养蜂人、登山家、慈善家。 第一部分：早年时代 1953年5</description>
-    </item>
-    
-    <item>
-      <title>如何转行做编程</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/5-26/</link>
-      <pubDate>Fri, 26 May 2017 23:50:04 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2017/5-26/</guid>
-      <description>转行进入科技和编程行业可能是所有职业变化里最大的一个了，然而，这并不让我感到意外。试想还有哪个行业能让你做喜欢的事还能得到工资？还有哪个行业</description>
-    </item>
-    
-    <item>
-      <title>留学法国时期的安汉</title>
-      <link>https://chaoyuezhao.github.io/posts/2017/5-25/</link>
-      <pubDate>Thu, 25 May 2017 00:39:57 +0800</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/posts/2017/5-25/</guid>
-      <description>这篇文章是去年6月为南郑民间人士组织的“安汉诞辰120周年”活动撰写的，本来已经收录在《南郑》杂志的纪念安汉诞辰120周年专版上了【南郑文学</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://chaoyuezhao.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chaoyuezhao.github.io/about/</guid>
-      <description>###没读过法学的MBA毕业生不是一个好程序员!
- 喜欢： 读武侠和推理小说、恐怖电影、撸刚睡醒的猫、禅宗思想、剑道（一段达成）；
- 讨厌： 等人、打开一次性塑料袋、官僚主义（痛恨）；
- 梦想： 当一天游乐场套头玩偶、在珠峰大本营观星、回到明朝当王爷（滑稽脸）；
-   “Be yourself; everyone else is already taken.” ― Oscar Wilde
- </description>
+      <guid>http://zhaochaoyue.com/post/7-31/</guid>
+      <description>&lt;p&gt;现代的剑玉是由一头是尖状一头是杯状的短木棒、两头是杯状的木质沙漏和一个底部有洞的球制成。木棒两边的杯装部分被称为“大杯”和“小杯”。一根大约40厘米的线连接球和木柄。木柄的尽头是一个尖，被称为“剑”，玩家可以用柄尖穿进球洞里。木柄的另一头是一个杯装部分，被称为“中杯”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-1.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;剑玉的基本玩法是把球抛起来，并用“杯”或者“剑”接住。这听起来好像挺简单，却可以有无数种玩法。&lt;/p&gt;
+
+&lt;p&gt;很多人认为剑玉是日本发明的，但事实并不是如此。虽然有很多种说法，但是剑玉起源于16世纪的法国却是有据可查。也有研究认为剑玉曾被希腊人或者中国人改良过，不过绝对的真相一直无法得知。&lt;/p&gt;
+
+&lt;p&gt;过去法国人称这个游戏为”Bilboquet”,”Bil”表示“球”，”Boquet”表示“小树”。这个单词表达了这个游戏与小木球有关。Bilboquet与我们现在所知的剑玉很不一样，它是由一个两头各有一个杯子的木柄制成，玩家需要轮流用两头的杯子接住抛起的小球。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-3.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;最早在法国出现的剑玉（Biboquet）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-4.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;剑玉传到日本后出现的一种剑玉——日月球&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;研究认为，在日本的江户时代（1603-1868），剑玉通过丝绸之路进入日本当时唯一的对外通商城市长崎。具体的传入年代无法确定，可能是在江户时代的中期，即1777年或者1778年左右。当时剑玉被当成一个酒桌上的游戏而受到成年人的欢迎。抛球失手的人被迫喝更多的酒。&lt;/p&gt;
+
+&lt;p&gt;当日本进入明治时代（1868-1912），教育部在1876年的儿童教育报告中介绍了剑玉，这个游戏随之在年轻人中流行起来。1919年，在日本的大正时代（1912-1926），现代剑玉的前身开始出现在市场上。当时被称为“日月球”，因为剑玉的球看起来像太阳，而剑玉的杯子的阴影看起来像新月。剑玉一举成为一个热门的玩具，从那时起到昭和时代（1926-1989）早期，日本出现了各种各样的剑玉，甚至包括一种木球与船桨连接的剑玉。&lt;/p&gt;
+
+&lt;p&gt;1945年二战结束后，剑玉与其他日本玩具开始出现在糖果店的货架上。1975年，儿童文学作家藤原一生成立了日本剑玉协会，标准化了剑玉以供竞技使用。并建立了统一的规则，好让更多的人用同样的方法玩剑玉。&lt;/p&gt;
+
+&lt;p&gt;随着游戏规则和工艺标准的统一，剑玉开始变为一个流行的竞技运动。此外，剑玉还得到了日本文部科学省的支持，设立了面向学生和成人的剑玉锦标赛。剑玉爱好者们也在努力在全球推广这项运动。日本剑玉协会相信有一天剑玉将会被全世界所了解，他们正在努力促进国际间的交流。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-5.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;日本儿童文学作家，日本剑玉协会创始人藤原一生先生&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2003年举办的第15届日本文部科学省杯剑玉锦标赛&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://web-japan.org/kidsweb/virtual/kendama/kendama02.html&#34; target=&#34;_blank&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

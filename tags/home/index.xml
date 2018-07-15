@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on 超越的主页</title>
+    <link>http://zhaochaoyue.com/tags/home/</link>
+    <description>Recent content in Home on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 14 Jul 2018 13:52:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhaochaoyue.com/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>谷歌Mobile Web Specialist证书备考指南</title>
+      <link>http://zhaochaoyue.com/post/7-14/</link>
+      <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/7-14/</guid>
+      <description>2017年8月，谷歌发布了专门针对web开发人员的Mobile Web Specialist考试，考试形式为四个小时的在线编程和结尾的在线面试，考试</description>
+    </item>
+    
+    <item>
+      <title>2018年,你为什么应该成为一个web开发工程师？</title>
+      <link>http://zhaochaoyue.com/post/2-2/</link>
+      <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/2-2/</guid>
+      <description>本期节目翻译自YouTube视频 Why You Should Become A Web Developer in 2018 本期节目我们要聊一聊2018年，为什么要成为一名web开发工程师。 不过在此之前，我们先来做</description>
+    </item>
+    
+    <item>
+      <title>15分钟了解JS面向对象精要</title>
+      <link>http://zhaochaoyue.com/post/1-29/</link>
+      <pubDate>Mon, 29 Jan 2018 17:20:16 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/1-29/</guid>
+      <description>本文是我读完《JavaScript面向对象精要》后写的学习笔记。这本小册子总共还不到一百页，但麻雀虽小，五脏俱全，可以称得上是微言大义，不愧</description>
+    </item>
+    
+    <item>
+      <title>入选互联网名人堂的三位中国人</title>
+      <link>http://zhaochaoyue.com/post/10-13/</link>
+      <pubDate>Fri, 13 Oct 2017 13:46:56 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/10-13/</guid>
+      <description>简介 互联网名人堂（The Internet Hall of Fame）由互联网协会（Internet Society）创建于2012年，目的在于表彰为互联网发展做出杰出贡献</description>
+    </item>
+    
+    <item>
+      <title>传奇登山家埃德蒙·希拉里略传</title>
+      <link>http://zhaochaoyue.com/post/6-4/</link>
+      <pubDate>Sun, 04 Jun 2017 20:25:30 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/6-4/</guid>
+      <description>埃德蒙·珀西瓦尔·希拉里（Hillary, Edmund Percival）（1919-2008），养蜂人、登山家、慈善家。 第一部分：早年时代 1953年5</description>
+    </item>
+    
+  </channel>
+</rss>

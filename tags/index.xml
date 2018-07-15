@@ -2,65 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 超越的主页</title>
-    <link>https://chaoyuezhao.github.io/tags/</link>
+    <link>http://zhaochaoyue.com/tags/</link>
     <description>Recent content in Tags on 超越的主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jan 2018 22:15:19 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 14 Jul 2018 13:52:14 +0800</lastBuildDate>
     
-	<atom:link href="https://chaoyuezhao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zhaochaoyue.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo</title>
-      <link>https://chaoyuezhao.github.io/tags/hugo/</link>
-      <pubDate>Thu, 25 Jan 2018 22:15:19 +0800</pubDate>
+      <title>Home</title>
+      <link>http://zhaochaoyue.com/tags/home/</link>
+      <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/hugo/</guid>
+      <guid>http://zhaochaoyue.com/tags/home/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>https://chaoyuezhao.github.io/tags/javascript/</link>
+      <link>http://zhaochaoyue.com/tags/javascript/</link>
       <pubDate>Sat, 17 Feb 2018 17:42:26 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/javascript/</guid>
+      <guid>http://zhaochaoyue.com/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>安汉</title>
-      <link>https://chaoyuezhao.github.io/tags/%E5%AE%89%E6%B1%89/</link>
-      <pubDate>Thu, 25 May 2017 00:39:57 +0800</pubDate>
+      <title>Websites</title>
+      <link>http://zhaochaoyue.com/tags/websites/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/%E5%AE%89%E6%B1%89/</guid>
+      <guid>http://zhaochaoyue.com/tags/websites/</guid>
       <description></description>
     </item>
     
     <item>
       <title>电台</title>
-      <link>https://chaoyuezhao.github.io/tags/%E7%94%B5%E5%8F%B0/</link>
+      <link>http://zhaochaoyue.com/tags/%E7%94%B5%E5%8F%B0/</link>
       <pubDate>Fri, 02 Feb 2018 17:20:16 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/%E7%94%B5%E5%8F%B0/</guid>
+      <guid>http://zhaochaoyue.com/tags/%E7%94%B5%E5%8F%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>翻译</title>
+      <link>http://zhaochaoyue.com/tags/%E7%BF%BB%E8%AF%91/</link>
+      <pubDate>Fri, 13 Oct 2017 13:46:56 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/tags/%E7%BF%BB%E8%AF%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>考试</title>
-      <link>https://chaoyuezhao.github.io/tags/%E8%80%83%E8%AF%95/</link>
+      <link>http://zhaochaoyue.com/tags/%E8%80%83%E8%AF%95/</link>
       <pubDate>Sat, 14 Jul 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/%E8%80%83%E8%AF%95/</guid>
+      <guid>http://zhaochaoyue.com/tags/%E8%80%83%E8%AF%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>论文</title>
-      <link>https://chaoyuezhao.github.io/tags/%E8%AE%BA%E6%96%87/</link>
+      <link>http://zhaochaoyue.com/tags/%E8%AE%BA%E6%96%87/</link>
       <pubDate>Fri, 01 Jun 2018 13:52:14 +0800</pubDate>
       
-      <guid>https://chaoyuezhao.github.io/tags/%E8%AE%BA%E6%96%87/</guid>
+      <guid>http://zhaochaoyue.com/tags/%E8%AE%BA%E6%96%87/</guid>
       <description></description>
     </item>
     

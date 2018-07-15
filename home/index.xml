@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on 超越的主页</title>
+    <link>http://zhaochaoyue.com/home/</link>
+    <description>Recent content in Homes on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhaochaoyue.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://zhaochaoyue.com/home/hero/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/home/hero/</guid>
+      <description>Yes, I am a criminal. My crime is that of curiosity. My crime is that of outsmarting you, something that you will never forgive me for.  </description>
+    </item>
+    
+    <item>
+      <title>博客</title>
+      <link>http://zhaochaoyue.com/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>项目</title>
+      <link>http://zhaochaoyue.com/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>论文</title>
+      <link>http://zhaochaoyue.com/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>联系</title>
+      <link>http://zhaochaoyue.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
