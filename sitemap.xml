@@ -194,16 +194,6 @@
     
     <url>
     
-      <loc>http://zhaochaoyue.com/categories/</loc>
-      <lastmod>2018-06-01T13:52:14+08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://zhaochaoyue.com/</loc>
       <lastmod>2017-10-15T00:00:00+08:00</lastmod>
     </url>
@@ -224,17 +214,6 @@
     <url>
     
       <loc>http://zhaochaoyue.com/categories/</loc>
-      <lastmod>2018-06-01T13:52:14+08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://zhaochaoyue.com/tags/home/</loc>
-      <lastmod>2018-07-14T13:52:14+08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -274,7 +253,7 @@
     <url>
     
       <loc>http://zhaochaoyue.com/tags/</loc>
-      <lastmod>2018-07-14T13:52:14+08:00</lastmod>
+      <lastmod>2018-02-17T17:42:26+08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -285,16 +264,6 @@
     
       <loc>http://zhaochaoyue.com/tags/websites/</loc>
       <lastmod>2018-07-15T00:00:00+08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://zhaochaoyue.com/categories/%E6%8A%80%E6%9C%AF/</loc>
-      <lastmod>2018-02-17T17:42:26+08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -343,7 +312,7 @@
     
     <url>
     
-      <loc>http://zhaochaoyue.com/categories/%E9%9A%8F%E7%AC%94/</loc>
+      <loc>http://zhaochaoyue.com/tags/%E9%9A%8F%E7%AC%94/</loc>
       <lastmod>2018-05-02T13:52:14+08:00</lastmod>
       <priority>0</priority>
     </url>

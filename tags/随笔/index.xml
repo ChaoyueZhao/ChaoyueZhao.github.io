@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on 超越的主页</title>
+    <link>http://zhaochaoyue.com/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 02 May 2018 13:52:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhaochaoyue.com/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我是如何成为前端开发工程师的？</title>
+      <link>http://zhaochaoyue.com/post/5-2/</link>
+      <pubDate>Wed, 02 May 2018 13:52:14 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/5-2/</guid>
+      <description>我本科学的法学，毕业后在北京一家央企做了5年国际工程市场开发，之后读了2年MBA，去年毕业后，我在家自学了7个月，上个月我入职了一家游戏公司</description>
+    </item>
+    
+  </channel>
+</rss>
