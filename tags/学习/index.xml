@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习 on 超越的主页</title>
+    <link>http://zhaochaoyue.com/tags/%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 学习 on 超越的主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 12 Feb 2019 13:52:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhaochaoyue.com/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我是如何学习英语的</title>
+      <link>http://zhaochaoyue.com/post/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E7%9A%84/</link>
+      <pubDate>Tue, 12 Feb 2019 13:52:14 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E7%9A%84/</guid>
+      <description>TL;DR 求知若渴的学习心态 Podcast Republic播客app 《韦氏英语词典》 《The New York Times》和YouTube 用英文搜Google解决技术问题 英语</description>
+    </item>
+    
+  </channel>
+</rss>

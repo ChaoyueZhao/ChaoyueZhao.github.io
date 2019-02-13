@@ -11,6 +11,91 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我是如何学习英语的</title>
+      <link>http://zhaochaoyue.com/post/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E7%9A%84/</link>
+      <pubDate>Tue, 12 Feb 2019 13:52:14 +0800</pubDate>
+      
+      <guid>http://zhaochaoyue.com/post/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E7%9A%84/</guid>
+      <description>
+
+&lt;h3 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;求知若渴的学习心态&lt;/li&gt;
+&lt;li&gt;Podcast Republic播客app&lt;/li&gt;
+&lt;li&gt;《韦氏英语词典》&lt;/li&gt;
+&lt;li&gt;《The New York Times》和YouTube&lt;/li&gt;
+&lt;li&gt;用英文搜Google解决技术问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;英语是程序员的必修课，也是鉴定程序员水平的试金石。一个优秀的程序员应该能够轻松读懂英文技术文档、快速查询英文网页并得到有用的信息，甚至还需要畅通无阻的在GitHub上用英文与人交流、看懂大部分Hacker News的文章。&lt;/p&gt;
+
+&lt;p&gt;一直以来，我都在思考如何才能快速有效的提高英语水平。由于我之前做过几年国际贸易，英语是国贸的基本功，再加上在英语国家南非工作过一年，自觉英语处于国人中上水平，所以为了巩固自己的优点，学习英语一直没有停过，也多少在实践中总结了几个切身经验，发现了一些好用的工具，不免想在自己网站上写出来，分享一下。&lt;/p&gt;
+
+&lt;h3 id=&#34;心态&#34;&gt;心态&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/img/stayHungryStayFoolish.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;乔布斯的名言“stay hungry，stay foolish”，大家肯定都听过。其实学习英语最重要的就是要保持对英文的好奇心。看见不会的单词尽量都搞懂了，尤其是那些很短的词，我每次见了很短又不会的词都觉得心里很别扭，三五个字母的词都不认识，多丢人啊，所以定会将其认真背一遍，理解一遍。&lt;/p&gt;
+
+&lt;p&gt;我没事就喜欢浏览外网，尤其是那些大牌网站。奥巴马总统在任的时候，我最喜欢逛美国白宫网站，里面有不少有趣的文章，比如美国总统、第一夫人、副总统、第二夫人的个人简历，看起来很过瘾。还记得看过拜登副总统的简历后一度非常伤感，他的身世真的太惨了。除了文字，还有白宫的新闻发布会也喜欢听，之前白宫发言人是一个戴眼镜的白人男子，我就很喜欢听他讲话，还专门查过他的眼镜什么牌子，可惜没有找到。政要的演讲也是必听的，虽然很同情拜登，但是他的演讲真的不喜欢，感觉他说话有点吐字不清，声音朦朦胧胧的，听起来不痛快。奥巴马的演讲就完美多了，阴阳顿挫，铿锵有力，简直是教科书。&lt;/p&gt;
+
+&lt;h3 id=&#34;the-new-york-times&#34;&gt;The New York Times&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/img/nytimes.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要论当今全球最高大上的报纸是哪家，我看非《纽约时报》莫属了。作为一个饥渴的英语学习者，怎么能不在这里好好畅游一番呢？我给自己定了一个小目标，每天工作再忙至少要浏览一遍《纽约时报》电子版首页的标题,然后找一两篇文章细读。免费版的每天只能读一篇，注册会员订阅后，就没有限制了，费用是一个月4美元，相当于一天1块钱，也蛮划算的。&lt;/p&gt;
+
+&lt;h3 id=&#34;merriam-webster-dictionary&#34;&gt;Merriam-Webster Dictionary&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/img/webster.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;阅读英语文章少不了要查词，我的chrome浏览器有两个查词的扩展程序，一个是谷歌翻译，选中就能立马显示中文含义，速读时候很好用。另一个是Lookup on Merriam-Webster，就是著名的《韦氏英英词典》，右键点击单词，选择在词典中查看即可。要想不断提高英语水平，一定要用英英词典！先仔理解单词的含义，然后细细品味在句子中的用法。这个《韦氏英英词典》还有一个很好用的App，配合上手机版的《纽约时报》app使用，简直是一种享受。唯一不足就是国内无法使用无广告版（因为要用到Google Play）&lt;/p&gt;
+
+&lt;h3 id=&#34;youtube&#34;&gt;YouTube&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/img/youtube.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我最常用，而且百看不厌，其乐无穷的网站是YouTube。这里的视频包罗万象，练习听力是最好不过了，还能顺便了解美国文化。尤其是美国的脱口秀节目，既搞笑又长见识。YouTube视频有一个功能是打开字幕，大多数都是计算机自动识别的打出的，在语速太快听不懂的时候，看看字幕会有很大帮助。我关注的脱口秀节目有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Team Coco&lt;/li&gt;
+&lt;li&gt;The Ellen Show&lt;/li&gt;
+&lt;li&gt;Jimmy Kimmel Live&lt;/li&gt;
+&lt;li&gt;The Late Show with Stephen Colbert&lt;/li&gt;
+&lt;li&gt;The Late Late Show with James Corden&lt;/li&gt;
+&lt;li&gt;The Tonight Show Starring Jimmy Fallon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;真是个个精彩无比，每个主持人都特别风趣幽默，妙语连珠。&lt;/p&gt;
+
+&lt;h3 id=&#34;podcast-republic&#34;&gt;Podcast Republic&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/img/podcast_republic.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;眼睛累了需要休息的时候，不妨听一听美国的播客节目，利用碎片时间学习英语。我至今一直坚持听播客，刚开始是听不懂硬听，而且多是一些专门学习英语的播客，比如我听了好久的ESL，慢慢的大部分都能听懂了，就会找一些内容有意思的播客来听。之前用iPhone时候，就是在自带的podcast软件里找播客，为了找到美国的节目，还要把Apple ID的国家设置为美国，相当麻烦。后来换了安卓手机就更不方便了。&lt;/p&gt;
+
+&lt;p&gt;最近发现了一个播客app叫Podcast Republic，真的要五星推荐！国外所有的podcast都能搜索到，订阅后自动后台下载，听的时候一点也不用担心信号不好的卡顿，不翻墙也能下载，真的是英语学习的神器。基本我每天通勤路上都会插着蓝牙耳机听英文播客。我最喜欢听的是NPR的节目，NPR是美国公共广播电台。&lt;/p&gt;
+
+&lt;h3 id=&#34;程序员光环&#34;&gt;程序员光环&lt;/h3&gt;
+
+&lt;p&gt;作为一个程序员，学习英语也是很方便的。日常编码当中必然会经常Google技术问题，有句话叫“我们不是代码的创造者，我们是stack overflow的搬运工”。每一次查询技术问题都是一个学习英语的过程，当然前提是一定要在Google上搜索，而且因为要用英语描述问题，久而久之，英文造句和写作的能力也有有所进步。&lt;/p&gt;
+
+&lt;p&gt;此外，我自己上班时候一有空就会大量浏览学习各种技术文章，大多是关于前端开发的。资料来源主要是自己订阅的几个前端周报，最喜欢的一个是Frontend Focus，每周四发一篇，每期大约有十几篇文章，相当不错，就是感觉过多侧重于前台技术栈。此外也会翻一翻Google developer、GitHub explore和Medium的订阅邮件。这样无形中就增加了大量的阅读量，不知不觉就提高了英语水平，程序员光环的作用真的不容小觑。&lt;/p&gt;
+
+&lt;h3 id=&#34;vpn&#34;&gt;VPN&lt;/h3&gt;
+
+&lt;p&gt;学好英语的一个大前提是学会科学上网。我目前使用了两个VPN，一个是用了四五年的ifly，价格是360元/年，不限流量。优点是在谷歌Chrome上安装扩展程序即可，可以自动识别国内和国外的网站，想看国内视频网站也不用关闭VPN。缺点就是手机无法使用。所以我又买了另一个，叫IVPN。这个是我做了一番功课，在纽约时报的产品测评网站上读了一篇长篇分析市面上VPN厂家的文章后购买的。优点是服务器多，速度快，手机使用方便。缺点是价格比较贵，一年要500块。&lt;/p&gt;
+
+&lt;h3 id=&#34;the-end&#34;&gt;The end&lt;/h3&gt;
+
+&lt;p&gt;以上就是我学习英语的方法和经验，诸君共勉！&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>年会自编自演小品《如此招聘1.0》</title>
       <link>http://zhaochaoyue.com/post/8-31/</link>
       <pubDate>Tue, 29 Jan 2019 23:39:38 +0800</pubDate>
@@ -2043,51 +2128,6 @@ console.log(person2 instanceof Person); /* true */
 &lt;p&gt;他坚持不懈地鼓励中国的科学家参与国际互联网的开发工作，对亚太地区和欧亚大陆开发先进的网络起到了重要的作用。&lt;/p&gt;
 
 &lt;p&gt;他是清华大学计算机技术与科学系教授和主任，中国工程院院士。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>剑玉的历史</title>
-      <link>http://zhaochaoyue.com/post/7-31/</link>
-      <pubDate>Mon, 31 Jul 2017 14:04:53 +0800</pubDate>
-      
-      <guid>http://zhaochaoyue.com/post/7-31/</guid>
-      <description>&lt;p&gt;现代的剑玉是由一头是尖状一头是杯状的短木棒、两头是杯状的木质沙漏和一个底部有洞的球制成。木棒两边的杯装部分被称为“大杯”和“小杯”。一根大约40厘米的线连接球和木柄。木柄的尽头是一个尖，被称为“剑”，玩家可以用柄尖穿进球洞里。木柄的另一头是一个杯装部分，被称为“中杯”。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-1.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;剑玉的基本玩法是把球抛起来，并用“杯”或者“剑”接住。这听起来好像挺简单，却可以有无数种玩法。&lt;/p&gt;
-
-&lt;p&gt;很多人认为剑玉是日本发明的，但事实并不是如此。虽然有很多种说法，但是剑玉起源于16世纪的法国却是有据可查。也有研究认为剑玉曾被希腊人或者中国人改良过，不过绝对的真相一直无法得知。&lt;/p&gt;
-
-&lt;p&gt;过去法国人称这个游戏为”Bilboquet”,”Bil”表示“球”，”Boquet”表示“小树”。这个单词表达了这个游戏与小木球有关。Bilboquet与我们现在所知的剑玉很不一样，它是由一个两头各有一个杯子的木柄制成，玩家需要轮流用两头的杯子接住抛起的小球。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-3.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;最早在法国出现的剑玉（Biboquet）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-4.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;剑玉传到日本后出现的一种剑玉——日月球&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;研究认为，在日本的江户时代（1603-1868），剑玉通过丝绸之路进入日本当时唯一的对外通商城市长崎。具体的传入年代无法确定，可能是在江户时代的中期，即1777年或者1778年左右。当时剑玉被当成一个酒桌上的游戏而受到成年人的欢迎。抛球失手的人被迫喝更多的酒。&lt;/p&gt;
-
-&lt;p&gt;当日本进入明治时代（1868-1912），教育部在1876年的儿童教育报告中介绍了剑玉，这个游戏随之在年轻人中流行起来。1919年，在日本的大正时代（1912-1926），现代剑玉的前身开始出现在市场上。当时被称为“日月球”，因为剑玉的球看起来像太阳，而剑玉的杯子的阴影看起来像新月。剑玉一举成为一个热门的玩具，从那时起到昭和时代（1926-1989）早期，日本出现了各种各样的剑玉，甚至包括一种木球与船桨连接的剑玉。&lt;/p&gt;
-
-&lt;p&gt;1945年二战结束后，剑玉与其他日本玩具开始出现在糖果店的货架上。1975年，儿童文学作家藤原一生成立了日本剑玉协会，标准化了剑玉以供竞技使用。并建立了统一的规则，好让更多的人用同样的方法玩剑玉。&lt;/p&gt;
-
-&lt;p&gt;随着游戏规则和工艺标准的统一，剑玉开始变为一个流行的竞技运动。此外，剑玉还得到了日本文部科学省的支持，设立了面向学生和成人的剑玉锦标赛。剑玉爱好者们也在努力在全球推广这项运动。日本剑玉协会相信有一天剑玉将会被全世界所了解，他们正在努力促进国际间的交流。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-5.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;日本儿童文学作家，日本剑玉协会创始人藤原一生先生&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://zhaochaoyue.com/image/jian-yu-6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2003年举办的第15届日本文部科学省杯剑玉锦标赛&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://web-japan.org/kidsweb/virtual/kendama/kendama02.html&#34; target=&#34;_blank&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
